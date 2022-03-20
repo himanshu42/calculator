@@ -1450,6 +1450,8 @@ header .navbar-expand {
     width: 100%;
     padding: 20px 25px;
     pointer-events: initial;
+    background-color: #f5f5f5;
+    color: #2f323a;
 }
 
 header .navbar-expand.navbar-vs-0  { padding-top: 0px;  padding-bottom: 0px; }
@@ -1524,6 +1526,7 @@ header .navbar-expand .navbar-brand img {
     align-items: center;
     font-size: 0.9rem;
     font-weight: 600;
+    color: #2f323a;
 }
 
 .navbar-expand .navbar-nav .nav-link:not(.btn) {
@@ -1533,7 +1536,7 @@ header .navbar-expand .navbar-brand img {
 }
 
 .navbar-expand:not(.navbar-sticky) .navbar-nav .nav-link:not(.btn) {
-    color: var(--top-nav-item-color);
+    color: #2f323a;
 }
 
 .navbar-expand .navbar-nav .nav-link:not(.btn):not(.title):hover {
@@ -3522,6 +3525,18 @@ footer .contacts li {
 
 footer .nav-item {
     margin: 0;
+    z-index: 0;
+}
+
+.cs-fixed{
+    position: relative;
+    z-index: 2;
+}
+
+.cs-fixed div{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 }
 
 footer .nav-item .nav-link {
