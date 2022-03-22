@@ -1565,7 +1565,7 @@ header .navbar-expand .navbar-brand img {
     align-items: center;
     justify-content: space-between;
     padding: 0.35rem 1rem;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--primary-p-color);
 }
 
@@ -2624,6 +2624,7 @@ header .navbar-expand .navbar-brand img {
     border: 1px solid var(--secondary-l-color);
     background: none;
 }
+
 
 .badge.tag {
     margin: 0 5px 10px 0;
@@ -3909,6 +3910,11 @@ footer .copyright a:not(.btn) {
     }
 
     /* #endregion Gallery */
+
+    /*my css*/
+    .table thead tr th{
+        font-size: 0.5rem;
+    } 
 }
 
 @media(max-width: 991px) {
@@ -3982,6 +3988,11 @@ footer .copyright a:not(.btn) {
     }
     
     /* #endregion Modal */
+
+    /*my css*/
+    .table thead tr th{
+        font-size: 0.5rem;
+    }
 }
 
 @media(max-width: 767px) {
@@ -4264,6 +4275,11 @@ footer .copyright a:not(.btn) {
     }
 
     /* #endregion Footer */
+
+    /*my css*/
+    .table thead tr th{
+        font-size: 0.5rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -4297,6 +4313,11 @@ footer .copyright a:not(.btn) {
     }
     
     /* #endregion Feature */
+
+    /*my css*/
+    .table thead tr th{
+        font-size: 0.5rem;
+    }
 }
 
 @media(max-width: 374px) {
@@ -4310,6 +4331,11 @@ footer .copyright a:not(.btn) {
     }
     
     /* #endregion General */
+
+    /*my css*/
+    .table thead tr th{
+        font-size: 0.5rem;
+    }
 }
 
 /* #endregion All Media Queries */
@@ -4323,3 +4349,7 @@ footer .copyright a:not(.btn) {
     border-radius: 20px 20px 0px 0px;
     border: none !important;
 }
+.table{
+    table-layout:fixed;
+}
+
