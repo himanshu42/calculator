@@ -615,7 +615,7 @@ section {
 }
 
 section.hero       { background-color: var(--hero-bg-color); }
-section.section-1  { background-color: var(--section-1-bg-color);  background-image: var(--section-1-bg-image); }
+section.section-1  { background-color: var(--section-2-bg-color);  background-image: var(--section-1-bg-image); }
 section.section-2  { background-color: var(--section-2-bg-color);  background-image: var(--section-2-bg-image); }
 section.section-3  { background-color: var(--section-3-bg-color);  background-image: var(--section-3-bg-image); }
 section.section-4  { background-color: var(--section-4-bg-color);  background-image: var(--section-4-bg-image); }
@@ -4419,3 +4419,34 @@ footer .copyright a:not(.btn) {
     font-size: 20px;
   }
 
+
+  .carbon1{
+    border-radius: 10px 0px 0px 0px;
+    border: none !important;
+    border-style: solid !important;
+    border-width: 0px 1px 0px 0px !important;
+    border-color: #454d55 !important;
+  }
+
+  .carbon2{
+    border-radius: 0px 10px 0px 0px;
+    border: none !important;
+  }
+
+  .valg{
+    vertical-align: inherit !important;
+    font-weight: 100;
+  }
+
+
+  .fl{
+      float: left;
+      margin: 0px;
+      margin-bottom: 20px;
+  }
+
+  .fr{
+    color: var(--primary-color);
+    margin: 0px;
+    margin-bottom: 20px;
+  }
