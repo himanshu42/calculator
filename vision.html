@@ -15,7 +15,7 @@
 
         <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
 
-        <title>Leverage - Your next level of website building</title>
+        <title>Noumi</title>
 
         <meta name="description" content="Creative Agency, Portfolio, Corporate, Startup & Technology">
         <meta name="subject" content="Creative Agency, Portfolio, Corporate, Startup & Technology">
@@ -24,7 +24,7 @@
         <!-- ==============================================
         Favicons
         =============================================== -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="">
         <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
         <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
@@ -68,42 +68,36 @@
         
     </head>
 
-    <style>
-        section.featured:after {
-            display: none;
-        }
-    </style>
-    <script>
-        function getParameters() {
-            const queryString = window.location.search;
-            const urlParams = new URLSearchParams(queryString);
-            const stores = urlParams.get('stores');
-            const till = urlParams.get('till');
-            const transactions = urlParams.get('transactions');
-
-            const cost_paper=(transactions*0.00281)*363;
-            const trees=(transactions*363)/39000;
-            const co2=Math.round(trees*21.8,0);
-            const ryear=((transactions/stores)*363)*0.00281;
-            const treecut=((transactions/stores)*363)/39000;
-            const lossco2=Math.round(treecut*21.8,0);
-
-            document.getElementById("cost_paper").innerHTML=cost_paper;
-            document.getElementById("trees").innerHTML=trees.toFixed(2);
-            document.getElementById("co2").innerHTML=co2;
-            document.getElementById("ryear").innerHTML=ryear.toFixed(2);
-            document.getElementById("treecut").innerHTML=treecut.toFixed(2);
-            document.getElementById("lossco2").innerHTML=lossco2;
-    }
-    </script>
-
-    <body onload="getParameters();">
+    <body>
 
         <!-- Header -->
         
 
         <!-- Hero -->
-        
+        <section id="slider" class="hero p-0 odd featured">
+            <div class="swiper-container no-slider slider-h-100">
+                <div class="swiper-wrapper">
+
+                    <!-- Item 1 -->
+                    <div class="swiper-slide slide-center">
+                        
+                        <img src="assets/images/bg-8.jpg" class="full-image" data-mask="70">
+                        
+                        <div class="slide-content row text-center">
+                            <div class="col-12 mx-auto inner">
+                                <h1 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">Our Vsion / Mission</h1>
+                                <nav data-aos="zoom-out-up" data-aos-delay="800" aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="demo-4-one-page.html">Home</a></li>
+                                        <li class="breadcrumb-item active"><a href="solutions.html">Our Vision - Mission</a></li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Content -->
         <section id="content" class="section-1 single featured">
@@ -111,41 +105,140 @@
                 <div class="row">
 
                     <!-- Main -->
-                    <main class="col-12 p-0 flex-center">
+                    <main class="col-12 p-0">
                         <div class="row">
                             <div class="col-12 align-self-center">
-                                <h2 class="super">Group Cost & Environmental impact of paper receipts </h2>
-                            </div>
-                            <div class="col-12 p-0">
-                                <table class="table tb-c">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th class="text-center carbon1">Group Cost</th>
-                                            <th colspan="5" class="text-center carbon2">Group Cost</th>
-                                        </tr>
-                                        <tr>
-                                            <th scope="col" class="valg">Cost of paper receipts per year for the group</th>
-                                            <th scope="col" class="valg">Number of trees felled annually to provide paper for the group</th>
-                                            <th scope="col" class="valg">Loss of CO2 sequestration for the group (first year)</th>
-                                            <th scope="col" class="valg">Cost of receipts per year for each store</th>
-                                            <th scope="col" class="valg">Number of trees felled annually to provide paper for each store</th>
-                                            <th scope="col" class="valg">Loss of CO2 sequestration per store (first year)</th>
-                                        </tr>
-                                    </thead>
-                                    <br>
-                                    <br>
-                                    <tbody>
-                                        <tr class="text-center">
-                                            <td id="cost_paper"></td>
-                                            <td id="trees"></td>
-                                            <td id="co2"></td>
-                                            <td id="ryear"></td>
-                                            <td id="treecut"></td>
-                                            <td id="lossco2"></td>
-                                        </tr>
-                                        <tr id="test"></tr>
-                                    </tbody>
-                                </table>
+                                <h2 class="featured mt-0 ml-0">NOUMI Device – latest 2022</h2>
+                                <hr>
+                                <ul class="p-0">
+                                    <li class="list-style-n">
+                                        <h3 class="h-green">Our Vision.</h3>
+                                        <p>Developed by a globally recognised contactless technology professional the Noumi device incorporates all the latest technology to ensure an exceptional MTBF, Noumi device is powered by the best electronic components that ensures super-fast transfer of data meaning consumers can collect receipts more efficiently than standard paper receipts.</p>
+                                        <ul>
+                                            <blockquote class="pl-5">
+                                                <li class="ls-s">
+                                                    <label>(Tbc) MTBF rate</label>
+                                                </li>
+                                                <li class="ls-s">
+                                                    <label>Premium electronic components</label>
+                                                </li>
+                                                <li class="ls-s">
+                                                    <label>Low power consumption</label>
+                                                </li>
+                                            </blockquote>
+                                        </ul>
+                                    </li>
+                                    <li class="list-style-n">
+                                        <h4>Are My EPOS Compatible?</h4>
+                                    </li>
+                                    <hr>
+                                    <li class="list-style-n">
+                                        <h3 class="h-green">Cost Savings</h3>
+                                        <!--Table-->
+                                        <table class="table tb-c">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th colspan="4" class="text-center tb-b">Group Savings & Enviromental Benefits Of Noumi </th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">Percentage of customers using noumi</th>
+                                                    <th scope="col">Annual group wide cost savings</th>
+                                                    <th scope="col">Trees saved annually</th>
+                                                    <th scope="col">CO2 sequestration protected for the group (first year)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="text-center">
+                                                <th scope="row">10%</th>
+                                                    <td>£0.00</td>
+                                                    <td>0.0</td>
+                                                    <td>0Kg</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>**Interested in saving money and helping the environment <a href="csform.html">Click Here</a>**</p>
+                                        <!--------->
+                                    </li>
+                                    <hr>
+                                    <li class="list-style-n">
+                                        <h3 class="h-green">New / Additional Business Features</h3>
+                                        <br>
+                                        <ul>
+                                            <li>
+                                                <b>Promotions / Loyalty Programs</b>
+                                                <ul>
+                                                    <li class="list-style-n">
+                                                        <p>TBC</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <br>
+                                            <li>
+                                                <b>QR Codes</b>
+                                                <ul>
+                                                    <li class="list-style-n">
+                                                        <p>TBC</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <br>
+                                            <li>
+                                                <b>Consumer Analytics</b>
+                                                <ul>
+                                                    <li class="list-style-n">
+                                                        <p>TBC</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <hr>
+                                    <li class="list-style-n">
+                                        <h3 class="h-green">Compatibility</h3>
+                                        <!--table-->
+                                        <table class="table table-striped table-hover">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="col" class="text-center" colspan="2">Software </th>
+                                                </tr>
+                                                <tr class="pb-3">
+                                                  <td colspan="2">Windows 10 (and earlier) / Android / MAC, etc</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <br>
+                                        <table class="table table-striped table-hover">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="col" class="text-center" colspan="2">Hardware</th>
+                                                </tr>
+                                                <tr>
+                                                  <th scope="row">Tier 1s</th>
+                                                  <td>E.G. Hewlett Packard, NCR etc</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Tier 2s</th>
+                                                    <td>E.G. Aures / Oxhoo / MyPos etc</td>
+                                                  </tr>
+                                              </tbody>
+                                        </table>
+                                        <!--------->
+                                    </li>
+                                    <li class="list-style-n">
+                                        <h3 class="h-green">Deployed NOUMI Information:</h3>
+                                        <ul>
+                                            <li>
+                                                <b>NOUMI Devices out there in the field now</b>
+                                            </li>
+                                            <br>
+                                            <li>
+                                                <b>Real time receipts counter – rolling style – ‘Receipts generated’ / ‘Trees saved’ / ‘CO2 saved’</b>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                                <br>
                             </div>
                         </div>        
                     </main>
