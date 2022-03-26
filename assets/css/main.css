@@ -3915,6 +3915,14 @@ footer .copyright a:not(.btn) {
     .table thead tr th{
         font-size: 0.5rem;
     } 
+
+    .table tbody tr td{
+        font-size: 0.5rem;
+    } 
+
+    .table tbody tr th{
+        font-size: 0.5rem;
+    } 
 }
 
 @media(max-width: 991px) {

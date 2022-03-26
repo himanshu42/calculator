@@ -88,12 +88,12 @@
             const treecut=((transactions/stores)*363)/39000;
             const lossco2=Math.round(treecut*21.8,0);
 
-            document.getElementById("cost_paper").innerHTML=cost_paper;
+            document.getElementById("cost_paper").innerHTML=cost_paper.toFixed(2);
             document.getElementById("trees").innerHTML=trees.toFixed(2);
-            document.getElementById("co2").innerHTML=co2;
+            document.getElementById("co2").innerHTML=co2.toFixed(2);
             document.getElementById("ryear").innerHTML=ryear.toFixed(2);
             document.getElementById("treecut").innerHTML=treecut.toFixed(2);
-            document.getElementById("lossco2").innerHTML=lossco2;
+            document.getElementById("lossco2").innerHTML=lossco2.toFixed(2);
     }
     </script>
 
