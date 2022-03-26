@@ -4457,4 +4457,5 @@ footer .copyright a:not(.btn) {
     color: var(--primary-color);
     margin: 0px;
     margin-bottom: 20px;
+    float: right;
   }
