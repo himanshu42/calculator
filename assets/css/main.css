@@ -4460,6 +4460,15 @@ footer .copyright a:not(.btn) {
     float: right;
   }
 
+  .eposbtn{
+    border: none;
+    padding: 10px;
+    background-color: #30a732;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+  }
+
   /*---------------buttons CSS--------------*/
 
   .learn-more {
