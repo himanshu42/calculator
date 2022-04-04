@@ -45,6 +45,7 @@
         =============================================== -->
         <link rel="stylesheet" href="assets/css/default.css">
         <link rel="stylesheet" href="assets/css/theme-pink.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- ==============================================
         Theme Settings
@@ -212,17 +213,69 @@
 
         <section id="contact" class="section-7 form">
             <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <p><i style="color: #3daf2c;" class="fa fa-building" aria-hidden="true"></i>&nbsp;NOUMI Digital LTD</p>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <p class="m-0"><i style="color: #3daf2c;" class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Barton Hall</p>
+                                <p class="m-0">Garstang Road</p>
+                                <p class="m-0">Broughton, Preston</p>
+                                <p class="m-0">PR3 5BT</p>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <p><i style="color: #3daf2c;" class="fa fa-envelope" aria-hidden="true"></i>&nbsp;Email hello@noumi.app</p>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.289454139593!2d77.13419131485053!3d28.62108569135029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03319465ebdd%3A0x126c933586b74327!2sTechSaints%20International%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1649100624020!5m2!1sen!2sin" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <p>Email:</p>
+                                <input type="email" name="email" id="email" placeholder="email">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <p>Name:</p>
+                                <input type="text" name="name" id="name" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-5">
+                                <p>Message:</p>
+                                <textarea name="message" data-minlength="3" class="form-control" placeholder="Message(Optional)" ></textarea>
+                            </div>
+                            <div class="col-12">
+                                <a id="next-3" class="send btn primary-button">SEND<i class="icon-login left"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="container">
                 <form action="lnk" id="leverage-form" class="multi-step-form">
                     <input type="hidden" name="section" value="leverage_form">
 
                     <input type="hidden" name="reCAPTCHA">
                     <!-- Remove this field if you want to disable recaptcha -->
 
-                    <div class="row">
-                        <div class="col-12 col-md-6 align-self-start text-center text-md-left">
+                    <!--<div class="row">
+                        <div class="col-12 col-md-6 align-self-start text-center text-md-left">-->
 
                             <!-- Success Message -->
-                            <div class="row success message">
+                            <!--<div class="row success message">
                                 <div class="col-12 p-0">
                                     <div class="wait">
                                         <div class="spinner-grow" role="status">
@@ -239,25 +292,25 @@
                                         </a>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
 
                             <!-- Steps Message -->
-                            <div class="row intro form-content">
-                                <div class="col-12 p-0">
+                            <!--<div class="row intro form-content">
+                                <div class="col-12 p-0">-->
 
                                     <!-- Step Title -->
-                                    <div class="step-title">
+                                    <!--<div class="step-title">
                                         <h2 class="featured alt">Let's Talk?</h2>
                                         <p>Don't wait until tomorrow. Talk to one of our consultants today and learn how to start leveraging your business.</p>
-                                    </div>
+                                    </div>-->
 
-                                    <!-- Step Title -->
+                                    <!-- Step Title --
                                     <div class="step-title">
                                         <h2 class="featured alt">Almost There</h2>
                                         <p>We need some more important information to better understand how we can help you in the best possible way.</p>
                                     </div>
 
-                                    <!-- Step Title -->
+                                    <!-- Step Title --
                                     <div class="step-title">
                                         <h2 class="featured alt">Are you Ready?</h2>
                                         <p>Tell us a little about the project you need to create. This is valuable so that we can direct you to the ideal team.</p>
@@ -266,7 +319,7 @@
                                 </div>
                             </div>
 
-                            <!-- Steps Group -->
+                            <!-- Steps Group --
                             <div class="row text-center form-content">
                                 <div class="col-12 p-0">
                                     <ul class="progressbar">
@@ -275,7 +328,7 @@
                                         <li>Service Setup</li>
                                     </ul>
 
-                                    <!-- Group 1 -->
+                                    <!-- Group 1 --
                                     <fieldset class="step-group">
                                         <div class="row">
                                             <div class="col-12 input-group p-0">
@@ -297,7 +350,7 @@
                                         </div>
                                     </fieldset>
 
-                                    <!-- Group 2 -->
+                                    <!-- Group 2 --
                                     <fieldset class="step-group">
                                         <div class="row">
                                             <div class="col-12 input-group p-0">
@@ -327,7 +380,7 @@
                                         </div>
                                     </fieldset>
 
-                                    <!-- Group 3 -->
+                                    <!-- Group 3 --
                                     <fieldset class="step-group">
                                         <div class="row">
                                             <div class="col-12 input-group p-0">
@@ -345,7 +398,7 @@
 
                         <div class="content-images col-12 col-md-6 pl-md-5 d-none d-md-block">
 
-                            <!-- Step 1 -->
+                            <!-- Step 1 --
 							<div class="gallery">
                                 <a class="step-image" data-poster="assets/images/about-2.jpg" href="video/Animation 2 - Consumer Benefits - NEW ENCLOSURE.mp4">
                                     <i class="play-video icon-control-play"></i>
@@ -354,21 +407,21 @@
                                 </a>
                             </div>
 
-                            <!-- Step 2 -->
+                            <!-- Step 2 --
 							<div class="gallery">
                                 <a class="step-image" href="assets/images/about-3.jpg">
                                     <img src="assets/images/about-3.jpg" class="fit-image" alt="Contact Us">
                                 </a>
                             </div>
 
-                            <!-- Step 3 -->
+                            <!-- Step 3 --
 							<div class="gallery">
                                 <a class="step-image" href="assets/images/about-4.jpg">
                                     <img src="assets/images/about-4.jpg" class="fit-image" alt="Contact Us">
                                 </a>
                             </div>
 
-                            <!-- Step 4 -->
+                            <!-- Step 4 --
 							<div class="gallery">
                                 <a class="step-image" href="assets/images/about-leverage.jpg">
                                     <img src="assets/images/about-leverage.jpg" class="fit-image" alt="Contact Us">
@@ -378,7 +431,7 @@
                         </div>
                     </div>
                 </form>
-            </div>
+            </div>-->
         </section>
 
         <div class="container">
@@ -401,10 +454,10 @@
         <br>
         <div class="row">
             <div class="col-12 col-lg-4 flex-center">
-                <a href="https://facebook.com"><img style="width: 50% !important;" src="images/facebook.png" alt="facebook"></a>
+                <a href="https://www.facebook.com/NoumiDigital/"><img style="width: 50% !important;" src="images/facebook.png" alt="facebook"></a>
             </div>
             <div class="col-12 col-lg-4 flex-center">
-                <a href="https://instagram.com"><img style="width: 50% !important;" src="images/instagram.png" alt="instagram"></a>
+                <a href="https://www.instagram.com/NoumiDigital/"><img style="width: 50% !important;" src="images/instagram.png" alt="instagram"></a>
             </div>
             <div class="col-12 col-lg-4 flex-center">
                 <a href="https://youtube.com"><img style="width: 50% !important;" src="images/youtube.png" alt="youtube"></a>

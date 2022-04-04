@@ -68,42 +68,36 @@
         
     </head>
 
-    <style>
-        section.featured:after {
-            display: none;
-        }
-    </style>
-    <script>
-        function getParameters() {
-            const queryString = window.location.search;
-            const urlParams = new URLSearchParams(queryString);
-            const stores = urlParams.get('stores');
-            const till = urlParams.get('till');
-            const transactions = urlParams.get('transactions');
-
-            const cost_paper=(transactions*0.00281)*363;
-            const trees=(transactions*363)/39000;
-            const co2=Math.round(trees*21.8,0);
-            const ryear=((transactions/stores)*363)*0.00281;
-            const treecut=((transactions/stores)*363)/39000;
-            const lossco2=Math.round(treecut*21.8,0);
-
-            document.getElementById("cost_paper").innerHTML="£ "+cost_paper.toFixed(2);
-            document.getElementById("trees").innerHTML=trees.toFixed(2);
-            document.getElementById("co2").innerHTML=co2.toFixed(2)+" Kg";
-            document.getElementById("ryear").innerHTML="£ "+ryear.toFixed(2);
-            document.getElementById("treecut").innerHTML=treecut.toFixed(2);
-            document.getElementById("lossco2").innerHTML=lossco2.toFixed(2)+" Kg";
-    }
-    </script>
-
-    <body onload="getParameters();">
+    <body>
 
         <!-- Header -->
         
 
         <!-- Hero -->
-        
+        <section id="slider" class="hero p-0 odd featured">
+            <div class="swiper-container no-slider slider-h-100">
+                <div class="swiper-wrapper">
+
+                    <!-- Item 1 -->
+                    <div class="swiper-slide slide-center">
+                        
+                        <img src="assets/images/bg-8.jpg" class="full-image" data-mask="70">
+                        
+                        <div class="slide-content row text-center">
+                            <div class="col-12 mx-auto inner">
+                                <h1 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">Partner Area</h1>
+                                <nav data-aos="zoom-out-up" data-aos-delay="800" aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="demo-4-one-page.html">Home</a></li>
+                                        <li class="breadcrumb-item active"><a href="parea.html">Partner Area</a></li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Content -->
         <section id="content" class="section-1 single featured">
@@ -111,43 +105,133 @@
                 <div class="row">
 
                     <!-- Main -->
-                    <main class="col-12 p-0 flex-center">
+                    <main class="col-12 p-0">
                         <div class="row">
-                            <div class="col-12 align-self-center">
-                                <h2 class="super">Group Cost & Environmental impact of paper receipts </h2>
+                            <div class="col-12">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <video width="400" controls autoplay loop>
+                                        <source src="video/retialer-benifits.mp4" type="video/mp4">
+                                        Your browser does not support HTML video.
+                                    </video>
+                                </div>
                             </div>
-                            <div class="col-12 p-0">
-                                <table class="table tb-c">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th class="text-center carbon1">Group Cost</th>
-                                            <th colspan="5" class="text-center carbon2">Group Cost</th>
-                                        </tr>
-                                        <tr>
-                                            <th scope="col" class="valg">Cost of paper receipts per year for the group</th>
-                                            <th scope="col" class="valg">Number of trees felled annually to provide paper for the group</th>
-                                            <th scope="col" class="valg">Loss of CO2 sequestration for the group (first year)</th>
-                                            <th scope="col" class="valg">Cost of receipts per year for each store</th>
-                                            <th scope="col" class="valg">Number of trees felled annually to provide paper for each store</th>
-                                            <th scope="col" class="valg">Loss of CO2 sequestration per store (first year)</th>
-                                        </tr>
-                                    </thead>
-                                    <br>
-                                    <br>
-                                    <tbody>
-                                        <tr class="text-center">
-                                            <td id="cost_paper"></td>
-                                            <td id="trees"></td>
-                                            <td id="co2"></td>
-                                            <td id="ryear"></td>
-                                            <td id="treecut"></td>
-                                            <td id="lossco2"></td>
-                                        </tr>
-                                        <tr id="test"></tr>
-                                    </tbody>
-                                </table>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 style="color: #4c4b4b !important;;">Paper Receipts are truly the plastic straw moment for customer facing businesses, receipts are not only damaging to <a style="font-size: 2rem !important;" href="environment.html">our environment</a>  but also are dangerous to human health as the BPS chemical is easily absorbed by  human skin and is linked to many dangerous illnesses. This means both cashiers and customers health is put at risk by handling thermal receipts.</h3>
                             </div>
-                        </div>        
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="super">Risks of thermal receipts:</h3>
+                            </div>
+                            <div class="col-12">
+                                <a href="https://www.ctvnews.ca/health/receipts-expose-retail-workers-consumers-to-worrying-levels-of-cancer-linked-chemicals-study-1.4287995">https://www.ctvnews.ca/health/receipts-expose-retail-workers-consumers-to-worrying-levels-of-cancer-linked-chemicals-study-1.4287995</a>
+                                <br><br>
+                                <a href="https://news.sky.com/story/harmful-chemicals-found-in-nearly-all-shop-receipts-study-warns-11608882">https://news.sky.com/story/harmful-chemicals-found-in-nearly-all-shop-receipts-study-warns-11608882</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="super">6 REASONS TO ADOPT NOUMI FOR YOUR BUSINESS</h2>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-lg-2 col-sm-2 col-sm-12">
+                                <p><b>1. Carbon Neutral :</b></p>
+                            </div>
+                            <div class="col-10">
+                                <p>Most people are not aware that In the UK, more than half of Britain’s 10 billion+ paper receipts issued each year are non[1]recyclable. This is due to being coated in the toxic chemical Bisphenol (BPS). This applies to most thermal receipts – the shiny pieces of paper printed by card machines and receipt printers that don’t require ink. Millions of trees are felled each year to feed our paper receipt habit – this results in deforestation and millions of tonnes of additional CO2 emissions, alongside huge oil and energy consumption required in the production of till rolls.</p>
+                                <p>At NOUMI’s Development HQ, their Technical Team have been working hard since the company’s inception in 2019 to develop the perfect antidote to all this unnecessary waste; a Digital Receipt EPOS solution that delivers the customer’s receipt digitally at the point of sale directly to their mobile phone.</p>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-lg-2 col-sm-2 col-sm-12">
+                                <p><b>2. Reduce Costs :</b></p>
+                            </div>
+                            <div class="col-10">
+                                <p>deploying NOUMI Devices across your EPOS estate reduces POS operating costs. NOUMI Devices maximise our retail partners’ green credentials, particularly with till roll procurement costs currently rising at 25%-35% YoY in the marketplace.</p>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-lg-2 col-sm-2 col-sm-12">
+                                <p><b>3. Reduce Contact :</b></p>
+                            </div>
+                            <div class="col-10">
+                                <p>NOUMI is a contactless solution and in a Post Covid NOUMI can help minimise contact between cashier and consumer.</p>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-lg-2 col-sm-2 col-sm-12">
+                                <p><b>4. Protect Consumer Rights :</b></p>
+                            </div>
+                            <div class="col-10">
+                                <p>Paper receipts can get lost or often faded which can impact on consumer rights.</p>
+                                <p>NOUMI receipts are securely stored in Google Cloud repository meaning they can be accessed at anytime.</p>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-lg-2 col-sm-2 col-sm-12">
+                                <p><b>5. Refund Process :</b></p>
+                            </div>
+                            <div class="col-10">
+                                <p>NOUMI’s patented receipting process is simple and easy for both customers and cashiers.<a href="video/refund-process.mp4">Know more.</a></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-2 col-sm-12">
+                                <p><b>6. Communicate With Your Customers :</b></p>
+                            </div>
+                            <div class="col-10">
+                                <p>Future feature set releases will add NOUMI customer analytics, capabilities for NOUMI retailers to offer Special Offers, voucher promotions and more within the NOUMI App.</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3>My Organisations Impact :</h3>
+                            </div>
+                            <div class="col-12">
+                                <p>We have expertly developed a Carbon & Cost Calculator to help you understand your carbon footprint, paper spend and potential savings on both with deploying NOUMI.</p>
+                            </div>
+                            <div class="col-12">
+                                <h4>How to use in 3 easy steps:</h4>
+                            </div>
+                            <div class="col-lg-2 col-sm-2 col-sm-12">
+                                <p><b>Step 1:</b></p>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-12 mb-3">
+                                <p>Choose type of thermal paper either 48GSM or 58GSM paper.</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-2 col-sm-12">
+                                <p><b>Step 2:</b></p>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-12 mb-3">
+                                <p>Enter values in the 3 boxes, these can be estimated for your business</p>
+                            </div>
+                            <div class="col-lg-2 col-sm-2 col-sm-12">
+                                <p><b>Step 3:</b></p>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-12 mb-3">
+                                <p>Click Submit</p>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="row flex-center">
+                            <div class="col-12 col-lg-6 col-md-6" style="margin-bottom: 50px;">
+                                <div class="dbut">
+                                    <button onclick="javascript:setTimeout(function(){ location.href='gsm.html?gsm=48'}, 500);" class="learn-more">48 GSM</button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-md-6" style="margin-bottom: 50px;">
+                                <div class="dbut">
+                                    <button onclick="javascript:setTimeout(function(){ location.href='gsm.html?gsm=58'}, 500);" class="learn-more">58 GSM</button>
+                                </div>
+                            </div>
+                        </div>
                     </main>
                 </div>
             </div>

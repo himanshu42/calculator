@@ -15,7 +15,7 @@
 
         <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
 
-        <title>Leverage - Your next level of website building</title>
+        <title>Noumi</title>
 
         <meta name="description" content="Creative Agency, Portfolio, Corporate, Startup & Technology">
         <meta name="subject" content="Creative Agency, Portfolio, Corporate, Startup & Technology">
@@ -24,7 +24,7 @@
         <!-- ==============================================
         Favicons
         =============================================== -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="">
         <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
         <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
@@ -68,42 +68,36 @@
         
     </head>
 
-    <style>
-        section.featured:after {
-            display: none;
-        }
-    </style>
-    <script>
-        function getParameters() {
-            const queryString = window.location.search;
-            const urlParams = new URLSearchParams(queryString);
-            const stores = urlParams.get('stores');
-            const till = urlParams.get('till');
-            const transactions = urlParams.get('transactions');
-
-            const cost_paper=(transactions*0.00281)*363;
-            const trees=(transactions*363)/39000;
-            const co2=Math.round(trees*21.8,0);
-            const ryear=((transactions/stores)*363)*0.00281;
-            const treecut=((transactions/stores)*363)/39000;
-            const lossco2=Math.round(treecut*21.8,0);
-
-            document.getElementById("cost_paper").innerHTML="£ "+cost_paper.toFixed(2);
-            document.getElementById("trees").innerHTML=trees.toFixed(2);
-            document.getElementById("co2").innerHTML=co2.toFixed(2)+" Kg";
-            document.getElementById("ryear").innerHTML="£ "+ryear.toFixed(2);
-            document.getElementById("treecut").innerHTML=treecut.toFixed(2);
-            document.getElementById("lossco2").innerHTML=lossco2.toFixed(2)+" Kg";
-    }
-    </script>
-
-    <body onload="getParameters();">
+    <body>
 
         <!-- Header -->
         
 
         <!-- Hero -->
-        
+        <section id="slider" class="hero p-0 odd featured">
+            <div class="swiper-container no-slider slider-h-100">
+                <div class="swiper-wrapper">
+
+                    <!-- Item 1 -->
+                    <div class="swiper-slide slide-center">
+                        
+                        <img src="assets/images/bg-8.jpg" class="full-image" data-mask="70">
+                        
+                        <div class="slide-content row text-center">
+                            <div class="col-12 mx-auto inner">
+                                <h1 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">Why ARC Product Solutions?</h1>
+                                <nav data-aos="zoom-out-up" data-aos-delay="800" aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="demo-4-one-page.html">Home</a></li>
+                                        <li class="breadcrumb-item active"><a href="arc.html">Why ARC Product Solutions?</a></li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Content -->
         <section id="content" class="section-1 single featured">
@@ -111,41 +105,18 @@
                 <div class="row">
 
                     <!-- Main -->
-                    <main class="col-12 p-0 flex-center">
+                    <main class="col-12 p-0">
                         <div class="row">
                             <div class="col-12 align-self-center">
-                                <h2 class="super">Group Cost & Environmental impact of paper receipts </h2>
-                            </div>
-                            <div class="col-12 p-0">
-                                <table class="table tb-c">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th class="text-center carbon1">Group Cost</th>
-                                            <th colspan="5" class="text-center carbon2">Group Cost</th>
-                                        </tr>
-                                        <tr>
-                                            <th scope="col" class="valg">Cost of paper receipts per year for the group</th>
-                                            <th scope="col" class="valg">Number of trees felled annually to provide paper for the group</th>
-                                            <th scope="col" class="valg">Loss of CO2 sequestration for the group (first year)</th>
-                                            <th scope="col" class="valg">Cost of receipts per year for each store</th>
-                                            <th scope="col" class="valg">Number of trees felled annually to provide paper for each store</th>
-                                            <th scope="col" class="valg">Loss of CO2 sequestration per store (first year)</th>
-                                        </tr>
-                                    </thead>
-                                    <br>
-                                    <br>
-                                    <tbody>
-                                        <tr class="text-center">
-                                            <td id="cost_paper"></td>
-                                            <td id="trees"></td>
-                                            <td id="co2"></td>
-                                            <td id="ryear"></td>
-                                            <td id="treecut"></td>
-                                            <td id="lossco2"></td>
-                                        </tr>
-                                        <tr id="test"></tr>
-                                    </tbody>
-                                </table>
+                                <ul class="p-0">
+                                    <li class="list-style-n">
+                                        <h3 class="h-green">Why ARC Product Solutions?</h3>
+                                        <p>ARC Group already carry out many thousands of hardware stage/builds, onsite installations and break-fix calls annually; ranging from a single piece of equipment at a single site, to multi-site nationwide rollouts all over the UK.</p>
+                                        <p>Our existing experience in the EPOS field at ARC Services combines with the consultative layer and technical excellence at the product level added by ARC Product Solutions. Backed by the deployment and installation service excellence that we pride ourselves on, we ensure that your NOUMI Digital Receipt requirements are catered-for from initial enquiry right through to on-site deployment completion, with the usual ARC stamp of quality service levels.</p>
+                                        <p>ARC Product Solutions and NOUMI is a hand-in-glove partnership. The benefit to you – our NOUMI customer, continues right through our extensive range of installation experience in IT equipment, network infrastructure hardware, EPOS and related peripherals (PEDs, printers, scanners, cash drawers etc), self-order kiosks, self-operated checkouts, and much more – it’s a natural fit with the NOUMI Digital</p>
+                                    </li>
+                                </ul>
+                                <br>
                             </div>
                         </div>        
                     </main>
