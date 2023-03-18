@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<questionBank>
+    <settings>
+        <isRandom val="true" />
+        <attempts val="3" />
+        <totalQuestion val="10" />
+        <!-- set 0 for all questions -->
+    </settings>
+    <questions>
+        <question type="MCQ" correctAnswer="4"> 
+            <quesText>
+                <![CDATA[Which of these would be a legitimate reason for Philips to hire Dr. Narasimhan as a consultant?]]>
+            </quesText>
+            <iText>
+                <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+            </iText>
+             <infoText>
+                   <![CDATA[<p>Philips could legitimately hire Dr. Narasimhan for his expert knowledge. Federal laws prohibit Philips from hiring him as a reward for generating revenue or for being a good customer. The fact that we may simply have the budget for an additional consultant is not a legitimate need for hiring one. Philips hires consultants based on the need for services and the consultants' qualifications.</p>]]>
+              </infoText>
+            <options>
+                <option>
+                    <![CDATA[Last year, Dr. Narasimhan generated $2.1 million in revenue for Philips through patient referrals.]]>
+                </option>
+                <option>
+                    <![CDATA[This year, Philips has a bigger budget for consultants.]]>
+                </option>
+                <option>
+                    <![CDATA[As an incentive, Philips offers consulting arrangements to all its best customers.]]>
+                </option>
+                <option>
+                    <![CDATA[Philips is developing a new device, and Dr. Narasimhan can provide expert knowledge that no one else can do.]]>
+                </option>
+              </options>   
+              <feedback>
+                <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">Philips could legitimately hire Dr. Narasimhan for his expert knowledge. Federal laws prohibit Philips from hiring him as a reward for generating revenue or for being a good customer. The fact that we may simply have the budget for an additional consultant is not a legitimate need for hiring one. Philips hires consultants based on the need for services and the consultants' qualifications.</p>]]>
+                    </correctFeedback>
+                    <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect!</p><p class="feedback_font">Philips could legitimately hire Dr. Narasimhan for his expert knowledge. Federal laws prohibit Philips from hiring him as a reward for generating revenue or for being a good customer. The fact that we may simply have the budget for an additional consultant is not a legitimate need for hiring one. Philips hires consultants based on the need for services and the consultants' qualifications.</p>]]>
+                    </incorrectFeedback>
+                    <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                    </incorrectFeedbackpop>
+                 </feedback>          
+        </question>
+        <question type="MCQ" correctAnswer="1"> 
+            <quesText>
+                <![CDATA[State University hosts a conference on ethics in medicine for physicians and medical students in its metropolitan area. St. Mary's Medical Center is affiliated with the university and buys many Philips devices. Would it be okay for Philips to consider approving State University's request for an educational grant to help subsidize the conference?]]>
+            </quesText>
+            <iText>
+                <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+            </iText>
+            <infoText>
+                   <![CDATA[<p>Even though St. Mary's is a customer of Philips, we can award a grant to reduce the expenses of the students as long as the conference was accredited and educational and the criteria set forth by the business in the U.S. Policy on Interactions with HCPs, including the educational grant approval process, are met. The company is not permitted to dictate content.</p>]]>
+            </infoText>
+            <options>
+                <option>
+                    <![CDATA[Yes, if the grant is used to reduce costs, and if the conference is accredited, educational, and dedicated to promoting health care.]]>
+                </option>
+                <option>
+                    <![CDATA[Yes, but only if Philips is allowed to choose the speakers and topics.]]>
+                </option>
+                <option>
+                    <![CDATA[No, because St. Mary's is a major customer of Philips.]]>
+                </option>
+                <option>
+                    <![CDATA[No, because St. Mary's isn't allowed to ask any device manufacturer to subsidize a conference.]]>
+                </option>
+              </options>
+              <feedback>
+                    <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">Even though St. Mary's is a customer of Philips, we can award a grant to reduce the expenses of the students as long as the conference was accredited and educational and the criteria set forth by the business in the U.S. Policy on Interactions with HCPs, including the educational grant approval process, are met. The company is not permitted to dictate content.</p>]]>
+                    </correctFeedback>
+                    <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect!</p><p class="feedback_font">Even though St. Mary's is a customer of Philips, we can award a grant to reduce the expenses of the students as long as the conference was accredited and educational and the criteria set forth by the business in the U.S. Policy on Interactions with HCPs, including the educational grant approval process, are met. The company is not permitted to dictate content.</p>]]>
+                    </incorrectFeedback>
+                    <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                    </incorrectFeedbackpop>
+              </feedback>              
+        </question>
+        <question type="MCQ" correctAnswer="2"> 
+            <quesText>
+                <![CDATA[Richard Sales is planning to host a workshop for the faculty of the Cincinnati Children's Hospital for vascular interventional tools training. The nearest facility that fits the budget is an event space at the Cincinnati's Reds' ball park. This should attract the top doctors as he can time it so that, once the workshop is over, they can open up the event space to watch the ball game. Richard approaches his manager for the approval of his plan.<br>What should his manager do?]]>
+            </quesText>
+            <iText>
+                <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+            </iText>
+            <infoText>
+                   <![CDATA[<p>The correct answer is that his manager should not approve this event as it clearly involves entertainment for HCPs, which is strictly prohibited by U.S. Policy on Interactions with HCPs. Even if there was no ball game during the event, the choice of venue would create questions and potentially cause the appearance of proving entertainment to HCPs. The choice of venue is important, but perceptions matter.</p>]]>
+            </infoText>
+            <options>
+                <option>
+                    <![CDATA[His manager should approve as the facility fits the budget and the event should attract top customers.]]>
+                </option>
+                <option>
+                    <![CDATA[His manager should not approve as this event is clearly involving entertainment as well as the venue is inappropriate for business discussions.]]>
+                </option> 
+              </options>  
+              <feedback>
+                    <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">The correct answer is that his manager should not approve this event as it clearly involves entertainment for HCPs, which is strictly prohibited by U.S. Policy on Interactions with HCPs. Even if there was no ball game during the event, the choice of venue would create questions and potentially cause the appearance of proving entertainment to HCPs. The choice of venue is important, but perceptions matter.</p>]]>
+                    </correctFeedback>
+                    <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect!</p><p class="feedback_font">The correct answer is that his manager should not approve this event as it clearly involves entertainment for HCPs, which is strictly prohibited by U.S. Policy on Interactions with HCPs. Even if there was no ball game during the event, the choice of venue would create questions and potentially cause the appearance of proving entertainment to HCPs. The choice of venue is important, but perceptions matter.</p>]]>
+                    </incorrectFeedback>
+                    <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                    </incorrectFeedbackpop>
+              </feedback>              
+        </question>
+        <question type="MCQ" correctAnswer="2"> 
+            <quesText>
+                <![CDATA[You have a big trip coming up where you are going to meet with two of your biggest potential new customers as they have both stated they are ready to upgrade their MRIs to Philips equipment. Knowing this is a big opportunity to bring two key accounts to Philips, you talk to your manager to get her approval to take them both to dinner. You explain to her that both VA hospital and St. Mary's will be huge wins, and she approves your plan for dinner to discuss the deals.<br>Have you done the right thing?]]>
+            </quesText>
+            <iText>
+                <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+            </iText>
+            <infoText>
+                   <![CDATA[<p>You must obtain approval each time you plan to provide any business courtesy to a government employee. Some government agencies have zero limit (meaning their employees cannot receive anything of value), and other agencies have annual limits. Using the Legal Compliance Registry tool gives our government affairs counsel, or other members of the Legal Compliance team, the opportunity to vet this interaction before it might get Philips into trouble.</p>]]>
+            </infoText>
+            <options>
+                <option>
+                    <![CDATA[Yes, you obtained your manager's permission for both events. You are all set to close these deals!]]>
+                </option>
+                <option>
+                    <![CDATA[No, as one of the customers is VA hospital (a government entity) and you must also use the Legal Compliance Registry tool to obtain approval for that interaction.]]>
+                </option> 
+            </options>  
+            <feedback>
+                    <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">You must obtain approval each time you plan to provide any business courtesy to a government employee. Some government agencies have zero limit (meaning their employees cannot receive anything of value), and other agencies have annual limits. Using the Legal Compliance Registry tool gives our government affairs counsel, or other members of the Legal Compliance team, the opportunity to vet this interaction before it might get Philips into trouble.</p>]]>
+                    </correctFeedback>
+                    <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect!</p><p class="feedback_font">You must obtain approval each time you plan to provide any business courtesy to a government employee. Some government agencies have zero limit (meaning their employees cannot receive anything of value), and other agencies have annual limits. Using the Legal Compliance Registry tool gives our government affairs counsel, or other members of the Legal Compliance team, the opportunity to vet this interaction before it might get Philips into trouble.</p>]]>
+                    </incorrectFeedback>
+                    <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                    </incorrectFeedbackpop>
+              </feedback>              
+        </question>
+        <question type="MCQ" correctAnswer="2"> 
+            <quesText>
+                <![CDATA[The University of Michigan has a research team that has been working on an innovative algorithm that can help predict when a sleep apnea event will happen. This technology could help by providing the right treatment in anticipation of the event.<br>The Sleep and Respiratory Care (SRC) business is interested in this technology; however, considering that it is not hardware, they cannot enter into a royalty/licensing agreement.<br>What should they do?]]>
+            </quesText>
+            <iText>
+                <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+            </iText>
+            <infoText>
+                   <![CDATA[<p>Any novel technology (hardware, software, or algorithm) developed outside of Philips can be used by Philips only if we have an agreement with the owner of that technology/intellectual property. For proper guidance, all questions regarding these types of arrangements must be vetted by the <u>Philips IP&S group</u>.</p>]]>
+            </infoText>
+            <options>
+                <option>
+                    <![CDATA[Go ahead and use the technology as it is just an algorithm; there is no harm in Philips using it.]]>
+                </option>
+                <option>
+                    <![CDATA[If the SRC business wants to use the technology developed by the University of Michigan researchers, they must enter into a royalty/licensing arrangement. The intellectual property belongs to the University and Philips can use it only if there is an agreement in place.]]>
+                </option> 
+              </options> 
+              <feedback>
+                    <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">Any novel technology (hardware, software, or algorithm) developed outside of Philips can be used by Philips only if we have an agreement with the owner of that technology/intellectual property. For proper guidance, all questions regarding these types of arrangements must be vetted by the <u>Philips IP&S group</u>.</p>]]>
+                    </correctFeedback>
+                    <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect!</p><p class="feedback_font">Any novel technology (hardware, software, or algorithm) developed outside of Philips can be used by Philips only if we have an agreement with the owner of that technology/intellectual property. For proper guidance, all questions regarding these types of arrangements must be vetted by the <u>Philips IP&S group</u>.</p>]]>
+                    </incorrectFeedback>
+                    <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                    </incorrectFeedbackpop>
+              </feedback>               
+        </question>
+        <question type="MCQ" correctAnswer="2"> 
+            <quesText>
+                <![CDATA[You would like to schedule a business meal with the CEO of Good Samaritan Hospital Medical Center located in Islip, New York. You check the U.S. Policy on Interactions with HCPs to ensure you understand the applicable meal limits to try and stay compliant. You find a restaurant near the hospital, and the CEO confirms she will attend. When the bill arrives after the meal is over, you see that the total is $140/person, which is below the $150/person limit set in the code. Are you compliant in this case?]]>
+            </quesText>
+            <iText>
+                <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+            </iText>
+            <infoText>
+                   <![CDATA[<p>The premium city meal limits in the code specify the amount permissible in cities only, not in the surrounding areas of the cities. While Islip is on Long Island and close to the city, the lower limits apply. In this case, you should have chosen a more modest location for this business meal so that you comply with the limits set by our U.S. policy on interactions with HCPs.</p>]]>
+            </infoText>
+            <options>
+                <option>
+                    <![CDATA[Yes, you are! The per-person amount is below the $150/person set for the New York city.]]>
+                </option>
+                <option>
+                    <![CDATA[No, you are not! Islip, New York, is not the same as the New York city, and the lower meal limit amount applies.]]>
+                </option>                
+              </options>  
+              <feedback>
+                    <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">The premium city meal limits in the code specify the amount permissible in cities only, not in the surrounding areas of the cities. While Islip is on Long Island and close to the city, the lower limits apply. In this case, you should have chosen a more modest location for this business meal so that you comply with the limits set by our U.S. policy on interactions with HCPs.</p>]]>
+                    </correctFeedback>
+                    <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect!</p><p class="feedback_font">The premium city meal limits in the code specify the amount permissible in cities only, not in the surrounding areas of the cities. While Islip is on Long Island and close to the city, the lower limits apply. In this case, you should have chosen a more modest location for this business meal so that you comply with the limits set by our U.S. policy on interactions with HCPs.</p>]]>
+                    </incorrectFeedback>
+                    <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                    </incorrectFeedbackpop>
+              </feedback>              
+        </question>
+        <question type="MCQ" correctAnswer="2"> 
+            <quesText>
+                <![CDATA[Robert, a member of the Marketing department, is working with Dr. Smith, licensed in the United States, who is providing product feedback. Robert has worked with Dr. Smith for the past five years, and they have gotten to know each other very well. During a recent meeting, Dr. Smith mentions that her daughter delivered a baby. Robert sends Dr. Smith a bottle of champagne with a congratulatory note. Robert registers the gift in the Gifts and Hospitality Registration Tool.<br>Has Robert done the right thing?]]>
+            </quesText>
+            <iText>
+                <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+            </iText>
+            <infoText>
+                   <![CDATA[<p>That’s not right! Robert should not send gifts of a personal nature to an HCP licensed in the United States. Though the Gift and Hospitality Registration Tool must be used for registering gifts, in this case, the gift should not have been provided. Robert has done the right thing by using the tool to report the gift that he incorrectly provided. Robert needs additional compliance training.</p>]]>
+              </infoText>
+            <options>
+                <option>
+                    <![CDATA[No, Robert should have neither sent a gift of a personal nature to Dr. Smith, who is licensed in the United States, nor registered the gift in the tool.]]>
+                </option>
+                <option>
+                    <![CDATA[No, Robert should not have sent a gift of a personal nature to Dr. Smith, who is licensed in the United States; however, he did the right thing by registering the gift in the tool.]]>
+                </option>
+                <option>
+                    <![CDATA[Yes. Robert has done the right thing by sending a gift of a personal nature to Dr. Smith, who is licensed in the United States; he, however, should not have registered the gift in the tool.]]>
+                </option>
+                <option>
+                    <![CDATA[Yes. Robert has given an appropriate gift for the occasion, regardless of where Dr. Smith is licensed, and has done the right thing by recording the gift in the tool.]]>
+                </option>
+              </options> 
+              <feedback>
+                    <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">That’s not right! Robert should not send gifts of a personal nature to an HCP licensed in the United States. Though the Gift and Hospitality Registration Tool must be used for registering gifts, in this case, the gift should not have been provided. Robert has done the right thing by using the tool to report the gift that he incorrectly provided. Robert needs additional compliance training.</p>]]>
+                    </correctFeedback>
+                    <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect!</p><p class="feedback_font">That’s not right! Robert should not send gifts of a personal nature to an HCP licensed in the United States. Though the Gift and Hospitality Registration Tool must be used for registering gifts, in this case, the gift should not have been provided. Robert has done the right thing by using the tool to report the gift that he incorrectly provided. Robert needs additional compliance training.</p>]]>
+                    </incorrectFeedback>
+                    <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                    </incorrectFeedbackpop>
+              </feedback>               
+        </question>
+        <question type="MCQ" correctAnswer="2"> 
+            <quesText>
+                <![CDATA[Jon, a sales representative in the IGT business, is wrapping up the end of the quarter and is very busy trying to make his numbers. Jon knows he needs to submit the expense report soon; otherwise, American Express will charge him a late fee for the dinner with some key HCPs he hosted some time ago. In haste, Jon reports the expense as a Meal and Drink expense type with just him in attendance. He uploads the receipt showing all the other attendees and thinks that this should be good enough if anyone in accounting asks.<br>Has Jon done the right thing?]]>
+            </quesText>
+            <iText>
+                <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+            </iText>
+            <infoText>
+                   <![CDATA[<p>Jon has violated two of our guiding principles, The Principle of Documentation (our records must accurately reflect our business) and The Principle of Transparency (properly disclosing transfers of value to HCPs). Even though Jon is busy and facing a deadline, he must accurately complete his expense reports. Jon, in a rush, could actually put Philips at risk because an external regulator will look at Jon's behavior as an attempt to hide this interaction with the HCPs. Jon should review the Business Courtesies course on Philips University for the right way to handle this situation.</p>]]>
+            </infoText>
+            <options>
+                <option>
+                    <![CDATA[Yes, he has. Jon needed to meet the deadline to avoid the late fee.]]>
+                </option>
+                <option>
+                    <![CDATA[No, he hasn’t. His expense report does not accurately reflect the actual event.]]>
+                </option> 
+              </options>  
+              <feedback>
+                    <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">Jon has violated two of our guiding principles, The Principle of Documentation (our records must accurately reflect our business) and The Principle of Transparency (properly disclosing transfers of value to HCPs). Even though Jon is busy and facing a deadline, he must accurately complete his expense reports. Jon, in a rush, could actually put Philips at risk because an external regulator will look at Jon's behavior as an attempt to hide this interaction with the HCPs. Jon should review the Business Courtesies course on Philips University for the right way to handle this situation.</p>]]>
+                    </correctFeedback>
+                    <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect!</p><p class="feedback_font">Jon has violated two of our guiding principles, The Principle of Documentation (our records must accurately reflect our business) and The Principle of Transparency (properly disclosing transfers of value to HCPs). Even though Jon is busy and facing a deadline, he must accurately complete his expense reports. Jon, in a rush, could actually put Philips at risk because an external regulator will look at Jon's behavior as an attempt to hide this interaction with the HCPs. Jon should review the Business Courtesies course on Philips University for the right way to handle this situation.</p>]]>
+                    </incorrectFeedback>
+                    <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                    </incorrectFeedbackpop>
+              </feedback>              
+        </question>
+        <question type="MCQ" correctAnswer="2"> 
+            <quesText>
+                <![CDATA[You have a dinner with a key customer, Dr. Susan Jones from Mass General Hospital. Being aware of the U.S. Policy on Interactions with HCPs, you know that you need to report this transfer of value as Dr. Jones is considered a Covered Recipient (she is an MD). So, you list her as a business guest and ensure to put her title as MD so that the compliance team finds this spend from your Concur expense report and properly report it under The Sunshine Act.<br>Is there anything else you need to do?]]>
+            </quesText>
+            <iText>
+                <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+            </iText>
+            <infoText>
+                   <![CDATA[<p>Simply listing an attendee's title is not enough to properly report a transfer of value. You should have used the Business Meals and Drinks Covered Recipient expense category. You should have also used the attendee type, HCP – Covered Recipient (USA). You must always search for and select these attendees using the advanced search function in Concur. There is a training program within Philips University, titled Business Courtesies Reporting, which guides you about the steps to properly register all transfers of value in Concur.</p>]]>
+            </infoText>
+            <options>
+                <option>
+                    <![CDATA[No, you’ve correctly listed her title so that the compliance team will be all set to report this transfer of value.]]>
+                </option>
+                <option>
+                    <![CDATA[Yes, you should have used the correct expense and attendee types. You did not report this transfer of value properly.]]>
+                </option> 
+            </options> 
+            <feedback>
+                    <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">Simply listing an attendee's title is not enough to properly report a transfer of value. You should have used the Business Meals and Drinks Covered Recipient expense category. You should have also used the attendee type, HCP – Covered Recipient (USA). You must always search for and select these attendees using the advanced search function in Concur. There is a training program within Philips University, titled Business Courtesies Reporting, which guides you about the steps to properly register all transfers of value in Concur.</p>]]>
+                    </correctFeedback>
+                    <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect!</p><p class="feedback_font">Simply listing an attendee's title is not enough to properly report a transfer of value. You should have used the Business Meals and Drinks Covered Recipient expense category. You should have also used the attendee type, HCP – Covered Recipient (USA). You must always search for and select these attendees using the advanced search function in Concur. There is a training program within Philips University, titled Business Courtesies Reporting, which guides you about the steps to properly register all transfers of value in Concur.</p>]]>
+                    </incorrectFeedback>
+                    <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                    </incorrectFeedbackpop>
+              </feedback>               
+        </question>
+        <question type="MCQ" correctAnswer="2"> 
+            <quesText>
+                <![CDATA[You have taken the U.S. Policy on Interactions with HCPs training, so you know that most gifts to HCPs are strictly prohibited but you know that some educational items that benefit patient care are allowed. You talk to your manager about providing some anatomical models to the newly formed practice in your area and she agrees this is a great idea.<br>Is this permissible?]]>
+            </quesText>
+            <iText>
+                <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+            </iText>
+            <infoText>
+                   <![CDATA[<p>You must always register and obtain approval via the Legal Compliance Registration tool before providing any gift. The tool is Philips way of ensuring this gift is properly documented, reviewed, and approved by the necessary chain of command – including Legal before anything that could be considered a bribe is providing to any HCP.</p>]]>
+            </infoText>
+            <options>
+                <option>
+                    <![CDATA[Yes, it is! You are offering a gift that would benefit patient care and your manager has agreed it is a good idea.]]>
+                </option>
+                <option>
+                    <![CDATA[No, it is not! These gifts might be permissible as they can benefit patient care. Yet, you must seek permission via the LC Registration Tool before offering any gift.]]>
+                </option>                
+              </options> 
+              <feedback>
+                    <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">You must always register and obtain approval via the Legal Compliance Registration tool before providing any gift. The tool is Philips way of ensuring this gift is properly documented, reviewed, and approved by the necessary chain of command – including Legal before anything that could be considered a bribe is providing to any HCP.</p>]]>
+                    </correctFeedback>
+                    <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect!</p><p class="feedback_font">You must always register and obtain approval via the Legal Compliance Registration tool before providing any gift. The tool is Philips way of ensuring this gift is properly documented, reviewed, and approved by the necessary chain of command – including Legal before anything that could be considered a bribe is providing to any HCP.</p>]]>
+                    </incorrectFeedback>
+                    <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                    </incorrectFeedbackpop>
+              </feedback>               
+        </question>
+        <question type="MCQ" correctAnswer="2"> 
+            <quesText>
+                <![CDATA[During a discussion on a potential sales deal, you are approached by Dr. Smith, a key customer, who informs you about an upcoming society event he is organizing. He says he will help enhance Philips brand visibility into a new and exciting field of Interventional Therapeutic areas. Dr. Smith would like to have Philips as a silver level sponsor at the event (the mid-level sponsorship). Knowing Dr. Smith is the key to winning an upcoming deal, you agree that it is a great idea and commit to bringing this opportunity up with your manager for approval.<br>Is this the right thing to do?]]>
+            </quesText>
+            <iText>
+                <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+            </iText>
+            <infoText>
+                   <![CDATA[<p>While it is perfectly fine for Dr. Smith to approach you regarding the society event, you should forward this request to the Marketing team. It is their responsibility to vet this opportunity by performing the ROI and determining if the opportunity matches their strategic plan. It should be processed as any other sponsorship opportunity. The fact that it is a key customer or that there is an upcoming deal should never be a factor to be considered.</p>]]>
+            </infoText>
+            <options>
+                <option>
+                    <![CDATA[Yes, it is! Philips sponsors many events to raise brand awareness and market our latest technologies.]]>
+                </option>
+                <option>
+                    <![CDATA[No, it is not! You should forward such requests to the marketing team. It is the Marketing department, not Sales, that is supposed to make decision about such events.]]>
+                </option> 
+              </options>   
+              <feedback>
+                    <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">While it is perfectly fine for Dr. Smith to approach you regarding the society event, you should forward this request to the Marketing team. It is their responsibility to vet this opportunity by performing the ROI and determining if the opportunity matches their strategic plan. It should be processed as any other sponsorship opportunity. The fact that it is a key customer or that there is an upcoming deal should never be a factor to be considered.</p>]]>
+                    </correctFeedback>
+                    <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect!</p><p class="feedback_font">While it is perfectly fine for Dr. Smith to approach you regarding the society event, you should forward this request to the Marketing team. It is their responsibility to vet this opportunity by performing the ROI and determining if the opportunity matches their strategic plan. It should be processed as any other sponsorship opportunity. The fact that it is a key customer or that there is an upcoming deal should never be a factor to be considered.</p>]]>
+                    </incorrectFeedback>
+                    <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                    </incorrectFeedbackpop>
+              </feedback>             
+        </question>
+        <question type="MMCQ" correctAnswer="1,2,3"> 
+            <quesText>
+                <![CDATA[Marlo works in the Training and Education team for the IGT business and is looking to set up a new Physician Training course in a region where Philips doesn’t currently offer one. Marlo has identified the need for a new physician arrangement as there are no arrangements in place with HCPs in the desired area. What should Marlo do to initiate a request for the new arrangement?]]>
+            </quesText>
+            <iText>
+                <![CDATA[Select the correct option(s) and click <b>Submit.</b>]]>
+            </iText>
+            <infoText>
+                   <![CDATA[<p>As Marlo has already confirmed the bona fide reasonable need for the services of an HCP or Potential Referral Source, Marlo needs to move forward with documenting this and determining the FMV rate for the arrangement.</p><p>Marlo will want to work with her local legal and/or compliance support teams to complete the HCP Needs Assessment checklist to ensure the potential referral source is compensated at FMV based on market data and their experience, specialization, types of services provided, and medical and academic achievements.</p>]]>
+            </infoText>
+            <options>
+                <option>
+                    <![CDATA[Confirm and document the bona fide reasonable need for the services of a HCP or Potential Referral Source.]]>
+                </option>
+                <option>
+                    <![CDATA[Contact the Market lawyer or the Business Compliance Officer.]]>
+                </option>
+                <option>
+                    <![CDATA[Complete the HCP Needs Assessment checklist.]]>
+                </option>
+                <option>
+                    <![CDATA[Create a contract with rates she feels are appropriate and send it to the desired HCP.]]>
+                </option>
+            </options> 
+            <feedback>
+                    <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">As Marlo has already confirmed the bona fide reasonable need for the services of an HCP or Potential Referral Source, Marlo needs to move forward with documenting this and determining the FMV rate for the arrangement.</p><p>Marlo will want to work with her local legal and/or compliance support teams to complete the HCP Needs Assessment checklist to ensure the potential referral source is compensated at FMV based on market data and their experience, specialization, types of services provided, and medical and academic achievements.</p>]]>
+                    </correctFeedback>
+                    <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect!</p><p class="feedback_font">As Marlo has already confirmed the bona fide reasonable need for the services of an HCP or Potential Referral Source, Marlo needs to move forward with documenting this and determining the FMV rate for the arrangement.</p><p>Marlo will want to work with her local legal and/or compliance support teams to complete the HCP Needs Assessment checklist to ensure the potential referral source is compensated at FMV based on market data and their experience, specialization, types of services provided, and medical and academic achievements.</p>]]>
+                    </incorrectFeedback>
+                    <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                    </incorrectFeedbackpop>
+              </feedback>               
+        </question>
+        <question type="MCQ" correctAnswer="4"> 
+            <quesText>
+                <![CDATA[Omar, a Philips sales representative, offers to pay Dr. Rose $10 every time she recommends a Philips device to a patient. Dr. Rose agrees to this arrangement as she feels Philips products will provide superior results.<br>Some of Dr. Rose's patients are on Medicare.<br>Who could be found guilty under the Anti-Kickback Statute?]]>
+            </quesText>
+            <iText>
+                <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+            </iText>
+            <infoText>
+                   <![CDATA[<p>Omar and Philips could be liable for paying the kickback, and Dr. Rose could be liable for accepting it. This activity violates Anti-Kickback Statute because Dr. Rose is being paid for recommending Philips products to patients covered by a federal health care program. Remember, parties at both the giving and receiving ends of an illegal kickback can be prosecuted.</p>]]>
+            </infoText>
+            <options>
+                <option>
+                    <![CDATA[Omar]]>
+                </option>
+                <option>
+                    <![CDATA[Philips]]>
+                </option>
+                <option>
+                    <![CDATA[Dr. Rose]]>
+                </option>
+                <option>
+                    <![CDATA[All of these people]]>
+                </option>
+            </options>   
+            <feedback>
+                    <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">Omar and Philips could be liable for paying the kickback, and Dr. Rose could be liable for accepting it. This activity violates Anti-Kickback Statute because Dr. Rose is being paid for recommending Philips products to patients covered by a federal health care program. Remember, parties at both the giving and receiving ends of an illegal kickback can be prosecuted.</p>]]>
+                    </correctFeedback>
+                    <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect!</p><p class="feedback_font">Omar and Philips could be liable for paying the kickback, and Dr. Rose could be liable for accepting it. This activity violates Anti-Kickback Statute because Dr. Rose is being paid for recommending Philips products to patients covered by a federal health care program. Remember, parties at both the giving and receiving ends of an illegal kickback can be prosecuted.</p>]]>
+                    </incorrectFeedback>
+                    <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                    </incorrectFeedbackpop>
+              </feedback>             
+        </question>
+        <question type="MCQ" correctAnswer="2"> 
+            <quesText>
+                <![CDATA[Jon, a long-time sales employee, now working in the Precision Diagnosis cluster, is working to close a deal with a customer who is facing some tough budget cuts. The customer tells Jon that he needs to bring a block-buster deal to the table to win this deal. Otherwise, the customer will be forced to consider the "outstanding" deal he got from our competitors, given the tough budget condition. Jon, not wanting to lose this key account, offers to throw in an enhanced service plan at no cost.<br>Is Jon's plan to win this deal permissible?]]>
+            </quesText>
+            <iText>
+                <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+            </iText>
+            <infoText>
+                   <![CDATA[<p>Bundling items together can be a permissible sales strategy as long as the discounts on the entire bundle don't take the sales price below our cost. Additionally, all discounts must be properly documented along with a reminder for the customer that they may have an obligation to report the discount, where applicable, to appropriate payment agencies, including regulatory bodies.</p>]]>
+            </infoText>
+            <options>
+                <option>
+                    <![CDATA[Yes, it is! Including service for free or at a discount is a normal part of the sales negotiations.]]>
+                </option>
+                <option>
+                    <![CDATA[Maybe not. If the service plan takes the total sale amount below cost, this is not permissible.]]>
+                </option> 
+            </options> 
+            <feedback>
+                    <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">Bundling items together can be a permissible sales strategy as long as the discounts on the entire bundle don't take the sales price below our cost. Additionally, all discounts must be properly documented along with a reminder for the customer that they may have an obligation to report the discount, where applicable, to appropriate payment agencies, including regulatory bodies.</p>]]>
+                    </correctFeedback>
+                    <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect!</p><p class="feedback_font">Bundling items together can be a permissible sales strategy as long as the discounts on the entire bundle don't take the sales price below our cost. Additionally, all discounts must be properly documented along with a reminder for the customer that they may have an obligation to report the discount, where applicable, to appropriate payment agencies, including regulatory bodies.</p>]]>
+                    </incorrectFeedback>
+                    <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                    </incorrectFeedbackpop>
+              </feedback>               
+        </question>
+        <question type="MCQ" correctAnswer="2"> 
+            <quesText>
+                <![CDATA[Boston General Hospital is one of Philips best customers across multiple product lines. It is also a prestigious teaching and research hospital. Jon, the head of sales at IGT, wants to explore the possibilities to make our relationship with Boston General stronger. After a conversation with the CEO, Jon learns that Boston General has some ongoing key research studies that need funding and Boston General would love to partner with Philips. Jon agrees that this is a great opportunity and promises to see how he can move this to "the top of the list" for Philips Research.<br>What should Jon do now?]]>
+            </quesText>
+            <iText>
+                <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+            </iText>
+            <infoText>
+                   <![CDATA[<p>There must be a clear distinction and separation between sales and research. Research can only be awarded based upon its own scientific value and can never be tied, in any way, to sales.<br> Jon's best move would be to thank the CEO for the information and tell her that he will pass along this request to the right people in research. Beyond that Jon must have no involvement.</p>]]>
+            </infoText>
+            <options>
+                <option>
+                    <![CDATA[Jon should use his network to influence Philips Research to grab the fantastic opportunity. This is a win-win situation for both Boston General and Philips. It can also lead to some future sales.]]>
+                </option>
+                <option>
+                    <![CDATA[Jon should not promise anything to Boston General. While sales may be approached, from time to time, with research opportunities they should only be passed along to Research for evaluation.]]>
+                </option> 
+              </options> 
+              <feedback>
+                    <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">There must be a clear distinction and separation between sales and research. Research can only be awarded based upon its own scientific value and can never be tied, in any way, to sales.<br> Jon's best move would be to thank the CEO for the information and tell her that he will pass along this request to the right people in research. Beyond that Jon must have no involvement.</p>]]>
+                    </correctFeedback>
+                    <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect!</p><p class="feedback_font">There must be a clear distinction and separation between sales and research. Research can only be awarded based upon its own scientific value and can never be tied, in any way, to sales.<br> Jon's best move would be to thank the CEO for the information and tell her that he will pass along this request to the right people in research. Beyond that Jon must have no involvement.</p>]]>
+                    </incorrectFeedback>
+                    <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                    </incorrectFeedbackpop>
+              </feedback>               
+        </question>
+        <question type="MCQ" correctAnswer="1"> 
+            <quesText>
+                <![CDATA[Dr. Miguel Lopez, a leading sleep physician, is interested in Philips’ latest sleep mask. Dr. Lopez is a long-time customer and asks his sales representative for some sample masks for examination before he can prescribe them to his patients. Dr. Lopez decides that 100 masks will be enough to thoroughly test out the product and determine if he should recommend them to his patients.<br>What should the sales representative do?]]>
+            </quesText>
+            <iText>
+                <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+            </iText>
+            <infoText>
+                   <![CDATA[<p>The sales representative should, first off, be aware of his groups policy on providing sample products. Each group should have specific guidance on what is and what is not considered a permissible amount of samples. If he is not aware then he should reach out to his manager or legal compliance to obtain the proper guidance. While it is completely reasonable and permissible to provide our customers with samples to evaluate our products we must always be sure the amount of samples provided is reasonable and would not appear to be an attempt to unduly influence sales. Providing too many samples could be considered a bribe by a government regulator.</p>]]>
+            </infoText>
+            <options>
+                <option>
+                    <![CDATA[The sales representative should consult with his sample policy, reach out to his manager, or contact his clinical team to ensure this request fits within guidelines.]]>
+                </option>
+                <option>
+                    <![CDATA[Give the doctor the masks. He is an important customer with a very large patient base and, if he likes the masks; there will be a significant rise in sales.]]>
+                </option>                 
+            </options> 
+            <feedback>
+                    <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">The sales representative should, first off, be aware of his groups policy on providing sample products. Each group should have specific guidance on what is and what is not considered a permissible amount of samples. If he is not aware then he should reach out to his manager or legal compliance to obtain the proper guidance. While it is completely reasonable and permissible to provide our customers with samples to evaluate our products we must always be sure the amount of samples provided is reasonable and would not appear to be an attempt to unduly influence sales. Providing too many samples could be considered a bribe by a government regulator.</p>]]>
+                    </correctFeedback>
+                    <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect!</p><p class="feedback_font">The sales representative should, first off, be aware of his groups policy on providing sample products. Each group should have specific guidance on what is and what is not considered a permissible amount of samples. If he is not aware then he should reach out to his manager or legal compliance to obtain the proper guidance. While it is completely reasonable and permissible to provide our customers with samples to evaluate our products we must always be sure the amount of samples provided is reasonable and would not appear to be an attempt to unduly influence sales. Providing too many samples could be considered a bribe by a government regulator.</p>]]>
+                    </incorrectFeedback>
+                    <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                    </incorrectFeedbackpop>
+              </feedback>               
+        </question>
+        <question type="MCQ" correctAnswer="1"> 
+            <quesText>
+                <![CDATA[Laura Legal gets a request for a contract for consulting with Dr. Green. While reviewing the contract, Laura notices there is no HCP checklist, no FMV justification, and no clear deliverables. Laura contacts Shawna who is requesting this contract to know why these key pieces are missing. Shawna says that she needs to use Dr. Green as a consultant on a project. She didn't fill out the HCP checklist because Dr. Green's request for payment seemed reasonable and she feels having her consultation will definitely help us generate more sales.<br> Would it be appropriate for Laura to draw up the contract?]]>
+            </quesText>
+            <iText>
+                <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+            </iText>
+            <infoText>
+                   <![CDATA[<p>Every contract must have a legitimate business reason (bona fide), clearly spell out the deliverables, and have the HCP checklist (and FMV calculations) as back-up documentation. Without these critical items, the contract might be considered a sham arrangement and an attempt to influence a sale.</p>]]>
+            </infoText>
+            <options>
+                <option>
+                    <![CDATA[No. Every contract must fully document the bona-fide need, clearly spell out all the expected deliverables, and document the FMV rationale.]]>
+                </option>
+                <option>
+                    <![CDATA[Yes, this will help generate sales and the amount seems reasonable.]]>
+                </option> 
+              </options> 
+              <feedback>
+                    <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">Every contract must have a legitimate business reason (bona fide), clearly spell out the deliverables, and have the HCP checklist (and FMV calculations) as back-up documentation. Without these critical items, the contract might be considered a sham arrangement and an attempt to influence a sale.</p>]]>
+                    </correctFeedback>
+                    <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect!</p><p class="feedback_font">Every contract must have a legitimate business reason (bona fide), clearly spell out the deliverables, and have the HCP checklist (and FMV calculations) as back-up documentation. Without these critical items, the contract might be considered a sham arrangement and an attempt to influence a sale.</p>]]>
+                    </incorrectFeedback>
+                    <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                    </incorrectFeedbackpop>
+              </feedback>               
+        </question>
+        <question type="MCQ" correctAnswer="1"> 
+            <quesText>
+                <![CDATA[<p>Dr. Joanne Lauria is interested in Philips’ latest IGT interventional suite for her hospital but the nearest location with this product is a two-hour flight away from Dr. Lauria's location.</p><p>Would it be appropriate for Philips to pay Dr. Laura for flying to that location to view the equipment?</p>]]>
+            </quesText>
+            <iText>
+                <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+            </iText>
+            <infoText>
+                   <![CDATA[<p>While our Policy on Interactions with U.S. HCPs prohibits the company from paying HCPs for attending meetings and conferences, it does allow Philips to pay for modest travel to the nearest location if it is necessary for a potential customer to view our products. Certain products, such as interventional suite, cannot be brought to an HCP for evaluation, and the only way for our customer to see the product is to go where one is already located. Be sure to vet this travel with your manager or legal compliance to ensure your plans comply with our policy.</p>]]>
+            </infoText>
+            <options>
+                <option>
+                    <![CDATA[Yes, it will be appropriate if the only way for a potential customer to view our products is to visit another site. In such a case, Philips can pay her for flying to the nearest location.]]>
+                </option>
+                <option>
+                    <![CDATA[No, It will be inappropriate. Philips Policy on Interactions with U.S. HCPs prohibits the company from paying HCPs for any travel for meetings and conferences.]]>
+                </option> 
+              </options>  
+              <feedback>
+                    <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">While our Policy on Interactions with U.S. HCPs prohibits the company from paying HCPs for attending meetings and conferences, it does allow Philips to pay for modest travel to the nearest location if it is necessary for a potential customer to view our products. Certain products, such as interventional suite, cannot be brought to an HCP for evaluation, and the only way for our customer to see the product is to go where one is already located. Be sure to vet this travel with your manager or legal compliance to ensure your plans comply with our policy.</p>]]>
+                    </correctFeedback>
+                    <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect!</p><p class="feedback_font">While our Policy on Interactions with U.S. HCPs prohibits the company from paying HCPs for attending meetings and conferences, it does allow Philips to pay for modest travel to the nearest location if it is necessary for a potential customer to view our products. Certain products, such as interventional suite, cannot be brought to an HCP for evaluation, and the only way for our customer to see the product is to go where one is already located. Be sure to vet this travel with your manager or legal compliance to ensure your plans comply with our policy.</p>]]>
+                    </incorrectFeedback>
+                    <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                    </incorrectFeedbackpop>
+              </feedback>              
+        </question>
+        <question type="MCQ" correctAnswer="1"> 
+            <quesText>
+                <![CDATA[Noel, a sales representative at Oral health care, has arranged a dinner meeting with Dr. Green, a prominent dentist in the Chicago suburbs with over 10 office locations. If Noel gets Dr. Green on board as a customer for our advanced whitening solutions, she will exceed her quarterly numbers.<br>To be compliant with our policy guidelines, Noel checks the per-attendee limit and learns that Chicago is considered a premium city and she can spend up to $150 per person. She books a nice steakhouse close to the doctor’s house in the Chicago suburb of Hinsdale and is confident the menu won't exceed the $150 per-person limit. <br>Has Noel done the right thing?]]>
+            </quesText>
+            <iText>
+                <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+            </iText>
+            <infoText>
+                   <![CDATA[<p>Noel should re-consider the fancy steakhouse for several reasons.<br>First, a lower limit applies to the suburbs of Chicago. The premium city amount applies only to cities, not to the surrounding area.<br>Second, our policy states that all meals must be modest in nature. Even if the meal falls below the limit set by the policy, it could be considered extravagant and distracting from the business to be discussed.</p>]]>
+            </infoText>
+            <options>
+                <option>
+                    <![CDATA[No, Hinsdale is not considered the same as Chicago and the lower $125-per-person limit applies in this case.]]>
+                </option>
+                <option>
+                    <![CDATA[Yes, as long as Noel stays below the limit set by the policy, she is doing nothing wrong.]]>
+                </option> 
+              </options> 
+              <feedback>
+                    <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">Noel should re-consider the fancy steakhouse for several reasons.<br>First, a lower limit applies to the suburbs of Chicago. The premium city amount applies only to cities, not to the surrounding area.<br>Second, our policy states that all meals must be modest in nature. Even if the meal falls below the limit set by the policy, it could be considered extravagant and distracting from the business to be discussed.</p>]]>
+                    </correctFeedback>
+                    <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect!</p><p class="feedback_font">Noel should re-consider the fancy steakhouse for several reasons.<br>First, a lower limit applies to the suburbs of Chicago. The premium city amount applies only to cities, not to the surrounding area.<br>Second, our policy states that all meals must be modest in nature. Even if the meal falls below the limit set by the policy, it could be considered extravagant and distracting from the business to be discussed.</p>]]>
+                    </incorrectFeedback>
+                    <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                    </incorrectFeedbackpop>
+              </feedback>               
+        </question>
+        <question type="MCQ" correctAnswer="1"> 
+            <quesText>
+                <![CDATA[Joe has developed a close relationship with one of his best customers, and the two have discovered they both love fishing. Joe decides to take the doctor fishing on his boat as a gesture of appreciation for being a loyal Philips customer. As it is Joe's boat, he will only need to claim expense for the cost of gas, food, and bait needed for fishing, which will be a very small amount compared to the sales generated from that account.<br>Given the expense amount being so small, should Joe's manager approve this event?]]>
+            </quesText>
+            <iText>
+                <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+            </iText>
+            <infoText>
+                   <![CDATA[<p>Even though Joe and the doctor may have a common interest, a Philips employee cannot host an entertainment event, no matter how small the cost is.</p>]]>
+            </infoText>
+            <options>
+                <option>
+                    <![CDATA[No, Joe should not be hosting a clear entertainment event with anyone in a position to make a recommendation or referral to purchase or use our products.]]>
+                </option>
+                <option>
+                    <![CDATA[Yes, this is such a small amount; there is no harm in Joe hosting this important customer.]]>
+                </option>
+                <option>
+                    <![CDATA[Yes, Joe and the customer are good friends, so there is nothing wrong with the two fishing.]]>
+                </option> 
+              </options>   
+              <feedback>
+                    <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">Even though Joe and the doctor may have a common interest, a Philips employee cannot host an entertainment event, no matter how small the cost is.</p>]]>
+                    </correctFeedback>
+                    <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect!</p><p class="feedback_font">Even though Joe and the doctor may have a common interest, a Philips employee cannot host an entertainment event, no matter how small the cost is.</p>]]>
+                    </incorrectFeedback>
+                    <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                    </incorrectFeedbackpop>
+              </feedback>             
+        </question>
+    </questions>
+</questionBank>

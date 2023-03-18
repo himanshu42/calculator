@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1812px" height="867.528px" viewBox="0 0 1812 867.528" enable-background="new 0 0 1812 867.528" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="1812" height="867.528"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g opacity="0.8" clip-path="url(#SVGID_2_)">
+		<g>
+			<defs>
+				<rect id="SVGID_3_" x="-9" y="-8.999" width="1830" height="876"/>
+			</defs>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_"  overflow="visible"/>
+			</clipPath>
+			<g clip-path="url(#SVGID_4_)">
+				<text transform="matrix(1 0 0 1 2 10.7241)" fill="#231F20" font-family="'MinionPro-Regular'" font-size="12">v</text>
+			</g>
+			<polygon clip-path="url(#SVGID_4_)" fill="none" stroke="#00BBFF" stroke-width="2" points="1811,766.332 1811,1 1,1 1,865 
+				1712.331,865 			"/>
+		</g>
+	</g>
+</g>
+<polyline fill="none" stroke="#004459" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" points="43.871,804.458 
+	609.928,422.647 733.341,605.614 1156.454,320.221 1227.802,425.999 1768.129,61.544 "/>
+<rect fill="none" width="1812" height="867.528"/>
+</svg>

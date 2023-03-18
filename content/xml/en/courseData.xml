@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<courseData>
+    <courseTitle>
+        <![CDATA[]]>
+    </courseTitle>
+    <module id="1">
+        <title>
+            <![CDATA[]]>
+        </title>
+        <topic id="1">
+            <title>
+                <![CDATA[]]>
+            </title>
+            <page id="1" target="m1_t1_p1" myNextTarget="m1_t2_p1" myPrevTarget="">
+                <title>
+                    <![CDATA[]]>
+                </title>
+                <transcript>
+                    <![CDATA[]]>
+                </transcript>
+            </page>
+        </topic>
+        <topic id="2">
+            <title>
+                <![CDATA[]]>
+            </title>
+            <page id="1" target="m1_t2_p1" myNextTarget="m1_t3_p1" myPrevTarget="m1_t1_p1">
+                <title>
+                    <![CDATA[]]>
+                </title>
+                <transcript>
+                    <![CDATA[]]>
+                </transcript>
+            </page>
+        </topic>
+        <topic id="3">
+            <title>
+                <![CDATA[]]>
+            </title>
+            <page id="1" target="m1_t3_p1"  myNextTarget="m1_t4_p1" myPrevTarget="m1_t2_p1">
+                <title>
+                    <![CDATA[]]>
+                </title>
+                <transcript>
+                    <![CDATA[]]>
+                </transcript>
+            </page>
+        </topic>
+        <topic id="4">
+                 <title>
+                    <![CDATA[]]>
+                </title>
+            <page id="1" target="m1_t4_p1" myNextTarget="m1_t5_p1" myPrevTarget="m1_t3_p1">
+                <title>
+                    <![CDATA[]]>
+                </title>
+                <transcript>
+                    <![CDATA[]]>
+                </transcript>
+            </page> 
+        </topic>
+        <topic id="5">
+             <title>
+                <![CDATA[]]>
+            </title>
+            <page id="1" target="m1_t5_p1" myNextTarget="m1_t6_p1" myPrevTarget="m1_t4_p1">
+                <title>
+                    <![CDATA[]]>
+                </title>
+                <transcript>
+                    <![CDATA[]]>
+                </transcript>
+            </page> 
+        </topic> 
+        <topic id="6">
+            <title>
+                <![CDATA[]]>
+            </title>
+            <page id="1" target="m1_t6_p1" type="interactive" myNextTarget="" myPrevTarget="m1_t5_p1">
+                <title>
+                    <![CDATA[]]>
+                </title>
+                <transcript>
+                    <![CDATA[]]>
+                </transcript>
+            </page>
+                                           
+        </topic>
+    </module>
+</courseData>

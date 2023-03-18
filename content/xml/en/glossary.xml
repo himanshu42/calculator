@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<glossary>
+	
+	<letter value='A'></letter>
+	<letter value='B'></letter>
+	<letter value='C'>
+		<word value='Child development'><![CDATA[How children grow, learn, and develop through different stages. Child development refers to the biological, psychological, and emotional changes that occur in human beings between birth and the end of adolescence.]]></word>
+	</letter>
+	<letter value='D'></letter>
+	<letter value='E'>
+		<word value='Evidence-Based Home Visiting Program'><![CDATA[A program that has participated in rigorous assessment of the service model and subsequent outcomes. The evidence that the program model is based upon demonstrates that by adhering to the model, the professionals carrying out the model should achieve the same outcomes for families enrolled.]]></word>
+	</letter>
+	<letter value='F'></letter>
+	<letter value='G'></letter>
+	<letter value='H'>
+		<word value='Home visiting'><![CDATA[A family-focused program that is offered to at-risk families and expectant parents with new babies and young children to address issues such as parenting skills, maternal and child health, access to healthcare services, child abuse, and school readiness.]]></word>
+		<word value='Home visitors'><![CDATA[Trained home visiting practitioners who assist at-risk and expectant families towards improving their parenting skills, providing guidance on access to healthcare services, promoting healthy family functioning, supporting and monitoring child development, preventing child abuse and maltreatment, and strengthening parent-child relationships.]]></word>
+	</letter>
+	<letter value='I'>
+		<word value='Intensive home visiting'><![CDATA[Home visiting delivered with a regular schedule and frequency, generally once per week or every other week. The home visitor carries a caseload of families who they visit each week, or every other week, in the home of the family. Home visiting is focused on the support for the parent-child relationship; the home visitor actively engages with the parent and child at each visit and facilitates and enhances the interaction between the paren
+		t and child during each visit.]]></word>
+	</letter>
+	<letter value='J'></letter>
+	<letter value='K'></letter>
+	<letter value='L'></letter>
+	<letter value='M'>
+		<word value='Maternal, Infant and Early Childhood Home Visiting program'><![CDATA[See MIECHV.]]></word>
+		<word value='MIECHV'><![CDATA[An evidence-based policy initiative under the Affordable Care Act requiring that home visiting programs be implemented within a comprehensive early childhood system through collaboration and partnership at the federal, state, and community levels to improve health and development outcomes for at-risk children.]]></word>
+	</letter>
+	<letter value='N'></letter>
+	<letter value='O'></letter>
+	<letter value='P'>
+		<word value='Public health'><![CDATA[The art and science of dealing with the protection and improvement of community health by organized community effort and including preventive medicine and sanitary and social science.]]></word>
+	</letter>
+	<letter value='Q'></letter>
+	<letter value='R'>
+		<word value='Reflecting'><![CDATA[Give serious thought or consideration to something. Reflecting involves stepping back from the immediate experience, in order to consider what the experience means.]]></word>
+		<word value='Reflective learning'><![CDATA[An ongoing process that integrates self-reflection on all aspects of learning. This learning includes reflection on one's identity, one's role, one's relationships with families, and the actual home visit itself. This reflection is critical to knowledge acquisition and growing as a professional. This learning requires individuals to reflect on their personal experiences to develop critical thinking, analytical skills, and self-awareness.]]></word>
+		<word value='Reflective practice'><![CDATA[A person's capacity to consciously review emotions, experiences, actions, and their responses to a situation after it has occurred in order to develop self-awareness and self-reflection.]]></word>
+		<word value='Reflective supervision'><![CDATA[Reflection activities by a home visitor carried out in partnership with the home visitor's supervisor. Through reflective supervision, a home visiting professional analyzes their work, assesses their performance, and develops an awareness of strengths, limitations, and vulnerabilities.]]></word>
+		<word value='Responsibility'><![CDATA[A duty or task that is required or expected; something that one should do because it is morally right, legally required, professionally appropriate.]]></word>
+		<word value='Role'><![CDATA[A part that someone has in a particular activity or situation.]]></word>
+	</letter>
+	<letter value='S'>
+		<word value='Settlement house'><![CDATA[An institution or center in an underprivileged area that provides educational, recreational, and other social services to the community.]]></word>
+		<word value='Skill'><![CDATA[The ability to do something that comes from training, experience, and practice. The ability to use one's knowledge effectively and readily in execution or performance.]]></word>
+		<word value='Social services'><![CDATA[Activities designed to promote social well-being and provided for the benefit of the community, such as education, medical care, and housing. ]]></word>
+		<word value='Spectrum'><![CDATA[A wide range; a concept used to classify something, or suggest that it can be classified, in terms of its position on a scale between two extreme or opposite points.]]></word>
+	</letter>
+	<letter value='T'></letter>
+	<letter value='U'></letter>
+	<letter value='V'></letter>
+	<letter value='W'></letter>
+	<letter value='X'></letter>
+	<letter value='Y'></letter>
+	<letter value='Z'></letter>
+</glossary>

@@ -1,0 +1,3529 @@
+
+.CTABtn#brusselsCtabtn{
+        position: absolute;
+        width: 280px;
+        height: 59.9px;
+        margin: 0px 0px;
+        overflow: hidden;
+        left: 220px;
+        top: -10px;
+    }
+    .CTABtn#brusselsCtabtn.disable_cta{
+        display: none !important;
+    }
+
+    .CTABtn#brusselsCtabtn:after{
+        content: "";
+        position: absolute;
+        width: 93%;
+        height: 120px;
+        top: -24px;
+        transform: rotate(10deg);
+        background: #26c5ff;
+        /* background: #000; */
+        left: 8px;
+    }
+    .CTABtn#brusselsCtabtn .cta_text{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all ease 0.5s;
+        cursor: pointer;
+        font-style: normal;
+        font-size: 28px;
+        font-family: 'helveticaneuemedium';
+        position: absolute;
+        top: 0;
+        letter-spacing: 0px;
+        left: 0;
+        z-index: 1;
+        color: #fff;
+    }
+    .CTABtn#brusselsCtabtn:hover .cta_text{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+
+
+    .CTABtn_con#brussels_con{
+        position: absolute;
+        width: 320px;
+        height: 59.9px;
+        margin: 0px 0px;
+        overflow: hidden;
+        left: 220px;
+        top: -10px;
+        display: none;
+    }
+    .CTABtn_con#brussels_con.disable_cta{
+        display: none !important;
+    }
+
+    .CTABtn_con#brussels_con:after{
+        content: "";
+        position: absolute;
+        width: 93%;
+        height: 120px;
+        top: -24px;
+        transform: rotate(10deg);
+        background: #26c5ff;
+        /* background: #000; */
+        left: 8px;
+    }
+    .CTABtn_con#brussels_con .cta_text_con{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all ease 0.5s;
+        cursor: pointer;
+        font-style: normal;
+        font-size: 28px;
+        font-family: 'helveticaneuemedium';
+        position: absolute;
+        top: 0;
+        letter-spacing: 0px;
+        left: 0;
+        z-index: 1;
+        color: #fff;
+    }
+    .CTABtn_con#brussels_con:hover .cta_text_con{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+
+
+
+
+
+
+.brussels_module {
+    width: 100%;
+    height: 100%;
+}
+
+.brussels_module .globeIconbx.disable {
+    pointer-events: none;
+}
+
+.svg_overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+
+.brussels_module .screen_bg{
+   width: 100%; height: 100%;
+   background: url(../images/pages/m1_t9_p1/img_nonselected.jpg) no-repeat bottom center;
+   /*background-size: 100% 100%;*/    background-position: 0px 0px;
+   z-index: 1;
+}
+
+.brussels_module .screen_animbg.char1{
+    width: 100%; height: 100%;
+   background: url(../images/pages/m1_t9_p1/img_1.jpg) no-repeat bottom center;
+   /*background-size: 100% 1000%;*/    background-position: 0px 0px;
+   opacity: 0;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+}
+.brussels_module .screen_animbg.char2{
+    width: 100%; height: 100%;
+   background: url(../images/pages/m1_t9_p1/img_2.jpg) no-repeat bottom center;
+   /*background-size: 100% 1000%;*/    background-position: 0px 0px;
+   opacity: 0;position: absolute;
+   left: 0px;
+   top: 0px;
+}
+.brussels_module .screen_animbg.char3{
+    width: 100%; height: 100%;
+   background: url(../images/pages/m1_t9_p1/img_3.jpg) no-repeat bottom center;
+   /*background-size: 100% 1000%;*/    background-position: 0px 0px;
+   opacity: 0;position: absolute;
+   left: 0px;
+   top: 0px;
+}
+.brussels_module .screen_animbg.char4{
+    width: 100%; height: 100%;
+   background: url(../images/pages/m1_t9_p1/img_4.jpg) no-repeat bottom center;
+   /*background-size: 100% 1000%;*/    background-position: 0px 0px;
+   opacity: 0;position: absolute;
+   left: 0px;
+   top: 0px;
+}
+
+.brussels_module .sCreenCount {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    overflow: hidden;
+}
+
+.brussels_module .sCreenCount video {
+    width: 100%;
+}
+
+.brussels_module #screen1 #myVideo {
+    position: absolute;
+    right: 0%;
+    left: 0;
+    top: -10%;
+    bottom: 0;
+    width: 104%;
+    height: 120%;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.brussels_module #screen1 .overlayLeft {
+    background: rgba(128, 186, 39, 0.9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all ease 0.7s;
+    z-index: 1;
+}
+
+.brussels_module #screen1 .overlayLeft.add {
+    left: 75%;
+    transform: rotate3d(1, 1, 1, 23.3deg);
+    top: -24%;
+    height: 250%;
+}
+
+.brussels_module #screen1 .line {
+    width: 395px;
+    position: absolute;
+    /*background: #558eef;*/
+    /*bottom: -13%;*/
+    /*transform: rotate(20deg);*/
+    height: 0vh;
+    transition: all ease 1s;
+    overflow: hidden;
+    bottom: 0;
+    right:200px;
+    z-index: 2;
+}
+
+.brussels_module #screen1 .mask {
+    height: 969px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.brussels_module #screen1 .line.lineanim {
+    height: 969px;
+}
+
+.brussels_module #screen1 .flagbox {
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    transform: translate(-50%, -50%)!important;
+}
+
+.brussels_module #screen1 .starCircleWrap {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.brussels_module #screen1 .starCircleWrap svg {
+    width: 100%;
+    top: -130px;
+    position: absolute;
+}
+
+.brussels_module #screen1 .flagcontner {
+    width: 650px;
+    height: 650px;
+    /*background: rgba(0, 196, 243, 0.9);
+    border-radius: 50%;*/
+}
+
+.brussels_module #screen1 .fishbox {
+    width: 100%;
+    height: 100%;
+}
+
+.brussels_module #screen1 .glasses {
+    position: absolute;
+    left: 109px;
+    top: -62px;
+    z-index: 2;
+    -webkit-animation: imgrot 6s linear infinite;
+    -moz-animation: imgrot 6s linear infinite;
+    animation: imgrot 6s linear infinite;
+}
+
+@-webkit-keyframes imgrot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@-moz-keyframes imgrot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes imgrot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.brussels_module #screen1 .glasses svg {
+    width: 100%;
+}
+
+.brussels_module #screen1 .fish1 {
+    position: absolute;
+    left: -87px;
+    top: 161px;
+    z-index: 1;
+    width: 192px;
+    height: 102px;
+    background: url(../images/pages/m1_t7_p1/fish_pink_ver_18nov.png);
+    background-repeat: no-repeat;
+    -webkit-animation: fishplayOne .8s steps(22) infinite;
+    -moz-animation: fishplayOne .8s steps(22) infinite;
+    animation: fishplayOne .8s steps(22) infinite;
+    z-index: 2;
+}
+
+@keyframes fishplayOne {
+    100% {
+        background-position: 0 -2244px;
+    }
+}
+
+.brussels_module #screen1 .fish2 {
+    position: absolute;
+    right: -68px;
+    top: 80px;
+    z-index: 1;
+    width: 231px;
+    height: 140px;
+    background: url(../images/pages/m1_t7_p1/fish_blue.png);
+    background-repeat: no-repeat;
+    -webkit-animation: fishplayTwo .8s steps(21) infinite;
+    -moz-animation: fishplayTwo .8s steps(21) infinite;
+    animation: fishplayTwo .8s steps(21) infinite;
+    z-index: 2;
+}
+
+@keyframes fishplayTwo {
+    100% {
+        background-position: 0 -2961px;
+    }
+}
+
+.brussels_module #screen1 .textbox h1 i {
+    color: #fff;
+    font-size: 185px;
+    font-family: helveticaneuethin;
+    margin-left: 40px;
+    line-height: 174px;
+    /* letter-spacing: 22px; */
+    font-style: italic;
+    padding-left: 6px;
+}
+
+.brussels_module #screen1 .textbox {
+    position: absolute;
+    left: 60px;
+    bottom: 290px;
+    width: 93%;
+    z-index: 1;
+}
+.brussels_module #screen1 .textbox2{
+}
+
+.brussels_module #screen1 .textbox p {
+    color: #fff;
+    font-size: 45px;
+    /* font-weight: bold; */
+    /* text-align: center; */
+    font-family: 'helveticaneuebold';
+    letter-spacing: 1px;
+    line-height: 50px;
+    margin: 10px 0px 0px 145px;
+}
+.brussels_module #screen1 .textbox p label {
+    padding-left: 90px;
+}
+
+.brussels_module #screen1 .textbox p span {
+    display: block;
+    padding: 10px 0 0 120px;
+}
+
+
+
+/*.brussels_module #screen1 .starCircleWrap .star1{ 
+    -webkit-animation: blinker1 1s linear infinite;
+    -moz-animation: blinker1 1s linear infinite;
+    animation: blinker1 1s linear infinite;   
+    animation-duration: 1s;
+}
+*/
+
+
+
+
+
+@keyframes starBlink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.brussels_module #screen1 .sCreenCount {
+    display: none;
+}
+
+.brussels_module #screen1 {
+    display: block;
+}
+
+/*screen 2 content*/
+.brussels_module #screen2 #myVideo2 {
+    position: absolute;
+    top: 0;
+    right: 0%;
+    bottom: 0;
+    left: 0;
+    /*width: 104%;
+    height: 105%;
+    min-width: 100%;
+    min-height: 100%;*/
+}
+
+.brussels_module #screen2 .overlayLeft2 {
+    background: rgba(128, 186, 39, 0.9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    transition: all ease 1.1s;
+    z-index: 1;
+}
+
+.brussels_module #screen2 .overlayLeft2.add2 {
+    right: 65.5%;
+    transform: rotate3d(1, 1, 1, 23.4deg);
+    top: -45%;
+    height: 250%;
+}
+
+.brussels_module #screen2 .line2 {
+    width: 395px;
+    position: absolute;
+    height: 0vh;
+    transition: all ease 2s;
+    overflow: hidden;
+    bottom: 0;
+   left: 528px;
+    z-index: 2;
+}
+
+.brussels_module #screen2 .mask2 {
+    height: 969px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+.brussels_module #screen2 .line2.lineanim2 {
+    height: 969px;
+}
+
+.brussels_module #screen2 .scrn2contantdiv {
+    position: relative;
+    left: 0;
+    z-index: 3;
+    color: #fff;
+    font-family: 'helveticaneuethin';
+    /* transform: translatey(-50%); */
+    padding: 110px 20px 50px 75px;
+    /* letter-spacing: 3px; */
+    font-style: italic;
+    width: 708px;
+    /* top: 170px; */
+}
+
+.brussels_module #screen2 .scrn2contantdiv h2 {
+    font-size: 70px;
+    line-height: 73px;
+    font-style: italic;
+    /* font-family: helveticaneuelight; */
+    letter-spacing: 2px;
+    padding-left: 0px;
+}
+.brussels_module #screen2 .scrn2contantdiv label {
+    padding-left: 62px;
+}
+
+.brussels_module #screen2 .scrn2contantdiv span {
+    font-size: 36px;
+    /* font-weight: bold; */
+    display: block;
+    padding: 10px 0 15px 45px;
+    font-family: 'helveticaneuemedium';
+    font-style: normal;
+    letter-spacing: 0px;
+}
+
+.brussels_module #screen2 .scrn2contantdiv p {
+    color: #fff;
+    padding-right: 20px;
+    font-size: 34px;
+    /* font-family: 'helveticaneuelight'; */
+    margin: 23px 21px 0px 0;
+    line-height: 42px;
+    letter-spacing: 0.45px;
+}
+
+.brussels_module #screen2 .stbtncontner {
+    width: 320px;
+    height: 60px;
+    margin:55px -1px;
+    pointer-events: none;
+}
+
+.brussels_module #screen2 .stbtncontner.active {
+    pointer-events: auto;
+}
+
+.brussels_module #screen2 .stbtncontner svg {
+    width: 100%;
+    height: 100%;
+}
+
+.brussels_module #screen2 .startbtn {
+    /*background: url(../images/pages/global/btn.png);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    font-style: normal;
+    font-size: 30px;
+    font-family: 'helveticaneuemedium';
+    position: absolute;
+    top: -1px;
+    left: 3px;
+    letter-spacing: 0;
+}
+
+.brussels_module #screen2 .startbtn:hover {
+    transform: scale(1.05);
+}
+
+.brussels_module #screen4 .endDiscussion{
+    width: 320px;
+    height: 60px;
+    position: absolute;
+    right: 50%;
+    margin-right: -160px;
+    bottom: 12%;
+    display: none;
+}
+
+.brussels_module #screen4 .stbtncontner svg {
+    width: 100%;
+    height: 100%;
+}
+.brussels_module #screen4 .startbtn {
+    /*background: url(../images/pages/global/btn.png);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    color: #fff;
+    font-style: normal;
+    font-size: 30px;
+    font-family: 'helveticaneuemedium';
+    position: absolute;
+    top: -1px;
+    left: 3px;
+    letter-spacing: 0;
+}
+
+.brussels_module #screen4 .startbtn:hover {
+    transform: scale(1.05);
+}
+
+/*screen3 css start*/
+/*.brussels_module #screen3 #myVideo3 {
+    position: absolute;
+    top: -17%;
+    right: -2%;
+    bottom: 0;
+    width: 104%;
+    height: 120%;
+    min-width: 100%;
+    min-height: 100%;
+}*/
+.brussels_module #screen3 #myVideo3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+   /* width: 104%;
+    height: 105%;
+    min-width: 100%;
+    min-height: 100%;*/
+}
+.brussels_module #screen3 .scrn3contantdiv {
+    position: absolute;
+    left: 0;
+    top: 37.5%;
+    z-index: 3;
+    font-family: 'helveticaneuethin';
+    transform: translatey(-50%);
+    padding: 40px 20px 50px 75px;
+    letter-spacing: 2px;
+    font-style: italic;
+    width: 708px;
+    z-index: 5;
+}
+
+.brussels_module #screen3 .scrn3contantdiv h2 {
+    color: #29c0ff;
+    font-size: 74px;
+    line-height: 74px;
+    font-style: italic;
+    /* font-family: helveticaneuelight; */
+    letter-spacing: 0px;
+    padding-left: 0px;
+}
+
+.brussels_module #screen3 .scrn3contantdiv label {
+    padding-left: 40px;
+}
+
+.brussels_module #screen3 .scrn3contantdiv span {
+    color: rgba(16, 56, 79, 1);
+    font-size: 31px;
+    font-weight: bold;
+    display: block;
+    padding: 0px 0 15px 160px;
+    font-family: 'helveticaneuebold';
+    font-style: normal;
+    letter-spacing: 0px;
+}
+
+.brussels_module #screen3 .scrn3contantdiv p {
+    color: rgba(16, 56, 79, 1);
+    padding-right: 120px;
+    font-size: 34px;
+    font-family: 'helveticaneuelight';
+    margin: 30px 21px 20px 0;
+    line-height: 42px;
+    letter-spacing: 0.45px;
+}
+.brussels_module #screen3 .scrn3contantdiv p.p2 {
+    padding-right: 205px;
+}
+
+.brussels_module #screen3 .leftbox {
+    position: absolute;
+    left: 79px;
+    top: 114px;
+    z-index: 9;
+    color: #fff;
+}
+
+.brussels_module #screen3 .leftbox span {
+    font-family: 'helveticaneuemedium';
+    font-size: 37.5px;
+}
+
+.brussels_module #screen3 .leftbox h1 {
+    font-size: 78px;
+    font-style: italic;
+    font-family: 'helveticaneuethin';
+    padding-left: 38px;
+}
+
+.brussels_module #screen3 .divebtn {
+    position: relative;
+    width: 233px;
+    height: auto;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-left: 0px;
+    transition: all ease 0.5s;
+    pointer-events: none;
+    /*display: none;*/
+}
+
+.brussels_module #screen3 .divebtn.active {
+    pointer-events: auto;
+    margin-left: 0;
+    display: block;
+}
+
+.brussels_module #screen3 .divebtn span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: all ease 0.5s;
+}
+
+.brussels_module #screen3 .divebtn:hover span {
+    transform: scale(1.05);
+}
+
+.brussels_module #screen3 .centerbox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    display: none;
+}
+.brussels_module #screen3 .centerbox .cb{
+    position: absolute;
+    display: none;
+    background: rgba(38,198,255,0.9);
+    color: #fff;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.7px;
+    font-family: 'helveticaneuethin';
+    font-style: italic;
+    padding: 25px;
+}
+.brussels_module #screen3 .centerbox .cb_0{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.brussels_module #screen3 .centerbox .cb_1 {
+   width: 430px;
+    top: 135px;
+    left: 454px;
+}
+.brussels_module #screen3 .centerbox .cb_2 {
+    width: 390px;
+    top: 120px;
+    left: 684px;
+}
+.brussels_module #screen3 .centerbox .cb_3 {
+       width: 430px;
+    top: 115px;
+    left: 851px;
+}
+.brussels_module #screen3 .centerbox .cb_4 {
+    width: 350px;
+    top: 155px;
+    left: 1112px;
+}
+.brussels_module #screen3 .centerbox .cb:after{
+    content: "";
+    position: absolute;
+    right: -19px;
+    bottom: 30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 20px;
+    border-color: transparent transparent transparent rgba(38,198,255,0.9);
+}
+.brussels_module #screen3 .centerbox .cb.cb_1:after{
+    bottom: 50px;
+}
+.brussels_module #screen3 .centerbox .cb.cb_2:after{
+    bottom: 80px;
+}
+.brussels_module #screen3 .centerbox .cb.cb_3:after{
+    bottom: 50px;
+}
+.brussels_module #screen3 .centerbox .cb.cb_4:after{
+    bottom: 80px;
+}
+.brussels_module #screen3 .centerbox .charBox{}
+.brussels_module #screen3 .centerbox .charBox1 {
+    position: absolute;
+    top: 196px;
+    left: 822px;
+    width: 236px;
+}
+.brussels_module #screen3 .centerbox .charBox2 {
+    position: absolute;
+    top: 240px;
+    left: 1091px;
+    width: 157px;
+}
+.brussels_module #screen3 .centerbox .charBox3 {
+    position: absolute;
+    top: 208px;
+    left: 1254px;
+    width: 208px;
+}
+.brussels_module #screen3 .centerbox .charBox4 {
+    position: absolute;
+    top: 236px;
+    left: 1477px;
+    width: 114px;
+}
+.brussels_module #screen3 .centerbox .charBox svg {
+    width: 100%;
+}
+.brussels_module #screen3 .centerbox .charBox svg path {
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+.brussels_module #screen3 .centerbox .charBox svg path.selected{
+    pointer-events: none;
+}
+
+/*.brussels_module #screen3 .centerbox>div {
+    position: absolute;
+    left: 0;
+    top: 690px;
+}
+
+.brussels_module #screen3 .centerbox .box2 {
+    right: 50px;
+    left: auto;
+    top: 662px;
+}
+
+.brussels_module #screen3 .centerbox div {
+    width: 390px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    margin: 0 0px;
+}
+
+.brussels_module #screen3 .centerbox div.box2 {
+    margin-left: 127px;
+}
+
+.brussels_module #screen3 .centerbox div img {
+    display: block;
+    max-width: 370px;
+    margin: auto;
+}
+
+.brussels_module #screen3 .centerbox .imgzom.anmibig {
+    transform: scale(1);
+}
+
+.brussels_module #screen3 .centerbox .imgzom.anmibig:before {
+    background: transparent;
+}
+
+.brussels_module #screen3 .centerbox .imgzom {
+    position: relative;
+    transform: scale(0.2);
+    transition: all ease 0.5s;
+}
+
+.brussels_module #screen3 .centerbox .imgzom:before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 0;
+    width: 95%;
+    height: 100%;
+    z-index: 1;
+    background: #64c6fe;
+    border-radius: 60%;
+}
+
+.brussels_module #screen3 .centerbox .box1.animat,
+.brussels_module #screen3 .centerbox .box2.animat {
+    webkit-animation: leapsbubbleUp 3s linear forwards;
+    -moz-animation: leapsbubbleUp 3s linear forwards;
+    animation: leapsbubbleUp 3s linear forwards;
+}
+
+.brussels_module #screen3 .centerbox .box2.animat {
+    webkit-animation: leapsbubbleUp 6.4s linear forwards;
+    -moz-animation: leapsbubbleUp 6.4s linear forwards;
+    animation: leapsbubbleUp 6.4s linear forwards;
+}*/
+
+@-webkit-keyframes leapsbubbleUp {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-100%)
+    }
+}
+
+@-moz-keyframes leapsbubbleUp {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-100%)
+    }
+}
+
+@-o-keyframes leapsbubbleUp {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-100%)
+    }
+}
+
+@keyframes leapsbubbleUp {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-100%)
+    }
+}
+
+.brussels_module #screen3 .centerbox div p {
+    color: #fff;
+    font-size: 25px;
+    padding-top: 24px;
+    font-style: italic;
+    line-height: 30px;
+    font-family: 'helveticaneuethin';
+}
+
+.brussels_module #screen3 .centerbox div span {
+    font-size: 25px;
+    font-family: 'helveticaneuemedium';
+    color: #64c6fe;
+    margin-top: 44px;
+    display: block;
+}
+
+/*screen4 css*/
+.brussels_module #screen4 .leftbox {
+    position: absolute;
+    left: 123px;
+    top: 90px;
+    z-index: 9;
+    width: 650px;
+    height: 550px;
+}
+
+.brussels_module #screen4 .bobule {
+    border: 2px solid #cfe6f3;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: absolute;
+    left: 130px;
+    top: 50px;
+}
+
+.brussels_module #screen4 .bobule.bbl1 {
+    width: 60px;
+    height: 60px;
+    top: 223px;
+    left: 203px;
+}
+
+.brussels_module #screen4 .bobule.bbl2 {
+    width: 35px;
+    height: 35px;
+    top: 169px;
+    left: 276px;
+}
+
+.brussels_module #screen4 .bobule.bbl3 {
+    width: 30px;
+    height: 30px;
+    top: 18px;
+    left: 90px;
+}
+
+.brussels_module #screen4 .textarea {
+    color: #fff;
+    position: absolute;
+    left: 7px;
+    top: 330px;
+}
+
+.brussels_module #screen4 .textarea span {
+    font-size: 24px;
+    font-family: 'helveticaneuemedium';
+}
+
+.brussels_module #screen4 .textarea p {
+    font-size: 52px;
+    color: #fff;
+    font-style: italic;
+    padding: 7px 15px 0px 10px;
+    line-height: 66px;
+}
+
+.brussels_module #screen4 .textarea p label {
+    padding-left: 48px;
+}
+
+.brussels_module #screen4 .arrowicon {
+    position: absolute;
+    left: 131px;
+    top: 160px;
+}
+
+.brussels_module #screen4 .arrowicon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.brussels_module #screen4 .arrowicon svg polygon {
+    fill: #fff;
+}
+
+/*.brussels_module #screen4 .clickbox {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 1150px;
+    z-index: 9;
+    height: 100%;
+}
+.brussels_module #screen4 .clickbox {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 1150px;
+    z-index: 9;
+    height: 100%;
+}
+
+.brussels_module #screen4 .clickbox .bubblediv {
+    position: absolute;
+    width: 206px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.brussels_module #screen4 .clickbox .clickbb2 {
+    bottom: 0px;
+}
+
+.brussels_module #screen4 .clickbox .clickbb3 {
+    bottom: 0px;
+}
+.brussels_module #screen4 .clickbox .clickbb4 {
+    bottom: 0px;
+}
+.brussels_module #screen4 .clickbox .clickbb5 {
+    bottom: 0px;
+}
+.brussels_module #screen4 .clickbox .clickbb6 {
+    bottom: 0px;
+}
+
+.brussels_module #screen4 .clickbox .bubblediv div {
+    position: absolute;
+    left: 50%;
+    top: 45px;
+    transform: translateX(-50%);
+}
+.brussels_module #screen4 .clickbox .bubblediv .nBubble path{fill:#64c5fe;}
+
+.brussels_module #screen4 .clickbox .bubblediv div svg path {fill: #fff;}
+
+.brussels_module #screen4 .clickbox .bubblediv div span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.brussels_module #screen4 .clickbox .bubblediv.clickbbl span, .brussels_module #screen4 .clickbox .bubblediv.clickbb4 span {
+    bottom: 54px;
+}
+.brussels_module #screen4 .clickbox .bubblediv.clickyes{transition: all ease 0.5s;cursor: pointer;}
+.brussels_module #screen4 .clickbox .bubblediv.clickyes:hover .nBubble path,#screen4 .clickbox .bubblediv.clickyes.active .nBubble path{fill:#4a92df;}
+.brussels_module #screen4 .clickbox .bubblediv.clickyes.disable {
+    pointer-events: none;
+}
+.brussels_module #screen4 .clickbox .bubblediv span {
+    position: absolute;
+    left: 43px;
+    bottom: 48px;
+    width: 60%;
+    text-align: center;
+    color: #fff;
+    font-family: 'helveticaneuemedium';
+    line-height: 18px;
+}
+
+.brussels_module #screen4 .clickshowItm {
+    position: absolute;
+    left: 38px;
+    top: 64px;
+    z-index: 1;
+}
+
+.brussels_module #screen4 .clickshowItm .showitem {
+    position: absolute;
+    left: 0;
+    top: 0;display: none;
+    font-style: italic;
+    font-family: 'helveticaneuethin'
+}
+.brussels_module #screen4 .clickshowItm .showitem svg path {
+    fill: #64c5fe;
+}
+.brussels_module #screen4 .clickshowItm .showitem div span {
+    color: #fff;
+    font-size: 53px;
+    padding-left: 23px;
+}
+.brussels_module #screen4 .clickshowItm #clickbb2 span {
+    line-height: 65px;
+}
+.brussels_module #screen4 .clickshowItm .showitem div span span {
+    padding-left: 58px;
+}
+.brussels_module #screen4 .clickshowItm .showitem svg {
+    position: absolute;
+    left: -69px;
+    top: 2px;
+}
+.brussels_module #screen4 .clickshowItm .showitem p {
+    color: #fff;
+    padding: 20px 0;
+    font-size: 24px;
+    line-height: 29px
+}*/
+.brussels_module #screen4 .scrn4contantdiv {
+    position: absolute;
+    left: 0;
+    top: 37.5%;
+    z-index: 3;
+    color: #fff;
+    font-family: 'helveticaneuethin';
+    transform: translatey(-50%);
+    padding: 0px 20px 50px 75px;
+    letter-spacing: 2px;
+    font-style: italic;
+    width: 708px;
+}
+
+.brussels_module #screen4 .scrn4contantdiv h2 {
+    font-size: 74px;
+    font-style: italic;
+    /* font-family: helveticaneuelight; */
+    color: rgba(0, 204, 255, 0.9);
+    letter-spacing: 0px;
+    padding-left: 0px;
+}
+
+.brussels_module #screen4 .scrn4contantdiv h2 div {
+    padding-left: 45px;
+}
+
+.brussels_module #screen4 .scrn4contantdiv span {
+    margin-left: 22px;
+    font-size: 31px;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0 15px 5px;
+    font-family: 'helveticaneuebold';
+    font-style: normal;
+}
+
+.brussels_module #screen4 .scrn4contantdiv p {
+    color: rgba(16, 56, 79, 1);
+    font-family: 'helveticaneuelight';
+    padding-right: 20px;
+    font-size: 34px;
+    margin: 30px 21px 30px 0;
+    line-height: 42px;
+    letter-spacing: 0.45px;
+}
+.brussels_module #screen4 .scrn4contantdiv p.p2{
+    padding-right: 80px;
+}
+
+.brussels_module #screen4 .clickboxWrap {
+    position: absolute;
+   top: 145px;
+    right: 23px;
+    width: 440px;
+    height: auto;
+    z-index: 3;
+    display: none;
+}
+
+.brussels_module #screen4 .clickbox {
+    position: relative;
+    height: 133px;
+    width: 440px;
+    margin-bottom: 14px;
+}
+
+.brussels_module #screen4 .clickbox .ic_img_wrap {
+    width: 134px;
+    height: 133px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all ease 0.5s;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.brussels_module #screen4 .clickbox .ic_img {
+    width: 134px;
+    height: 133px;
+    position: absolute;
+    top: 0px;
+    left: 0px;    
+    z-index: 1;
+    cursor: pointer;
+}
+
+.brussels_module #screen4 .clickbox.clickbox1 .ic_img {
+    background: url(../images/pages/m1_t9_p1/img1.png) no-repeat;
+    background-size: 100%;
+}
+
+.brussels_module #screen4 .clickbox.clickbox2 .ic_img {
+    background: url(../images/pages/m1_t9_p1/img2.png) no-repeat;
+    background-size: 100%;
+}
+
+.brussels_module #screen4 .clickbox.clickbox3 .ic_img {
+    background: url(../images/pages/m1_t9_p1/img3.png) no-repeat;
+    background-size: 100%;
+}
+
+.brussels_module #screen4 .clickbox.clickbox4 .ic_img {
+    background: url(../images/pages/m1_t9_p1/img4.png) no-repeat;
+    background-size: 100%;
+}
+
+
+.brussels_module #screen4 .clickbox.clickbox1 .ic_text .ic_img_active {
+    background: url(../images/pages/m1_t9_p1/img1_active.png) no-repeat;
+    background-size: 100%;
+    opacity: 0;
+}
+
+.brussels_module #screen4 .clickbox.clickbox2 .ic_text .ic_img_active {
+    background: url(../images/pages/m1_t9_p1/img2_active.png) no-repeat;
+    background-size: 100%;
+    opacity: 0;
+}
+
+.brussels_module #screen4 .clickbox.clickbox3 .ic_text .ic_img_active {
+    background: url(../images/pages/m1_t9_p1/img3_active.png) no-repeat;
+    background-size: 100%;
+    opacity: 0;
+}
+
+.brussels_module #screen4 .clickbox.clickbox4 .ic_text .ic_img_active {
+    background: url(../images/pages/m1_t9_p1/img4_active.png) no-repeat;
+    background-size: 100%;
+    opacity: 0;
+}
+
+
+.brussels_module #screen4 .clickbox.clickbox1 .ic_text.active .ic_img{   
+    opacity: 0 !important;
+}
+
+.brussels_module #screen4 .clickbox.clickbox2 .ic_text.active .ic_img {   
+    opacity: 0 !important;
+}
+
+.brussels_module #screen4 .clickbox.clickbox3 .ic_text.active .ic_img {   
+    opacity: 0 !important;
+}
+
+.brussels_module #screen4 .clickbox.clickbox4 .ic_text.active .ic_img {  
+    opacity: 0 !important;
+}
+
+
+.brussels_module #screen4 .clickbox.clickbox1 .ic_text.active .ic_img_active {
+    background: url(../images/pages/m1_t9_p1/img1_active.png) no-repeat;
+    background-size: 100%;
+    opacity: 1 !important;
+}
+
+.brussels_module #screen4 .clickbox.clickbox2 .ic_text.active .ic_img_active {
+    background: url(../images/pages/m1_t9_p1/img2_active.png) no-repeat;
+    background-size: 100%;
+    opacity: 1 !important;
+}
+
+.brussels_module #screen4 .clickbox.clickbox3 .ic_text.active .ic_img_active {
+    background: url(../images/pages/m1_t9_p1/img3_active.png) no-repeat;
+    background-size: 100%;
+    opacity: 1 !important;
+}
+
+.brussels_module #screen4 .clickbox.clickbox4 .ic_text.active .ic_img_active {
+    background: url(../images/pages/m1_t9_p1/img4_active.png) no-repeat;
+    background-size: 100%;
+    opacity: 1 !important;
+}
+
+
+
+
+
+
+.brussels_module #screen4 .ic_text {
+    position: relative;
+   /* position: absolute;
+    top: 25px;
+    left: 80px;
+    width: 100px;
+    height: 60px;
+    vertical-align: middle;
+    background: #ffffff;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    color: #26C6FF;
+    padding: 0px 30px;
+    font-size: 28px;
+    line-height: 60px;
+    letter-spacing: 0.7px;
+    font-style: italic;
+    font-family: 'helveticaneuelight';*/
+}
+.brussels_module #screen4 .ic_textbx {
+    position: absolute;
+    top: 25px;
+    left: 80px;
+    width: 100px;
+    height: 60px;
+    vertical-align: middle;
+    background: #ffffff;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    color: #26C6FF;
+    padding: 0px 30px;
+    font-size: 28px;
+    line-height: 60px;
+    letter-spacing: 0.7px;
+    font-style: italic;
+    font-family: 'helveticaneuelight';
+}
+
+.brussels_module #screen4 .ic_textbx b {
+    font-style: normal;
+}
+
+.brussels_module #screen4 .ic_text .ic_textbx:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -8px;
+    width: 0;
+    height: 0;
+    transition: all ease 0.5s;
+    border-style: solid;
+    border-width:53px 8px 0 0;
+    border-color: #ffffff transparent transparent transparent;
+}
+
+.brussels_module #screen4 .ic_text .ic_textbx:hover {
+    background: #26C6FF;
+    color: #ffffff;
+}
+
+.brussels_module #screen4 .ic_text .ic_textbx:hover:after {
+    border-color: #26c5ff transparent transparent transparent;
+}
+.brussels_module #screen4 .ic_text.active .ic_textbx{
+    background: #26C6FF;
+    color: #ffffff;
+    pointer-events: none;
+}
+.brussels_module #screen4 .ic_text.active{
+    background: #26C6FF;
+    color: #ffffff;
+    pointer-events: none;
+}
+
+.brussels_module #screen4 .ic_text.active .ic_textbx:after {
+    border-color: #26c5ff transparent transparent transparent;
+    pointer-events: none;
+}
+
+.brussels_module #screen4 .ic_textbx {
+    top: 40px;
+    left: 123px;
+    width: 290px;
+    height: 53px;
+    font-size: 22px;
+    line-height: 53px;
+    letter-spacing: 0.7px;
+    font-style: italic;
+}
+
+.brussels_module .clickcontentWrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+.brussels_module .clickcontentbox {
+        position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-style: italic;
+    font-family: 'helveticaneuethin';
+    display: none;
+}
+
+.brussels_module .clickcontentbox.clickcontentbox1 {}
+
+.brussels_module .clickcontentbox.clickcontentbox2 {}
+
+.brussels_module .clickcontentbox.clickcontentbox3 {}
+
+.brussels_module .clickcontentbox.clickcontentbox4 {}
+
+.brussels_module .calloutdiv {
+    position: absolute;
+    opacity: 0;
+}
+
+.brussels_module .calloutdiv.calloutdiv1 {
+    bottom: 600px;
+    right: 550px;
+    background: #3accff;
+    padding: 30px 30px;
+}
+
+.brussels_module .calloutdiv.calloutdiv2 {
+    top: 305px;
+    right: 1100px;
+    background: #338198;
+    padding: 30px 30px;
+}
+
+.brussels_module .calloutdiv.calloutdiv1:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 15px 0 15px;
+    border-color: #3accff transparent transparent transparent;
+}
+
+.brussels_module .calloutdiv.calloutdiv2:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 20px;
+    border-color: transparent transparent transparent #338098;
+}
+
+/***box1***/
+.brussels_module .clickcontentbox1 .calloutdiv.calloutdiv1 {
+    width: 288px;
+    height: 140px;
+}
+
+.brussels_module .clickcontentbox1 .calloutdiv.calloutdiv1:after {
+    left: 50%;
+    bottom: -19px;
+    margin-left: 7.5px;
+}
+
+.brussels_module .clickcontentbox1 .calloutdiv.calloutdiv2 {
+    width: 610px;
+    height: 292px;
+    top: 330px;
+}
+
+.brussels_module .calloutdiv p{
+    color: #fff;
+}
+
+.brussels_module .clickcontentbox1 .calloutdiv.calloutdiv2:after {
+    right: -19px;
+    bottom: 58px;
+    margin-left: 7.5px;
+}
+
+/***box2***/
+.brussels_module .clickcontentbox2 .calloutdiv.calloutdiv1 {
+    width: 345px;
+    height: 195px;
+}
+
+.brussels_module .clickcontentbox2 .calloutdiv.calloutdiv1:after {
+    left: 59%;
+    bottom: -19px;
+    margin-left: 7.5px;
+}
+
+.brussels_module .clickcontentbox2 .calloutdiv.calloutdiv2 {
+        top: 390px;
+    right: 1100px;
+    width: 430px;
+    height: 225px;
+}
+
+.brussels_module .clickcontentbox2 .calloutdiv.calloutdiv2:after {
+    right: -19px;
+    bottom: 38px;
+    margin-left: 7.5px;
+}
+
+/***box3***/
+.brussels_module .clickcontentbox3 .calloutdiv.calloutdiv1 {
+    width: 325px;
+    height: 165px;
+}
+
+.brussels_module .clickcontentbox3 .calloutdiv.calloutdiv1:after {
+    left: 53%;
+    bottom: -19px;
+    margin-left: 7.5px;
+}
+
+.brussels_module .clickcontentbox3 .calloutdiv.calloutdiv2 {
+    top: 320px;
+    right: 1100px;
+    width: 600px;
+    height: 348px;
+}
+
+.brussels_module .clickcontentbox3 .calloutdiv.calloutdiv2:after {
+    right: -19px;
+    bottom: 88px;
+    margin-left: 7.5px;
+}
+
+/***box4***/
+.brussels_module .clickcontentbox4 .calloutdiv.calloutdiv1 {
+    width: 334px;
+    height: 165px;
+}
+
+.brussels_module .clickcontentbox4 .calloutdiv.calloutdiv1:after {
+    left: 56%;
+    bottom: -19px;
+    margin-left: 7.5px;
+}
+
+.brussels_module .clickcontentbox4 .calloutdiv.calloutdiv2 {
+    top: 320px;
+    right: 1100px;
+    width: 520px;
+    height: 292px;
+}
+
+.brussels_module .clickcontentbox4 .calloutdiv.calloutdiv2:after {
+    right: -19px;
+    bottom: 53px;
+    margin-left: 7.5px;
+}
+
+/* screen4 css end*/
+
+/* screen5 css */
+.brussels_module #myVideo5 {
+    position: absolute;
+    right: 0;
+    top: -10%;
+    left: -2%;
+    bottom: 0;
+    width: 104%;
+    height: 120%;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.brussels_module .overlayscreen5 {
+    background: rgba(0, 46, 70, 0.9);
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    transition: all ease 1.0s;
+    z-index: 1;
+}
+
+.brussels_module .overlayscreen5.screen5add {
+    width: 100%;
+}
+
+.brussels_module .scrn5contantdiv {
+    color: #fff;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    top: 30px;
+    left: 0px;
+}
+
+.brussels_module .scrn5contantdiv p {
+    color: #fff;
+    font-size: 36px;
+    width: 100%;
+    margin-bottom: 35px;
+    letter-spacing: 0.5px;
+    font-family: 'helveticaneuethin';
+    font-style: italic;
+    line-height: 43px;
+    padding-right: 60px;
+}
+
+.brussels_module .scrn5contantdiv p#scrn5_6 {
+    padding-right: 310px;
+}
+
+.brussels_module .scrn5contantdiv .rightsec {
+    position: absolute;
+    right: 112px;
+    top: 12vh;
+    width: 60%;
+}
+
+.brussels_module .scrn5contantdiv .leftsec {
+    position: absolute;
+    left: 13.2vh;
+    top: 6.9vh;
+}
+
+.brussels_module .scrn5contantdiv .roundbox {
+    background: #00baed;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.brussels_module .scrn5contantdiv .roundbox .flagimg {
+    position: absolute;
+    left: 84px;
+    top: 5px;
+}
+
+.brussels_module .scrn5contantdiv .roundbox .flagimg .blbcolor {
+    /*fill: #52a9d8;*/
+    transition: all ease 0.5s;
+}
+
+.brussels_module .scrn5contantdiv .roundbox .flagimg .blbcolor.makcolor {
+    fill: rgba(255, 204, 27);
+}
+
+.brussels_module .scrn5contantdiv .flagimg .flagimagebox {
+    position: absolute;
+    top: 0px;
+    left: -82px;
+    /* width: 328px;
+    height: 355px;
+    background: url(../images/pages/global/Flage_Sprite_Vertical.png);
+    background-repeat: no-repeat;
+    animation: Fplay .8s steps(25) infinite;
+    transform: scale(1.09);*/
+}
+
+/*.brussels_module .scrn5contantdiv .flagimg .flagimagebox svg#Layer_1 {
+    margin: 28px 88px 88px 88px;
+}*/
+.brussels_module .bulbline {
+    position: absolute;
+    top: 60px;
+    left: 86px;
+}
+
+.brussels_module .bulbline svg {
+    transform: scale(1.3);
+}
+
+.brussels_module .bulbline {
+    -webkit-animation: leaves 2s linear infinite;
+    -moz-animation: leaves 2s linear infinite;
+    animation: leaves 2s linear infinite;
+}
+
+/*@keyframes useranisleafs {
+    0% {
+        opacity: 1;
+    }
+    50% {
+          opacity: 0;                    
+    }
+    100% {
+          opacity: 1;                   
+    }
+}*/
+/*@keyframes leaves {
+    0% {
+        transform: scale(0);
+        opacity: 1
+    }
+
+    50% {
+        transform: scale(0.5);
+        opacity: 1
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0
+    }
+}*/
+
+.brussels_module .bulb {
+    position: absolute;
+    top: 110px;
+    left: 146px;
+}
+
+/*.brussels_module svg.wave1 {
+    position: absolute;
+    left: 105px;
+    bottom: -57px;
+    -webkit-animation: movewavesupplier 12s linear infinite;
+    -moz-animation: movewavesupplier 12s linear infinite;
+    animation: movewavesupplier 12s linear infinite;
+}
+.brussels_module svg.wave2 {
+    position: absolute;
+    left: 230px;
+    bottom: -28px;
+    -webkit-animation: movewavesupplier 12s linear infinite;
+    -moz-animation: movewavesupplier 12s linear infinite;
+    animation: movewavesupplier 12s linear infinite;
+}*/
+
+@keyframes Fplay {
+    100% {
+        background-position: 0 -8875px;
+    }
+}
+
+.brussels_module .scrn5contantdiv .rightsec h1 {
+    color: rgba(0, 204, 255, 0.9);
+    font-size: 78.5px;
+    font-family: 'helveticaneuethin';
+    margin: 15px 0 40px 0;
+    letter-spacing: 0px;
+    font-style: italic;
+}
+
+.brussels_module .scrn5contantdiv .rightsec span {
+    font-family: 'helveticaneuemedium';
+    font-size: 33px;
+    letter-spacing: 2px;
+}
+
+.brussels_module .scrn5contantdiv .roundbox .flagimg img {
+    width: 410px;
+}
+
+.brussels_module .scrn5contantdiv .globeIconbx {
+    margin-top: 10px;
+    margin-left: 0px;
+    display: inline-block;
+    width: 336px;
+}
+
+.brussels_module .scrn5contantdiv .globeIconbx {
+    cursor: pointer;
+}
+
+.brussels_module .scrn5contantdiv .globeIconbx:hover svg path {
+    fill: rgba(0, 204, 255, 0.9) !important;
+}
+
+.brussels_module .scrn5contantdiv .globeIcon {
+    /*display: inline-block;
+    position: relative;
+    pointer-events: none;
+    margin-top: 15px;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    position: relative;
+    background-position: -379px -36px;
+    width: 68px !important;
+    height: 68px !important;*/
+    transition: all 0.5s ease 0s;
+    position: relative;
+    pointer-events: none;
+    margin-top: 1px;
+    background-position: -384px -194px;
+    width: 60px;
+    height: 60px;
+}
+
+.brussels_module .scrn5contantdiv .globeIcon svg path {
+    fill: #fff !important;
+    transition: all ease 0.5s;
+}
+
+.brussels_module .scrn5contantdiv .globeIcon svg:hover {
+    fill: #45C7F4 !important;
+}
+
+.brussels_module .scrn5contantdiv .globeIcon span {
+    position: absolute;
+    left: 75px;
+    top: 11px;
+    width: 260px;
+    font-size: 24px !important;
+    transition: all ease 0.5s;
+    background-position: -379px -192px;
+    letter-spacing: 0px;
+}
+
+/*.scrn4contantdiv .globeIcon:hover {
+    background-image: url(../images/pages/global/globe-hover.png);
+    pointer-events: auto;
+    cursor: pointer;transform: scale(1.022);
+}*/
+.brussels_module .scrn5contantdiv .globeIconbx:hover svg {
+    fill: rgba(0, 204, 255, 0.9) !important;
+}
+
+.brussels_module .scrn5contantdiv .globeIconbx:hover .globeIcon span {
+    color: rgba(0, 204, 255, 0.9)
+}
+
+.brussels_module .scrn5contantdiv .flagimg .flagimagebox .message_ic .dot.dot1,
+.outro_module .dot.dot1{
+    -webkit-animation: dotBlink 1.5s linear infinite;
+    -moz-animation: dotBlink 1.5s linear infinite;
+    animation: dotBlink 1.5s linear infinite;
+    animation-delay: 0s;
+}
+.brussels_module .scrn5contantdiv .flagimg .flagimagebox .message_ic .dot.dot2,
+.outro_module .dot.dot2{
+    -webkit-animation: dotBlink 1.5s linear infinite;
+    -moz-animation: dotBlink 1.5s linear infinite;
+    animation: dotBlink 1.5s linear infinite;
+    animation-delay: 0.5s;
+}
+.brussels_module .scrn5contantdiv .flagimg .flagimagebox .message_ic .dot.dot3,
+.outro_module .dot.dot3{
+    -webkit-animation: dotBlink 1.5s linear infinite;
+    -moz-animation: dotBlink 1.5s linear infinite;
+    animation: dotBlink 1.5s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes dotBlink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+/*.scrn4contantdiv .globeIcon:hover span {
+    color: rgba(0, 204, 255, 0.9)
+}*/
+@media (max-width: 1366px) {
+
+       .CTABtn_con#brussels_con{
+        position: absolute;
+        width: 235px;
+        height: 45px;
+        margin: 0px 0px;
+        overflow: hidden;
+        left: 155px;
+        top: -5px;
+        display: none;
+    }
+    .CTABtn_con#brussels_con.disable_cta{
+        display: none !important;
+    }
+
+    .CTABtn_con#brussels_con:after{
+        content: "";
+        position: absolute;
+        width: 93%;
+        height: 120px;
+        top: -24px;
+        transform: rotate(10deg);
+        background: #26c5ff;
+        /* background: #000; */
+        left: 4px;
+    }
+    .CTABtn_con#brussels_con .cta_text_con{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all ease 0.5s;
+        cursor: pointer;
+        font-style: normal;
+        font-size: 20px;
+        font-family: 'helveticaneuemedium';
+        position: absolute;
+        top: 0;
+        letter-spacing: 0px;
+        left: 0;
+        z-index: 1;
+        color: #fff;
+    }
+    .CTABtn_con#brussels_con:hover .cta_text_con{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+
+
+     .CTABtn#brusselsCtabtn {
+            position: absolute;
+            width: 205px;
+            height: 45px;
+            margin: 0px 0px;
+            overflow: hidden;
+            left: 155px;
+            top: -5px;
+        }
+        .CTABtn#brusselsCtabtn .cta_text {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all ease 0.5s;
+            cursor: pointer;
+            font-style: normal;
+            font-size: 20px;
+            font-family: 'helveticaneuemedium';
+            position: absolute;
+            top: 0;
+            letter-spacing: 0px;
+            left: 0;
+            z-index: 1;
+            color: #fff;
+        }
+        .CTABtn#brusselsCtabtn:after {
+            content: "";
+            position: absolute;
+            width: 90%;
+            height: 120px;
+            top: -24px;
+            transform: rotate(10deg);
+            background: #26c5ff;
+            /* background: #000; */
+            left: 6px;
+        }
+    .brussels_module #screen4 .ic_text .ic_textbx:after{    border-width: 40px 8px 0 0;}
+    .brussels_module #screen1 #myVideo {
+        height: 125%;
+        width: 104%;
+        min-height: 117%;
+        min-width: 100%;
+    }
+
+    .brussels_module #screen1 .flagbox {
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%)!important;
+        width: 400px;
+        height: 400px;
+    }
+
+    .brussels_module #screen1 .flagcontner {
+        width: 400px;
+        height: 400px;
+    }
+
+    .brussels_module #screen1 .fish1 {
+        transform: scale(0.62);
+        top: 83px;
+        left: -93px;
+    }
+
+    .brussels_module #screen1 .fish2 {
+        transform: scale(0.62);
+        top: 20px;
+        left: 205px;
+    }
+
+    .brussels_module #screen1 .glasses {
+        transform: scale(0.7);
+        left: 47px;
+        top: -87px;
+        width: 170px;
+    }
+
+  .brussels_module #screen1 .textbox {
+    left: 50px;
+    bottom: 100px;
+    width: 80%;
+}
+
+    .brussels_module #screen1 .textbox h1 i {
+        font-size: 122px;
+        margin-left: 0px;
+        line-height: 100px;
+    }
+
+    .brussels_module #screen1 .textbox p {
+    font-size: 24px;
+    bottom: 285px;
+    line-height: 28px;
+    margin-left: 83px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+    .brussels_module #screen1 .textbox p label {
+        padding-left: 50px;
+    }
+
+    .brussels_module #screen1 .textbox p span {
+        padding: 4px 0 0 65px;
+    }
+
+    .brussels_module #screen1 .flag img {
+        width: 61%;
+        top: -28px;
+        left: 78px;
+    }
+
+    .brussels_module #screen1 .flag .flagimagebox svg#Layer_1 {
+        height: 255px;
+        width: 444px;
+    }
+
+    .brussels_module #screen1 .line {
+        right: 10%
+    }
+
+    .brussels_module #screen1 .mask {
+        height: 657px;
+    }
+
+    .brussels_module #screen1 .line.lineanim {
+        height: 657px;
+    }
+
+    .brussels_module #screen1 .flag .flagimagebox {
+        top: -93px;
+        left: 18px;
+        transform: scale(0.68);
+    }
+
+    .brussels_module #screen1 #background-wrap {
+        width: 100%;
+        position: absolute;
+        height: 680px;
+        right: 0;
+        top: -160px;
+        z-index: 1;
+    }
+
+    .brussels_module #screen2 #myVideo2 {
+       /* top: -53px;
+        height: 125%;
+        width: 104%;
+        min-height: 117%;
+        min-width: 100%;*/
+    }
+
+    .brussels_module #screen2 .overlayLeft2.add2 {
+        right: 65%;
+    }
+
+    .brussels_module #screen2 .line2 {
+        left: 283px;
+    }
+
+    .brussels_module #screen2 .mask2 {
+        height: 657px;
+    }
+
+    .brussels_module #screen2 .line2.lineanim2 {
+        height: 657px;
+    }
+
+    .brussels_module #screen2 .scrn2contantdiv {
+    letter-spacing: 0.5px;
+    padding: 75px 20px 50px 56px;
+    width: 488px;
+}
+
+    .brussels_module #screen2 .scrn2contantdiv h2 {
+    font-size: 50px;
+    letter-spacing: 1px;
+    padding-left: 0px;
+    line-height: 48px;
+}
+
+    .brussels_module #screen2 .scrn2contantdiv label {
+        padding-left: 40px;
+    }
+
+    .brussels_module #screen2 .scrn2contantdiv p {
+    color: #fff;
+    padding-right: 10px;
+    font-size: 22px;
+    /* font-family: 'helveticaneuelight'; */
+    margin: 15px 40px 0px 0;
+    line-height: 25px;
+    letter-spacing: 0px;
+}
+
+    .brussels_module #screen2 .scrn2contantdiv span {
+        font-size: 23px;
+        letter-spacing: 1px;
+        margin-bottom: 0px;
+        padding-left: 30px;
+        padding-top: 9px;
+    }
+
+    .brussels_module #screen2 .stbtncontner {
+    width: 230px;
+    height: 44px;
+    margin: 30px -5px;
+}
+
+    .brussels_module #screen2 .startbtn {
+    width: 220px;
+    height: 44px;
+    font-size: 20px;
+}
+
+    .brussels_module #screen3 .scrn3contantdiv {
+        letter-spacing: 0.5px;
+        padding: 70px 20px 50px 56px;
+        width: 550px;
+    }
+
+    .brussels_module #screen3 .scrn3contantdiv h2 {
+        font-size: 50px;
+        letter-spacing: 1px;
+        padding-left: 0px;
+        line-height: 50px;
+    }
+
+    .brussels_module #screen3 .scrn3contantdiv label {
+        padding-left: 40px;
+    }
+
+    .brussels_module #screen3 .scrn3contantdiv p {
+        letter-spacing: 1px;
+        font-size: 21px;
+        line-height: 25px;
+        padding-right: 150px;
+        margin: 10px 0 30px 0;
+    }
+
+    .brussels_module #screen3 .scrn3contantdiv p.p2 {
+        padding-right: 205px;
+    }
+
+    .brussels_module #screen3 .scrn3contantdiv span {
+        font-size: 23px;
+        letter-spacing: 1px;
+        margin-bottom: 0px;
+        padding-left: 110px;
+    }
+
+    .brussels_module #screen3 .divebtn:hover span {
+        transform: scale(1.03);
+    }
+
+    .brussels_module #screen3 .leftbox span {
+        font-size: 23px;
+    }
+
+    .brussels_module #screen3 .divebtn span {
+        font-size: 31px;
+    }
+
+    .brussels_module #screen3 .leftbox h1 {
+        font-size: 56px;
+        line-height: 55px;
+        padding-left: 20px;
+    }
+
+    .brussels_module #screen3 .divebtn {
+        transform: scale(0.58);
+        margin-top: 15px;
+        margin: 0;
+        margin-left: -50px !important;
+        width: 229px;
+        margin-top: 15px;
+    }
+
+    .brussels_module #screen3 #myVideo3 {
+      /*  top: -53px;
+        height: 125%;
+        width: 104%;
+        min-height: 117%;
+        min-width: 100%;*/
+    }
+
+    .brussels_module #screen3 .centerbox {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 4;
+    }
+    .brussels_module #screen3 .centerbox .cb{
+        position: absolute;
+        display: none;
+        background: rgba(38,198,255,0.9);
+        color: #fff;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.7px;
+        font-family: 'helveticaneuethin';
+        font-style: italic;
+        padding: 20px;
+    }
+    .brussels_module #screen3 .centerbox .cb_0{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    .brussels_module #screen3 .centerbox .cb_1{
+        width: 285px;
+        top: 30px;
+        left: 190px;
+    }
+    .brussels_module #screen3 .centerbox .cb_2{
+        width: 265px;
+        top: 37px;
+        left: 340px;
+    }
+    .brussels_module #screen3 .centerbox .cb_3{
+        width: 285px;
+        top: 20px;
+        left: 465px;
+    }
+    .brussels_module #screen3 .centerbox .cb_4{
+        width: 235px;
+        top: 40px;
+        left: 653px;
+    }
+    .brussels_module #screen3 .centerbox .cb:after{
+        content: "";
+        position: absolute;
+        right: -9px;
+        bottom: 30px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 7.5px 0 7.5px 10px;
+        border-color: transparent transparent transparent rgba(38,198,255,0.9);
+    }
+    .brussels_module #screen3 .centerbox .cb.cb_1:after{
+        bottom: 40px;
+    }
+    .brussels_module #screen3 .centerbox .cb.cb_2:after{
+        bottom: 60px;
+    }
+    .brussels_module #screen3 .centerbox .cb.cb_3:after{
+        bottom: 35px;
+    }
+    .brussels_module #screen3 .centerbox .cb.cb_4:after{
+        bottom: 55px;
+    }
+    .brussels_module #screen3 .centerbox .charBox{}
+    .brussels_module #screen3 .centerbox .charBox1{
+        position: absolute;
+        top: 43px;
+        left: 425px;
+        width: 168px;
+    }
+    .brussels_module #screen3 .centerbox .charBox2{
+        position: absolute;
+        top: 84px;
+        left: 618px;
+        width: 110px;
+    }
+    .brussels_module #screen3 .centerbox .charBox3{
+        position: absolute;
+        top: 73px;
+        left: 733px;
+        width: 147px;
+    }
+    
+    .brussels_module #screen3 .centerbox .charBox4{
+        position: absolute;
+        top: 99px;
+        left: 891px;
+        width: 81px;
+    }
+
+    /*.brussels_module #screen3 .centerbox div img {
+        width: 260px;
+    }
+
+    .brussels_module #screen3 .centerbox div span {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .brussels_module #screen3 .centerbox div p {
+        font-size: 15px;
+        line-height: 17px;
+        padding-top: 15px;
+    }
+
+    .brussels_module #screen3 .centerbox div.box2 p {
+        padding: 15px 30px 0 20px;
+    }
+
+    .brussels_module #screen3 .centerbox div.box2 {
+        margin-left: 70px;
+    }
+
+    .brussels_module #screen3 .centerbox div {
+        width: 266px;
+    }
+
+    .brussels_module #screen3 .leftbox {
+        top: 80px;
+        left: 50px;
+    }
+
+    .brussels_module #screen3 .centerbox {
+        left: 360px;
+        top: -180px;
+        width: 690px;
+    }
+
+    .brussels_module #screen3 .centerbox .box2 {
+        top: 674px;
+    }*/
+
+    .brussels_module #myVideo5 {
+        height: 118%;
+        width: 104%;
+        min-height: 117%;
+        min-width: 100%;
+    }
+
+    .brussels_module .scrn5contantdiv {
+        color: #fff;
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        top: 40px;
+        left: 8px;
+    }
+    .brussels_module .scrn5contantdiv .rightsec {
+        position: absolute;
+        right: 0px;
+        top: 8vh;
+        width: 64%;
+    }
+
+    .brussels_module .scrn5contantdiv .rightsec {
+        padding-right: 49px;
+    }
+
+    .brussels_module .scrn5contantdiv .rightsec span {
+       font-size: 18px;
+       letter-spacing: 1.8px;
+    }
+
+    .brussels_module .scrn5contantdiv .globeIcon {
+        width: 40px !important;
+        height: 52px !important;
+    }
+
+    .brussels_module .scrn5contantdiv .globeIcon span {
+        left: 48px;
+        top: 17px;
+        width: 260px;
+        font-size: 22px !important
+    }
+
+    .brussels_module .scrn5contantdiv .roundbox {
+        width: 255px;
+        height: 255px;
+    }
+
+    .brussels_module .scrn5contantdiv .roundbox .flagimg {
+        top: 2px;
+        left: 39px;
+    }
+
+    .brussels_module .scrn5contantdiv .roundbox .flagimg img {
+        width: 243px;
+    }
+
+    .brussels_module .scrn5contantdiv .flagimg .flagimagebox {
+        transform: scale(0.7);
+        top: -55px;
+        left: -90px;
+    }
+
+    .brussels_module .scrn5contantdiv .flagimg .flagimagebox svg#Layer_1 {
+        /*width: 400px;*/
+    }
+
+    .brussels_module .scrn5contantdiv .flagimg .flagimagebox svg#Layer_1 {
+        margin: 0;
+    }
+    .brussels_module .scrn5contantdiv .flagimg .flagimagebox .message_ic .dot.dot1,
+    .outro_module .dot.dot1{
+        -webkit-animation: dotBlink 1.5s linear infinite;
+        -moz-animation: dotBlink 1.5s linear infinite;
+        animation: dotBlink 1.5s linear infinite;
+        animation-delay: 0s;
+    }
+    .brussels_module .scrn5contantdiv .flagimg .flagimagebox .message_ic .dot.dot2,
+    .outro_module .dot.dot2{
+        -webkit-animation: dotBlink 1.5s linear infinite;
+        -moz-animation: dotBlink 1.5s linear infinite;
+        animation: dotBlink 1.5s linear infinite;
+        animation-delay: 0.5s;
+    }
+    .brussels_module .scrn5contantdiv .flagimg .flagimagebox .message_ic .dot.dot3,
+    .outro_module .dot.dot3{
+        -webkit-animation: dotBlink 1.5s linear infinite;
+        -moz-animation: dotBlink 1.5s linear infinite;
+        animation: dotBlink 1.5s linear infinite;
+        animation-delay: 1s;
+    }
+
+    /*@keyframes dotBlink {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0.5;
+        }
+    }*/
+
+    .brussels_module .scrn5contantdiv .rightsec h1 {
+        margin: 15px 0 29px 0;
+        letter-spacing: 1.9px;
+        font-size: 44px;
+    }
+
+    .brussels_module .scrn5contantdiv p {
+        font-size: 22px;
+        margin-bottom: 24px;
+        padding-right: 80px;
+        line-height: 28px;
+        letter-spacing: 0.3px;
+    }
+
+    .brussels_module .scrn5contantdiv .leftsec {
+        left: 15.44vh;
+        top: 5vh;
+    }
+
+    .brussels_module .scrn5contantdiv .globeIconbx {
+        margin-top: -5px;
+    }
+
+    .brussels_module .scrn5contantdiv .globeIcon svg {
+        width: 38px;
+    }
+
+    .brussels_module .scrn5contantdiv .globeIcon span {
+        font-size: 15px !important;
+        letter-spacing: 0px;
+    }
+
+    .brussels_module .scrn5contantdiv .rightsec {
+        width: 735px;
+        right: 170px;
+    }
+
+    .brussels_module .scrn5contantdiv p#scrn5_6 {
+        padding-right: 130px;
+    }
+
+    .brussels_module .bulbline {
+        position: absolute;
+        top: 64px;
+        left: 52px;
+    }
+
+    .brussels_module .bulb {
+        position: absolute;
+        top: 110px;
+        left: 112px;
+    }
+
+    .brussels_module #screen4 #myVideo4 {
+        height: 118%;
+        width: 100%;
+        min-height: 57%;
+        min-width: 100%;
+    }
+
+    .brussels_module #screen4 #background-wrap {
+        right: 281px;
+    }
+
+    .brussels_module #screen4 .leftbox {
+        left: 30px;
+        top: 40px;
+        width: 485px;
+    }
+
+    .brussels_module #screen4 .bobule {
+        width: 105px;
+        height: 105px;
+        left: 130px;
+        top: 50px;
+    }
+
+    .brussels_module #screen4 .bobule.bbl1 {
+        width: 45px;
+        height: 45px;
+        left: 182px;
+        top: 174px;
+    }
+
+    .brussels_module #screen4 .bobule.bbl2 {
+        width: 23px;
+        height: 23px;
+        top: 137px;
+        left: 236px;
+    }
+
+    .brussels_module #screen4 .bobule.bbl3 {
+        width: 18px;
+        height: 18px;
+        top: 32px;
+        left: 104px;
+    }
+
+    .brussels_module #screen4 .arrowicon {
+        left: 134px;
+        top: 130px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .brussels_module #screen4 .arrowicon svg {
+        height: 100%;
+        width: 100%;
+    }
+
+    .brussels_module #screen4 .textarea {
+        top: 253px;
+        left: 44px;
+    }
+
+    .brussels_module #screen4 .textarea span {
+        font-size: 16px;
+    }
+
+    .brussels_module #screen4 .textarea p {
+        font-size: 37px;
+        padding-top: 5px;
+        line-height: 47px;
+    }
+
+    .brussels_module #screen4 .textarea p label {
+        padding-left: 30px;
+    }
+
+    /*.brussels_module #screen4 .clickbox .bubblediv svg {width: 100%;height: 100%;}
+    .brussels_module #screen4 .clickbox .bubblediv {width: 140px;height: 140px;}
+    .brussels_module #screen4 #background-wrap {right: 28px;}
+    .brussels_module #screen4 .clickbox .bubblediv div svg {width: 45px;height: 45px;}
+    .brussels_module #screen4 .clickbox .bubblediv span{width: 60%;}
+    .brussels_module #screen4 .clickbox .bubblediv span {font-size: 12px;bottom: 30px;left: 30px;line-height: 13px;}
+    .brussels_module #screen4 .clickbox .bubblediv.clickyes div svg {position: relative;top: -11px;left: 2px;width: 45px;}
+    .brussels_module #screen4 .clickbox{width: 830px;}
+    .brussels_module #screen4 .clickbox .bubblediv.clickbbl span, .brussels_module #screen4 .clickbox .bubblediv.clickbb4 span {bottom: 40px;}
+    .brussels_module #screen4 .clickshowItm {left: 70px;top: 60px;}
+    .brussels_module #screen4 .clickshowItm .showitem div span {font-size: 30px;}
+    .brussels_module #screen4 .clickshowItm #clickbb2 span{    line-height: 37px}
+    .brussels_module #screen4 .clickshowItm .showitem p {font-size: 16px;line-height: 18px;padding-top: 20px;}
+    .brussels_module #screen4 .clickshowItm .showitem img {width: 330px;}
+    .brussels_module #screen4 .clickshowItm .showitem svg {width: 44px;left: -43px;top: -10px;}*/
+
+    .brussels_module #screen4 .scrn4contantdiv {
+        letter-spacing: 0.5px;
+        padding: 20px 20px 50px 55px;
+        width: 500px;
+    }
+
+    .brussels_module #screen4 .scrn4contantdiv h2 {
+        font-size: 50px;
+        padding-left: 0px;
+        line-height: 52px;
+        letter-spacing: 1px;
+    }
+
+    .brussels_module #screen4 .scrn4contantdiv label {
+        padding-right: 5px !important;
+    }
+
+    .brussels_module #screen4 .scrn4contantdiv span {
+        margin-left: 15px;
+        font-size: 24px;
+        padding-top: 2px;
+    }
+
+    .brussels_module #screen4 .scrn4contantdiv p {
+        padding-right: 55px;
+        font-size: 21px;
+        color: rgba(16, 56, 79, 1);
+        margin: 25px 0 20px 0;
+        line-height: 25px;
+        letter-spacing: 0.4px;
+    }
+
+    .brussels_module #screen4 .clickboxWrap {
+        position: absolute;
+        top: 85px;
+        right: 30px;
+        width: 300px;
+        height: 300px;
+        z-index: 3;
+    }
+
+    .brussels_module #screen4 .clickbox {
+        position: relative;
+        height: 90px;
+        width: 300px;
+        margin-bottom: 5px;
+    }
+
+    .brussels_module #screen4 .clickbox .ic_img_wrap {
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transition: all ease 0.5s;
+        z-index: 1;
+    }
+
+    .brussels_module #screen4 .clickbox .ic_img {
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        top: 0px;
+        left: 0px;        
+        z-index: 1;
+    }
+
+    .brussels_module #screen4 .clickbox.clickbox1 .ic_img {
+        background: url(../images/pages/m1_t9_p1/img1.png) no-repeat;
+        background-size: 100%;
+    }
+
+    .brussels_module #screen4 .clickbox.clickbox2 .ic_img {
+        background: url(../images/pages/m1_t9_p1/img2.png) no-repeat;
+        background-size: 100%;
+    }
+
+    .brussels_module #screen4 .clickbox.clickbox3 .ic_img {
+        background: url(../images/pages/m1_t9_p1/img3.png) no-repeat;
+        background-size: 100%;
+    }
+
+    .brussels_module #screen4 .clickbox.clickbox4 .ic_img {
+        background: url(../images/pages/m1_t9_p1/img4.png) no-repeat;
+        background-size: 100%;
+    }
+
+    .brussels_module #screen4 .clickbox.clickbox1 .ic_img.active {
+        background: url(../images/pages/m1_t9_p1/img1_active.png) no-repeat;
+        background-size: 100%;
+    }
+
+    .brussels_module #screen4 .clickbox.clickbox2 .ic_img.active {
+        background: url(../images/pages/m1_t9_p1/img2_active.png) no-repeat;
+        background-size: 100%;
+    }
+
+    .brussels_module #screen4 .clickbox.clickbox3 .ic_img.active {
+        background: url(../images/pages/m1_t9_p1/img3_active.png) no-repeat;
+        background-size: 100%;
+    }
+
+    .brussels_module #screen4 .clickbox.clickbox4 .ic_img.active {
+        background: url(../images/pages/m1_t9_p1/img4_active.png) no-repeat;
+        background-size: 100%;
+    }
+
+    .brussels_module #screen4 .ic_textbx {
+        position: absolute;
+        top: 25px;
+        left: 80px;
+        width: 100px;
+        height: 60px;
+        vertical-align: middle;
+        background: #ffffff;
+        transition: all ease 0.5s;
+        cursor: pointer;
+        color: #26C6FF;
+        padding: 0px 20px;
+        font-size: 28px;
+        line-height: 60px;
+        letter-spacing: 0.7px;
+        font-style: italic;
+        font-family: 'helveticaneuelight';
+    }
+
+    .brussels_module #screen4 .ic_textbx b {
+        font-style: normal;
+    }
+
+    .brussels_module #screen4 .ic_textbx:after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: -10px;
+        width: 0;
+        height: 0;
+        transition: all ease 0.5s;
+        border-style: solid;
+        border-width: 40px 10px 0 0;
+        border-color: #ffffff transparent transparent transparent;
+    }
+
+    .brussels_module #screen4 .ic_text:hover {
+        background: #26C6FF;
+        color: #ffffff;
+    }
+
+    .brussels_module #screen4 .ic_textbx:hover:after {
+        border-color: #26c5ff transparent transparent transparent;
+    }
+
+    .brussels_module #screen4 .ic_text.active {
+        background: #26C6FF;
+        color: #ffffff;
+        pointer-events: none;
+    }
+
+    .brussels_module #screen4 .ic_text.active:after {
+        border-color: #26c5ff transparent transparent transparent;
+        pointer-events: none;
+    }
+
+    .brussels_module #screen4 .ic_textbx {
+        top: 25px;
+        left: 80px;
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+        letter-spacing: 0.7px;
+        font-style: italic;
+    }
+
+    .brussels_module .clickcontentWrap {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        display: none;
+    }
+
+    .brussels_module .clickcontentbox {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.9px;
+        color: #ffffff;
+        font-style: italic;
+        font-family: 'helveticaneuelight';
+        display: none;
+    }
+
+    .brussels_module .clickcontentbox.clickcontentbox1 {}
+
+    .brussels_module .clickcontentbox.clickcontentbox2 {}
+
+    .brussels_module .clickcontentbox.clickcontentbox3 {}
+
+    .brussels_module .clickcontentbox.clickcontentbox4 {}
+
+    .brussels_module .calloutdiv {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .brussels_module .calloutdiv.calloutdiv1 {
+        bottom: 405px;
+        right: 390px;
+        background: #3accff;
+        padding: 20px 25px;
+    }
+
+    .brussels_module .calloutdiv.calloutdiv2 {
+        top: 210px;
+        right: 785px;
+        background: #338198;
+        padding: 20px 25px;
+    }
+
+    .brussels_module .calloutdiv.calloutdiv1:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 7.5px 0 7.5px;
+        border-color: #3accff transparent transparent transparent;
+    }
+
+    .brussels_module .calloutdiv.calloutdiv2:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 7.5px 0 7.5px 10px;
+        border-color: transparent transparent transparent #338098;
+    }
+
+    /***box1***/
+    .brussels_module .clickcontentbox1 .calloutdiv.calloutdiv1 {
+        width: 215px;
+        height: 95px;
+    }
+
+    .brussels_module .clickcontentbox1 .calloutdiv.calloutdiv1:after {
+        left: 50%;
+        bottom: -9px;
+        margin-left: 7.5px;
+    }
+
+    .brussels_module .clickcontentbox1 .calloutdiv.calloutdiv2 {
+    width: 445px;
+    height: 204px;
+    top: 260px;
+}
+
+    .brussels_module .clickcontentbox1 .calloutdiv.calloutdiv2:after {
+        right: -9px;
+        bottom: 58px;
+        margin-left: 7.5px;
+    }
+
+    /***box2***/
+    .brussels_module .clickcontentbox2 .calloutdiv.calloutdiv1 {
+        width: 270px;
+        height: 130px;
+    }
+
+    .brussels_module .clickcontentbox2 .calloutdiv.calloutdiv1:after {
+        left: 59%;
+        bottom: -9px;
+        margin-left: 7.5px;
+    }
+
+    .brussels_module .clickcontentbox2 .calloutdiv.calloutdiv2 {
+        top: 250px;
+        right: 835px;
+        width: 310px;
+        height: 150px;
+    }
+
+    .brussels_module .clickcontentbox2 .calloutdiv.calloutdiv2:after {
+        right: -9px;
+        bottom: 38px;
+        margin-left: 7.5px;
+    }
+
+    /***box3***/
+    .brussels_module .clickcontentbox3 .calloutdiv.calloutdiv1 {
+        width: 235px;
+        height: 115px;
+    }
+
+    .brussels_module .clickcontentbox3 .calloutdiv.calloutdiv1:after {
+        left: 53%;
+        bottom: -9px;
+        margin-left: 7.5px;
+    }
+
+    .brussels_module .clickcontentbox3 .calloutdiv.calloutdiv2 {
+        top: 160px;
+        right: 835px;
+        width: 435px;
+        height: 290px;
+    }
+
+    .brussels_module .clickcontentbox3 .calloutdiv.calloutdiv2:after {
+        right: -9px;
+        bottom: 88px;
+        margin-left: 7.5px;
+    }
+
+    /***box4***/
+    .brussels_module .clickcontentbox4 .calloutdiv.calloutdiv1 {
+        width: 250px;
+        height: 115px;
+    }
+
+    .brussels_module .clickcontentbox4 .calloutdiv.calloutdiv1:after {
+        left: 56%;
+        bottom: -9px;
+        margin-left: 7.5px;
+    }
+
+    .brussels_module .clickcontentbox4 .calloutdiv.calloutdiv2 {
+        top: 205px;
+        right: 835px;
+        width: 345px;
+        height: 210px;
+    }
+
+    .brussels_module .clickcontentbox4 .calloutdiv.calloutdiv2:after {
+        right: -9px;
+        bottom: 53px;
+        margin-left: 7.5px;
+    }
+    .brussels_module .screen_bg{width: 100%;   
+    background-size: 100% auto;
+    background-position: 0px 0px;
+    z-index: 1;}
+    .brussels_module #screen3 .centerbox .charBox1 {   
+    left: 581px;
+    width: 163px;
+    
+}
+.brussels_module #screen3 .centerbox .charBox2 {
+    
+    left: 771px;
+    width: 110px;
+    
+}
+.brussels_module #screen3 .centerbox .charBox3 {
+   
+   left: 886px;
+    width: 147px;
+   
+}
+.brussels_module #screen3 .centerbox .charBox4 {
+   
+    left: 1038px;
+    width: 80px;
+   
+}
+.brussels_module .screen_animbg.char1,.brussels_module .screen_animbg.char2,.brussels_module .screen_animbg.char3,.brussels_module .screen_animbg.char4 {    
+    background-size: 100% auto;
+    background-position: 0px 0px;
+    
+}
+.brussels_module #screen3 .centerbox .cb_1 {
+    width: 285px;
+    top: 100px;
+    left: 350px;
+}
+.brussels_module #screen3 .centerbox .cb_2 {
+    width: 265px;
+    top: 107px;
+    left: 502px;
+}
+.brussels_module #screen3 .centerbox .cb_3 {
+    width: 285px;
+    top: 80px;
+    left: 624px;
+}
+.brussels_module #screen3 .centerbox .cb_4 {
+    width: 235px;
+    top: 110px;
+    left: 801px;
+}
+.brussels_module #screen4 #myVideo4 {
+    height: 118%;
+    width: 100%;
+    min-height: 57%;
+    min-width: 100%;
+}
+.brussels_module #screen4 .ic_text:after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 10px;
+   
+}
+.brussels_module .calloutdiv.calloutdiv2 {
+    top: 252px;
+    right: 785px;
+    background: #338198;
+    padding: 20px 25px;
+    width: 440px;
+}
+.brussels_module .clickcontentbox2 .calloutdiv.calloutdiv2 {
+    top: 294px;
+    right: 785px;    
+}
+.brussels_module .clickcontentbox3 .calloutdiv.calloutdiv2 {
+    top: 230px;
+    right: 785px;
+    width: 460px;
+    height: 240px;
+}
+.brussels_module .clickcontentbox4 .calloutdiv.calloutdiv2 {
+    top: 251px;
+    right: 785px;
+    width: 375px;
+    height: 200px;
+}
+
+
+
+
+
+
+}
+
+.brussels_module .container,
+.brussels_module .row,
+.brussels_module .slide1 {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    padding: 0px;
+}
+
+.brussels_module .container {
+    background: url(../images/pages/preloadBg/2.jpg) no-repeat top 0px center;
+    background-size: cover;
+}
+
+.brussels_module .warpperarea {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.brussels_module .local_player {
+    visibility: hidden;
+    position: absolute;
+}
+
+.brussels_module .whole_p_div {
+    position: absolute;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+
+.brussels_module .whole_p_div img {
+    width: 100%;
+    opacity: 0.5;
+    margin-top: -60px;
+}
+
+/*...........................................*/
+.brussels_module #screen1 #background-wrap {
+    width: 100%;
+    position: absolute;
+    height: 1002px;
+    right: 0;
+    top: -200px;
+    z-index: 1;
+}
+
+.brussels_module #screen1 #background-wrap .bubble {
+    background: #c6ebfb !important;
+}
+
+.brussels_module #screen3 #background-wrap {
+    width: 100%;
+    position: absolute;
+    height: 1020px;
+    right: 0px;
+    top: 0;
+}
+
+.brussels_module #screen4 #background-wrap {
+    width: 850px;
+    position: absolute;
+    height: 1020px;
+    right: 401px;
+    top: 0;
+}
+
+/*@-webkit-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-moz-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}*/
+
+@keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes animateBubble2 {
+    0% {
+        margin-top: 1000px;
+    }
+
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes animateBubble3 {
+    0% {
+        margin-top: 1000px;
+    }
+
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes animateBubble4 {
+    0% {
+        margin-top: 1000px;
+    }
+
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes animateBubble5 {
+    0% {
+        margin-top: 1000px;
+    }
+
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes animateBubble6 {
+    0% {
+        margin-top: 1000px;
+    }
+
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-webkit-keyframes sideWays {
+    0% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 50px;
+    }
+}
+
+@-moz-keyframes sideWays {
+    0% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 50px;
+    }
+}
+
+@keyframes sideWays {
+    0% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 50px;
+    }
+}
+
+/* ANIMATIONS */
+
+.brussels_module #screen4 .clickbox .clickbbl {
+    -webkit-animation: animateBubble 35s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 35s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 35s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    left: 52%;
+    top: -20%;
+}
+
+.brussels_module #screen4 .clickbox .clickbb2 {
+    -webkit-animation: animateBubble2 30s linear infinite, sideWays 2.5s ease-in-out infinite alternate;
+    -moz-animation: animateBubble2 30s linear infinite, sideWays 2.5s ease-in-out infinite alternate;
+    animation: animateBubble2 30s linear infinite, sideWays 2.5s ease-in-out infinite alternate;
+    left: -5%;
+    top: -10%;
+}
+
+.brussels_module #screen4 .clickbox .clickbb3 {
+    -webkit-animation: animateBubble3 28s linear infinite, sideWays 2.5s ease-in-out infinite alternate;
+    -moz-animation: animateBubble3 28s linear infinite, sideWays 2.5s ease-in-out infinite alternate;
+    animation: animateBubble3 28s linear infinite, sideWays 2.5s ease-in-out infinite alternate;
+    left: 15%;
+    top: 15%;
+}
+
+.brussels_module #screen4 .clickbox .clickbb4 {
+    -webkit-animation: animateBubble4 26s linear infinite, sideWays 1.8s ease-in-out infinite alternate;
+    -moz-animation: animateBubble4 26s linear infinite, sideWays 1.8s ease-in-out infinite alternate;
+    animation: animateBubble4 26s linear infinite, sideWays 1.8s ease-in-out infinite alternate;
+    left: 10%;
+    top: -15%;
+}
+
+.brussels_module #screen4 .clickbox .clickbb5 {
+    -webkit-animation: animateBubble5 31s linear infinite, sideWays 2.1s ease-in-out infinite alternate;
+    -moz-animation: animateBubble5 31s linear infinite, sideWays 2.1s ease-in-out infinite alternate;
+    animation: animateBubble5 31s linear infinite, sideWays 2.1s ease-in-out infinite alternate;
+    left: 50%;
+    top: -10%;
+}
+
+.brussels_module #screen4 .clickbox .clickbb6 {
+    -webkit-animation: animateBubble6 32s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    -moz-animation: animateBubble6 32s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    animation: animateBubble6 32s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    left: 40%;
+    top: 20%;
+}
+
+.brussels_module #screen4 .clickbox .clickbb7 {
+    -webkit-animation: animateBubble 26s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 26s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    animation: animateBubble 26s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    left: 24%;
+    top: -50%;
+}
+
+.brussels_module #screen4 .clickbox .clickbb8 {
+    -webkit-animation: animateBubble 30s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 30s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    animation: animateBubble 30s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    left: 70%;
+    top: -80%;
+}
+
+.brussels_module #screen4 .clickbox .clickbb9 {
+    -webkit-animation: animateBubble 27s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 27s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    animation: animateBubble 27s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    left: 0%;
+    top: -45%;
+}
+
+.brussels_module #screen4 .clickbox .clickbb10 {
+    -webkit-animation: animateBubble 29s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 29s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    animation: animateBubble 29s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    left: 27%;
+    top: -55%;
+}
+
+.brussels_module #screen4 .clickbox .clickbb11 {
+    -webkit-animation: animateBubble 31s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 31s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    animation: animateBubble 31s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    left: 45%;
+    top: -65%;
+}
+
+.brussels_module #screen4 .clickbox .clickbb12 {
+    -webkit-animation: animateBubble 30s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 30s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    animation: animateBubble 30s linear infinite, sideWays 2.3s ease-in-out infinite alternate;
+    left: 41%;
+    top: -25%;
+}
+
+.brussels_module .x1 {
+    -webkit-animation: animateBubble 35s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 35s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 35s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    left: -5%;
+    top: 5%;
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    transform: scale(0.1);
+}
+
+.brussels_module .x2 {
+    -webkit-animation: animateBubble 30s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 30s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    animation: animateBubble 30s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    left: 5%;
+    top: 80%;
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    transform: scale(0.4);
+}
+
+.brussels_module .x3 {
+    -webkit-animation: animateBubble 34s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 34s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 34s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    left: 10%;
+    top: 40%;
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    transform: scale(0.4);
+}
+
+.brussels_module .x4 {
+    -webkit-animation: animateBubble 28s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 28s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    animation: animateBubble 28s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    left: 20%;
+    top: 0;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    transform: scale(0.3);
+}
+
+.brussels_module .x5 {
+    -webkit-animation: animateBubble 36s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 36s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    animation: animateBubble 36s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    left: 30%;
+    top: 50%;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.brussels_module .x6 {
+    -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    left: 50%;
+    top: 0;
+    -webkit-transform: scale(0.45);
+    -moz-transform: scale(0.45);
+    transform: scale(0.45);
+}
+
+.brussels_module .x7 {
+    -webkit-animation: animateBubble 29s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 29s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 29s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    left: 65%;
+    top: 70%;
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    transform: scale(0.4);
+}
+
+.brussels_module .x8 {
+    -webkit-animation: animateBubble 31s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 31s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    animation: animateBubble 31s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    left: 80%;
+    top: 10%;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    transform: scale(0.3);
+}
+
+.brussels_module .x9 {
+    -webkit-animation: animateBubble 34s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 34s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    animation: animateBubble 34s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    left: 90%;
+    top: 50%;
+    -webkit-transform: scale(0.25);
+    -moz-transform: scale(0.25);
+    transform: scale(0.25);
+}
+
+.brussels_module .x10 {
+    -webkit-animation: animateBubble 36s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 36s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 36s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    left: 80%;
+    top: 80%;
+    -webkit-transform: scale(0.2);
+    -moz-transform: scale(0.2);
+    transform: scale(0.2);
+}
+
+/* OBJECTS */
+
+.brussels_module .bubble {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    /*  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    */
+    height: 80px;
+    position: absolute;
+    width: 80px;
+    background: rgba(40, 104, 142, 0.86);
+}
+
+.brussels_module .bubble:::::after {
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(70%, rgba(255, 255, 255, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    /* IE10+ */
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#00ffffff', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    content: "";
+    height: 180px;
+    left: 10px;
+    position: absolute;
+    width: 180px;
+}
+
+.layoutmg{
+    z-index: 12;
+    opacity: 0.7;
+    display: none;
+}
+
+.brussels_module #screen1 .starCircleWrap .star{opacity: 0;}
+

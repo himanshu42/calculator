@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questionBank>
+    <settings>
+        <isRandom val="false" />
+        <attempts val="2" />
+        <totalQuestion val="11" />
+        <!-- set 0 for all questions -->
+    </settings>
+    <sections>
+        <section sectiontext="Section 3 PSS Training and Education" sectiontopic="Healthcare Compliance" toolkitText="1" secID="3">
+            <questions>
+                <question questioIndex="1" type="MCQ" correctAnswer="1" section="0" severity="easy">
+                    <scenario orientation="Hor" imagePath="Img1.png" iconPath="icon_01.png">
+                        <![CDATA[Section 3 PSS Training and Education]]>
+                    </scenario>
+                    <scenarioInfo>
+                        <![CDATA[<span>Section 3 PSS Training and Education</span>]]>
+                    </scenarioInfo>
+                    <quesText>
+                        <![CDATA[A long time Philips Customer would like to use funds from a Flex Account from their latest purchase from Philips to pay for registration, travel, lodging, and the costs to attend Philips provided training.]]>
+                    </quesText>
+                    <iText>
+                        <![CDATA[Could this be OK?]]>
+                    </iText>
+                    <infoText>
+                        <![CDATA[<p>It may be appropriate to use a FSA for registration, travel, lodging and associated training and educational expenses. Payment from “Flex Accounts” must be clearly identified as a line item of commercially reasonable value in the sales agreement. It is the responsibility of the Philips employees making such arrangements to be sure the expenses are appropriately deducted from the flex account, and appropriately reported or disclosed to the customer.</p>]]>
+                    </infoText>
+                    <options>
+                        <option>
+                            <![CDATA[Yes]]>
+                        </option>
+                        <option>
+                            <![CDATA[No]]>
+                        </option> 
+                    </options>
+                    <feedback>
+                        <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">It may be appropriate to use a FSA for registration, travel, lodging and associated training and educational expenses. Payment from “Flex Accounts” must be clearly identified as a line item of commercially reasonable value in the sales agreement. It is the responsibility of the Philips employees making such arrangements to be sure the expenses are appropriately deducted from the flex account, and appropriately reported or disclosed to the customer.</p>]]>
+                        </correctFeedback>
+                        <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect.</p><p class="feedback_font">It may be appropriate to use a FSA for registration, travel, lodging and associated training and educational expenses. Payment from “Flex Accounts” must be clearly identified as a line item of commercially reasonable value in the sales agreement. It is the responsibility of the Philips employees making such arrangements to be sure the expenses are appropriately deducted from the flex account, and appropriately reported or disclosed to the customer.</p>]]>
+                        </incorrectFeedback>
+                        <incorrectFeedbackpop>
+                            <![CDATA[ ]]>
+                        </incorrectFeedbackpop>
+                    </feedback>
+                </question>
+            </questions>
+        </section>
+        <section sectiontext="Section 3.2 Communicating for The Safe &amp; Effective Use of Medical Technology" sectiontopic="Antitrust" toolkitText="2" secID="3.2">
+            <questions>
+                <question questioIndex="2" type="MCQ" correctAnswer="1" section="1" severity="easy">
+                    <scenario orientation="Ver" imagePath="Img2.png" iconPath="icon_04.png">
+                        <![CDATA[Section 3.2 Communicating for The Safe & Effective Use of Medical Technology]]>
+                    </scenario>
+                    <scenarioInfo>
+                        <![CDATA[<span>Section 3.2 Communicating for The Safe & Effective Use of Medical Technology</span>]]>
+                    </scenarioInfo>
+                    <quesText>
+                        <![CDATA[If we train a group of HCPs on the safe and effective use of portable equipment and/or software, is it appropriate to provide the “hands-on” training in a hotel or other meeting facility, other than a clinical facility?]]>
+                    </quesText>
+                    <iText>
+                        <![CDATA[Is this OK?]]>
+                    </iText>
+                    <infoText>
+                        <![CDATA[<p>The correct answer is Yes, but only if a training facility, medical institution, lab or other appropriate setting is not available and so long as the facility used is conducive to the training purpose.</p>]]>
+                    </infoText>
+                    <options>
+                        <option>
+                            <![CDATA[Yes]]>
+                        </option>
+                        <option>
+                            <![CDATA[No]]>
+                        </option>
+                    </options>
+                    <feedback>
+                        <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">The correct answer is Yes, but only if a training facility, medical institution, lab or other appropriate setting is not available and so long as the facility used is conducive to the training purpose.</p>]]>
+                        </correctFeedback>
+                        <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect.</p><p class="feedback_font">The correct answer is Yes, but only if a training facility, medical institution, lab or other appropriate setting is not available and so long as the facility used is conducive to the training purpose.</p>]]>
+                        </incorrectFeedback>
+                        <incorrectFeedbackpop>
+                            <![CDATA[]]>
+                        </incorrectFeedbackpop>
+                    </feedback>
+                </question> 
+            </questions>
+        </section>
+        <section sectiontext="Section 3.5 Continuing Medical Education Credits" sectiontopic="Export Control" toolkitText="3" secID="3.5">
+            <questions>
+                <question questioIndex="3" type="MCQ" correctAnswer="2" section="1" severity="easy">
+                    <scenario orientation="Hor" imagePath="Img3.png" iconPath="icon_07.png">
+                        <![CDATA[Section 3.5 Continuing Medical Education Credits]]>
+                    </scenario>
+                    <scenarioInfo>
+                        <![CDATA[<span>Section 3.5 Continuing Medical Education Credits</span>]]>
+                    </scenarioInfo>
+                    <quesText>
+                        <![CDATA[Philips purchased accredited continuing education training which it will provide to <br>healthcare professionals at a discounted rate. Philips wants to only offer this to<br>Customers most likely to make a purchase in the next year.]]>
+                    </quesText>
+                    <iText>
+                        <![CDATA[Is this permissible?]]>
+                    </iText>
+                    <infoText>
+                        <![CDATA[<p>The correct answer is No.</p><p>Philips may offer continuing education training at a reduced rate but Philips representatives cannot select the individual attendees on the basis of their status as a Philips customer or prospective customer. Such programs must be made available to a broad segment of interested health care providers in the community.</p>]]>
+                    </infoText>
+                    <options>
+                        <option>
+                            <![CDATA[Yes]]>
+                        </option>
+                        <option>
+                            <![CDATA[No]]>
+                        </option> 
+                    </options>
+                    <feedback>
+                        <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">The correct answer is No.</p><p class="feedback_font">Philips may offer continuing education training at a reduced rate but Philips representatives cannot select the individual attendees on the basis of their status as a Philips customer or prospective customer. Such programs must be made available to a broad segment of interested health care providers in the community.</p>]]>
+                        </correctFeedback>
+                        <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect.</p><p class="feedback_font">The correct answer is No.</p><p class="feedback_font">Philips may offer continuing education training at a reduced rate but Philips representatives cannot select the individual attendees on the basis of their status as a Philips customer or prospective customer. Such programs must be made available to a broad segment of interested health care providers in the community.</p>]]>
+                        </incorrectFeedback>
+                        <incorrectFeedbackpop>
+                            <![CDATA[]]>
+                        </incorrectFeedbackpop>
+                    </feedback>
+                </question>
+            </questions>
+        </section>
+
+        <section sectiontext="Section 4 Sponsorships, Grants, and Supporting Third-Party Educational Conferences" sectiontopic="Data Privacy" toolkitText="4" secID="4">
+            <questions> 
+                <question questioIndex="4" type="DND" DropLength="9" DropID="1" dragsUID="1" correctAnswer="963284751" secondCorrectAnswer="963284715" section="1" severity="advance">  
+                     <scenario orientation="Hor" imagePath="Img4.png" iconPath="icon_07.png">
+                        <![CDATA[Section 4 Sponsorships, Grants, and Supporting Third-Party Educational Conferences]]>
+                    </scenario>
+                    <scenarioInfo>
+                        <![CDATA[<span>Section 4 Sponsorships, Grants, and Supporting Third-Party Educational Conferences</span>]]>
+                    </scenarioInfo>               
+                    <quesText>
+                        <![CDATA[Read the given example to understand how a component is related to a topic.]]>
+                    </quesText>
+                    <iText>
+                        <![CDATA[Drag each of the components to the relevant topic. After you have dragged all of them to the right places, click <b>Submit</b>.]]>
+                    </iText>
+                    <tableHead>
+                        <![CDATA[
+                            <ul>
+                                <li>Component</li>
+                                <li>Sponsorship</li>
+                                <li>Grants</li>
+                                <li>Donations</li>
+                            </ul>
+                        ]]>
+                    </tableHead>
+                    <tableLft>
+                        <![CDATA[
+                            <ul>
+                                <li>Type of arrangement</li>
+                                <li>What is the intent of the arrangement?</li>
+                                <li>FMV and deliverables</li>
+                                <li>Examples</li>
+                            </ul>
+                        ]]>
+                    </tableLft> 
+                    <tableBottom>
+                        <![CDATA[
+                            <ul>
+                                <li><b>Example:</b> Standard set fee “Bronze Level” sponsorship to promote our brand with banners, our name on a slide presentation and website and our own lunch symposium at HIMMS.</li>
+
+                                <li><b>Example:</b> An educational grant that includes in-kind equipment loaned for demonstration purposes at a continuing education conference</li>
+
+                                <li><b>Example:</b> Philips may make a donation directly to The American Heart Association through Philips Cares or The Philips foundation only</li>
+
+                            </ul>
+                        ]]>
+                    </tableBottom>                        
+                    <options>
+                        <option><![CDATA[
+                            <b>FMV and deliverables:</b>
+                            No expected deliverables
+                        ]]>
+                        </option>
+
+                        <option><![CDATA[
+                            <b>Intent:</b>
+                            Intended for marketing purposes
+                        ]]>
+                        </option>
+
+                        <option><![CDATA[
+                            <b>Arrangement:</b>
+                            Philips provides a monetary or medical technology contribution to a bona fide charitable organization
+                        ]]>
+                        </option>
+
+                        <option><![CDATA[
+                            <b>Intent:</b>
+                            In support of a charitable purpose
+                        ]]>
+                        </option>
+
+                        <option><![CDATA[
+                            <b>FMV and deliverables:</b>
+                            No expected deliverables
+                        ]]>
+                        </option>
+
+                        <option><![CDATA[
+                            <b>Arrangement:</b>
+                            No Philips input or influence; independent Third Party activity
+                        ]]>
+                        </option>
+
+                        <option><![CDATA[
+                            <b>FMV and deliverables:</b>
+                            Must be FMV or reasonable ROI for deliverables
+                        ]]>
+                        </option>
+
+                        <option><![CDATA[
+                            <b>Intent:</b>
+                            Support for bona fide education or independent research
+                        ]]>
+                        </option>
+
+                        <option><![CDATA[
+                            <b>Arrangement:</b>
+                            Collaborative agreement between Philips and bona fide third party
+                        ]]>
+                        </option>
+
+                    </options>
+                    <feedback>
+                        <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p>]]>
+                        </correctFeedback>
+                        <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect. The correct answer is shown on screen.</p>]]>
+                        </incorrectFeedback>                        
+                    </feedback>                    
+                </question>
+            </questions>
+        </section>
+
+        <section sectiontext="Section 4.1 Conference or Educational Grants" sectiontopic="ABAC" toolkitText="5" secID="4.1">
+            <questions>
+                <question questioIndex="5" type="MCQ" correctAnswer="3" section="4" severity="easy">
+                    <scenario orientation="Ver" imagePath="Img5.png" iconPath="icon_12.png">
+                        <![CDATA[Section 4.1 Conference or Educational Grants]]>
+                    </scenario>
+                    <scenarioInfo>
+                        <![CDATA[<span>Section 4.1 Conference or Educational Grants</span>]]>
+                    </scenarioInfo>
+                    <quesText>
+                        <![CDATA[Is it appropriate to provide an education grant to a hospital that happens to be a customer?]]>
+                    </quesText>
+                    <iText>
+                        <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+                    </iText>
+                    <infoText>
+                        <![CDATA[<p>It may be appropriate to support a grant with a customer as long as the grant is not tied to any past, current or future sale of Philips PSS with that customer and such grant is consistent with Philips Grants Policy. Contact the legal department or your Compliance Officer for guidance.</p>]]>
+                    </infoText>
+                    <options>
+                        <option>
+                            <![CDATA[Yes]]>
+                        </option>
+                        <option>
+                            <![CDATA[No]]>
+                        </option>
+                        <option>
+                            <![CDATA[It depends.]]>
+                        </option>                       
+                    </options>
+                    <feedback>
+                        <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">It may be appropriate to support a grant with a customer as long as the grant is not tied to any past, current or future sale of Philips PSS with that customer and such grant is consistent with Philips Grants Policy. Contact the legal department or your Compliance Officer for guidance.</p>]]>
+                        </correctFeedback>
+                        <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect.</p><p class="feedback_font">It may be appropriate to support a grant with a customer as long as the grant is not tied to any past, current or future sale of Philips PSS with that customer and such grant is consistent with Philips Grants Policy. Contact the legal department or your Compliance Officer for guidance.</p>]]>
+                        </incorrectFeedback>
+                        <incorrectFeedbackpop>
+                            <![CDATA[]]>
+                        </incorrectFeedbackpop>
+                    </feedback>
+                </question> 
+            </questions>
+        </section>
+        <section sectiontext="Section 4.4 Sponsorships, Advertisements, Exhibits, and Booth Rentals" sectiontopic="HR" toolkitText="6" secID="4.4">
+            <questions>
+                <question questioIndex="6" type="MCQ" correctAnswer="3" section="5" severity="easy">
+                    <scenario orientation="Hor" imagePath="Img6.png" iconPath="icon_15.png">
+                        <![CDATA[Section 4.4 Sponsorships, Advertisements, Exhibits, and Booth Rentals]]>
+                    </scenario>
+                    <scenarioInfo>
+                        <![CDATA[<span>Section 4.4 Sponsorships, Advertisements, Exhibits, and Booth Rentals</span>]]>
+                    </scenarioInfo>
+                    <quesText>
+                        <![CDATA[Is it appropriate to pay an exhibit fee for the privilege of displaying product information at an educational conference sponsored by a Health Care Provider?]]>
+                    </quesText>
+                    <iText>
+                        <![CDATA[Select the correct option and click <b>Submit.</b>]]>
+                    </iText>
+                    <infoText>
+                        <![CDATA[<p>The correct Answer is; It Depends. Philips may pay the exhibit fee, but only if the exhibit fee reflects the reasonable rental space valuation. Exhibit fees should be based on a fair market value basis and should reflect the fees that any other industry member would be charged. A Booth Rental Toolkit is available on our Philips North America LLC Compliance Policies webpage (Support Materials to the Philips North America LLC Sponsorship Policy).</p>]]>
+                    </infoText>
+                    <options>
+                        <option>
+                            <![CDATA[Never]]>
+                        </option>
+                        <option>
+                            <![CDATA[Always]]>
+                        </option>
+                        <option>
+                            <![CDATA[It depends.]]>
+                        </option>                        
+                    </options>
+                    <feedback>
+                        <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">The correct Answer is; It Depends. Philips may pay the exhibit fee, but only if the exhibit fee reflects the reasonable rental space valuation. Exhibit fees should be based on a fair market value basis and should reflect the fees that any other industry member would be charged. A Booth Rental Toolkit is available on our Philips North America LLC Compliance Policies webpage (Support Materials to the Philips North America LLC Sponsorship Policy).</p>]]>
+                        </correctFeedback>
+                        <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect.</p><p class="feedback_font">The correct Answer is; It Depends. Philips may pay the exhibit fee, but only if the exhibit fee reflects the reasonable rental space valuation. Exhibit fees should be based on a fair market value basis and should reflect the fees that any other industry member would be charged. A Booth Rental Toolkit is available on our Philips North America LLC Compliance Policies webpage (Support Materials to the Philips North America LLC Sponsorship Policy).</p>]]>
+                        </incorrectFeedback>
+                        <incorrectFeedbackpop>
+                            <![CDATA[]]>
+                        </incorrectFeedbackpop>
+                    </feedback>
+                </question> 
+            </questions>
+        </section>
+        <section sectiontext="Section 5 Sales, Promotional, and Other Business Meetings" sectiontopic="Q&amp;R" toolkitText="7" secID="5">
+            <questions>
+                <question questioIndex="7" type="MCQ" correctAnswer="2" section="6" severity="easy">
+                    <scenario orientation="Ver" imagePath="Img7.png" iconPath="icon_17.png">
+                        <![CDATA[Section 5 Sales, Promotional, and Other Business Meetings]]>
+                    </scenario>
+                    <scenarioInfo>
+                        <![CDATA[<span>Section 5 Sales, Promotional, and Other Business Meetings</span>]]>
+                    </scenarioInfo>
+                    <quesText>
+                        <![CDATA[You have a fantastic idea to help generate sales in your region and approach your manager to obtain her approval. You would like to have one of our key thought leaders speak to a group of doctors on the benefits of using Philips solutions. Upon hearing how Philips solutions will enable the quadruple aim you know this will help you achieve your sales targets. You have also been able to book an impressive venue, the Ritz, in Chicago during RSNA and can't believe your luck. This will surely impress the doctors in attendance. <br> Should the manager approve this event?]]>
+                    </quesText>
+                    <iText>
+                        <![CDATA[Select the correct option and click <b>Submit</b>.]]>
+                    </iText>
+                    <infoText>
+                        <![CDATA[<p>The correct answer is “No.” While it is completely fine to conduct a session where a key thought leader shares their views on our technology, the venue would be considered lavish or extravagant and might distract from the intent of the meeting, which is to share scientific information. The manager should coach the employee to find an appropriate venue.</p>]]>
+                    </infoText>
+                    <options>
+                        <option>
+                            <![CDATA[Yes. The Key Thought Leader will be sharing their experience, will be fairly compensated under standard contract terms and the intent of the meeting is to share scientific information.]]>
+                        </option>
+                        <option>
+                            <![CDATA[No, Philips can not host an event at any location that could be deemed lavish or extravagant.]]>
+                        </option> 
+                    </options>
+                    <feedback>
+                        <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">The correct answer is “No.” While it is completely fine to conduct a session where a key thought leader shares their views on our technology, the venue would be considered lavish or extravagant and might distract from the intent of the meeting, which is to share scientific information. The manager should coach the employee to find an appropriate venue.</p>]]>
+                        </correctFeedback>
+                        <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect.</p><p class="feedback_font">The correct answer is “No.” While it is completely fine to conduct a session where a key thought leader shares their views on our technology, the venue would be considered lavish or extravagant and might distract from the intent of the meeting, which is to share scientific information. The manager should coach the employee to find an appropriate venue.</p>]]>
+                        </incorrectFeedback>
+                        <incorrectFeedbackpop>
+                            <![CDATA[]]>
+                        </incorrectFeedbackpop>
+                    </feedback>
+                </question>
+            </questions>
+        </section>
+        <section sectiontext="Section 10 Coverage, Reimbursement, and Health Economics Information" sectiontopic="Security" toolkitText="8" secID="10">
+            <questions>
+                <question questioIndex="8" type="MCQ" correctAnswer="2" section="7" severity="easy">
+                    <scenario orientation="Hor" imagePath="Img8.png" iconPath="icon_20.png">
+                        <![CDATA[Section 10 Coverage, Reimbursement, and Health Economics Information]]>
+                    </scenario>
+                    <scenarioInfo>
+                        <![CDATA[<span>Section 10 Coverage, Reimbursement, and Health Economics Information</span>]]>
+                    </scenarioInfo>
+                    <quesText>
+                        <![CDATA[Fran, a sales rep, is closing a deal with University Hospitals and they ask her to provide the billing codes they should use with their new equipment to ensure they are correctly billing insurances.<br>Can Fran provide this information?]]>
+                    </quesText>
+                    <iText>
+                        <![CDATA[Select the correct option and click <b>Submit</b>.]]>
+                    </iText>
+                    <infoText>
+                        <![CDATA[<p>Any reimbursement information must be derived from authoritative sources, including Medicare websites, regulations, and private insurer websites.</p>]]>
+                    </infoText>
+                    <options>
+                        <option>
+                            <![CDATA[No, Fran should never give our customers that information. Once the sale is done it is up to them to figure it out.]]>
+                        </option>
+                        <option>
+                            <![CDATA[Yes, Fran can provide them billing codes as long as they have come from the correct sources and have been vetted thoroughly.]]>
+                        </option> 
+                    </options>
+                    <feedback>
+                        <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">Any reimbursement information must be derived from authoritative sources, including Medicare websites, regulations, and private insurer websites.</p>]]>
+                        </correctFeedback>
+                        <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect.</p><p class="feedback_font">Any reimbursement information must be derived from authoritative sources, including Medicare websites, regulations, and private insurer websites.</p>]]>
+                        </incorrectFeedback>
+                        <incorrectFeedbackpop>
+                            <![CDATA[]]>
+                        </incorrectFeedbackpop>
+                    </feedback>
+                </question>
+            </questions>
+        </section>
+        <section sectiontext="Section 11 Collaborative and Independent Clinical Research" sectiontopic="Health &amp; Safety" toolkitText="9" secID="11">
+            <questions>
+                <question questioIndex="9" type="MMCQ" correctAnswer="1,2,3" section="8" severity="easy">
+                    <scenario orientation="Ver" imagePath="Img9.png" iconPath="icon_23.png">
+                        <![CDATA[Section 11 Collaborative and Independent Clinical Research]]>
+                    </scenario>
+                    <scenarioInfo>
+                        <![CDATA[<span>Section 11 Collaborative and Independent Clinical Research</span>]]>
+                    </scenarioInfo>
+                    <quesText>
+                        <![CDATA[Shawndra Sales meets with her point of contact at Boston General Hospital. Her contact says that it would be helpful in deciding to buy a new CVX-300, if Philips would pay Boston General Hospital to do some research using that new CVX-300.<br> Shawndra agrees that Philips and Boston General Hospital should collaborate as research partners, as Philips always needs more research and this equipment is new, so some studies would help Philips sell more CVX-300s. Shawndra promises that Philips would enter into a research collaboration. As a result of Shawndra's promise the customer then bought a new CVX-300.<br> Given the facts of this case, which of the following statements are true?]]>
+                    </quesText>
+                    <iText>
+                        <![CDATA[Select the correct option(s) and click <b>Submit</b>.]]>
+                    </iText>
+                    <infoText>
+                        <![CDATA[<p>The correct answer is all of the above. The Sales function should have no influence or decision making when it comes to research. Additionally, using a promise of research to generate sales is a clear attempt at undue influence and could potentially violate the Anti-Kickback Statute. Finally, all research must stand on its own merit, be compensated according to FMV standards, and must be documented properly in the appropriate system of record.</p>]]>
+                    </infoText>
+                    <options>
+                        <option>
+                            <![CDATA[Separation between all forms of research, including grants, and commercial activities is mandatory.]]>
+                        </option>
+                        <option>
+                            <![CDATA[The Anti-Kickback statute clearly dictates that Philips conducts business in a way that at no point may research, innovation, or collaborative or grant activity be used as an inducement to win commercial orders.]]>
+                        </option>
+                        <option>
+                            <![CDATA[Collaborative research or innovation require a FMV exchange between Philips and the other party and must be documented in the appropriate system of record (e.g. ORION or other system).]]>
+                        </option>                       
+                    </options>
+                    <feedback>
+                        <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">The correct answer is all of the above. The Sales function should have no influence or decision making when it comes to research. Additionally, using a promise of research to generate sales is a clear attempt at undue influence and could potentially violate the Anti-Kickback Statute. Finally, all research must stand on its own merit, be compensated according to FMV standards, and must be documented properly in the appropriate system of record.</p>]]>
+                        </correctFeedback>
+                        <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect.</p><p class="feedback_font">The correct answer is all of the above. The Sales function should have no influence or decision making when it comes to research. Additionally, using a promise of research to generate sales is a clear attempt at undue influence and could potentially violate the Anti-Kickback Statute. Finally, all research must stand on its own merit, be compensated according to FMV standards, and must be documented properly in the appropriate system of record.</p>]]>
+                        </incorrectFeedback>
+                        <incorrectFeedbackpop>
+                            <![CDATA[]]>
+                        </incorrectFeedbackpop>
+                    </feedback>
+                </question>
+            </questions>
+        </section>
+        <section sectiontext="Section 13 Evaluation and Demonstration PSS" sectiontopic="Social Media" toolkitText="10" secID="13">
+            <questions>
+                <question questioIndex="10" type="MCQ" correctAnswer="1" section="9" severity="easy">
+                    <scenario orientation="Ver" imagePath="Img10.png" iconPath="icon_26.png">
+                        <![CDATA[Section 13 Evaluation and Demonstration PSS]]>
+                    </scenario>
+                    <scenarioInfo>
+                        <![CDATA[<span>Section 13 Evaluation and Demonstration PSS</span>]]>
+                    </scenarioInfo>
+                    <quesText>
+                        <![CDATA[Ezra, a sales representative, provided Dr. Monty with a 60-day evaluation for equipment. It is day 55, and Ezra has just learned that there is a new software upgrade for equipment that enables system functionality that wasn’t previously available during the initial evaluation period. When Ezra informs Dr. Monty about this software upgrade, Dr. Monty requests that his evaluation equipment be upgraded and the evaluation be extended. Ezra agrees to do so. Should Ezra have extended the evaluation?]]>
+                    </quesText>
+                    <iText>
+                        <![CDATA[Select the correct option and click <b>Submit</b>.]]>
+                    </iText>
+                    <infoText>
+                        <![CDATA[<p>In certain circumstances, evaluations may be extended In this case, if the changes to the functionality make a material difference in a purchase decision, there can be another evaluation. If yes, there can be an extended evaluation.</p>]]>
+                    </infoText>
+                    <options>
+                        <option>
+                            <![CDATA[Maybe, does this functionality make a material difference in a purchasing decision? If yes, there can be extended evaluation.]]>
+                        </option>                    
+                        <option>
+                            <![CDATA[No, evaluations can never be extended.]]>
+                        </option>
+                        <option>
+                            <![CDATA[Yes, any change to the equipment would trigger a new evaluation.]]>
+                        </option>
+                    </options>
+                    <feedback>
+                        <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">In certain circumstances, evaluations may be extended In this case, if the changes to the functionality make a material difference in a purchase decision, there can be another evaluation. If yes, there can be an extended evaluation.</p>]]>
+                        </correctFeedback>
+                        <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect.</p><p class="feedback_font">In certain circumstances, evaluations may be extended In this case, if the changes to the functionality make a material difference in a purchase decision, there can be another evaluation. If yes, there can be an extended evaluation.</p>]]>
+                        </incorrectFeedback>
+                        <incorrectFeedbackpop>
+                            <![CDATA[]]>
+                        </incorrectFeedbackpop>
+                    </feedback>
+                </question> 
+            </questions>
+        </section>
+        <section sectiontext="Section 14 Interactions with Federal and State Government Employees" sectiontopic="Social Media" toolkitText="11" secID="14">
+            <questions>
+                <question questioIndex="11" type="MCQ" correctAnswer="2" section="9" severity="easy">
+                    <scenario orientation="Ver" imagePath="Img11.png" iconPath="icon_26.png">
+                        <![CDATA[Section 14 Interactions with Federal and State Government Employees]]>
+                    </scenario>
+                    <scenarioInfo>
+                        <![CDATA[<span>Section 14 Interactions with Federal and State Government Employees</span>]]>
+                    </scenarioInfo>
+                    <quesText>
+                        <![CDATA[You have obtained permission to take Dr. Jane Lopez, from the VA center in Detroit, to dinner last quarter and would like to do the same this quarter so you can discuss our latest product offering. You know her patients can truly benefit from the new features so you reach out and schedule a dinner with her for tomorrow. Is this the right approach?]]>
+                    </quesText>
+                    <iText>
+                        <![CDATA[Select the correct option and click <b>Submit</b>.]]>
+                    </iText>
+                    <infoText>
+                        <![CDATA[<p>Relying on an approval from a past interaction is not the right approach. You must obtain a new approval each time you plan to invite any government employee to a dinner as a business courtesy. Many U.S. government agencies have strict limits on how much their employees can accept business courtesies – with some prohibiting the acceptance of any business courtesy. If Philips is found to be in violation of these limits, we might lose our ability to sell to the U.S. government agencies, which is our largest customer in the largest market. Therefore, to prevent potential violation of these limits, you must always obtain the approval before you offer any business courtesy.</p><p>Note: You can also check the resources on the <a href="https://intranet.philips.com/Pages/gift-and-hospitality-registration-tool.aspx" target="_blank">Legal Compliance Registration Tool</a> page where you can find detailed instructions and guidance. </p>]]>
+                    </infoText>
+                    <options>
+                        <option>
+                            <![CDATA[Yes, you used the Legal Compliance Registration Tool last quarter and obtained permission.]]>
+                        </option>                    
+                        <option>
+                            <![CDATA[No, each interaction with a government employee involving a transfer of value or exchange of business courtesies must be pre-approved.]]>
+                        </option> 
+                    </options>
+                    <feedback>
+                        <correctFeedback>
+                            <![CDATA[<p class="feedback_font">Well done! This is the correct answer.</p><p class="feedback_font">Relying on an approval from a past interaction is not the right approach. You must obtain a new approval each time you plan to invite any government employee to a dinner as a business courtesy. Many U.S. government agencies have strict limits on how much their employees can accept business courtesies – with some prohibiting the acceptance of any business courtesy. If Philips is found to be in violation of these limits, we might lose our ability to sell to the U.S. government agencies, which is our largest customer in the largest market. Therefore, to prevent potential violation of these limits, you must always obtain the approval before you offer any business courtesy.</p><p class="feedback_font">Note: You can also check the resources on the <a href="https://intranet.philips.com/Pages/gift-and-hospitality-registration-tool.aspx" target="_blank">Legal Compliance Registration Tool</a> page where you can find detailed instructions and guidance. </p>]]>
+                        </correctFeedback>
+                        <incorrectFeedback>
+                            <![CDATA[<p class="feedback_font">Sorry, that’s incorrect.</p><p class="feedback_font">Relying on an approval from a past interaction is not the right approach. You must obtain a new approval each time you plan to invite any government employee to a dinner as a business courtesy. Many U.S. government agencies have strict limits on how much their employees can accept business courtesies – with some prohibiting the acceptance of any business courtesy. If Philips is found to be in violation of these limits, we might lose our ability to sell to the U.S. government agencies, which is our largest customer in the largest market. Therefore, to prevent potential violation of these limits, you must always obtain the approval before you offer any business courtesy.</p><p class="feedback_font">Note: You can also check the resources on the <a href="https://intranet.philips.com/Pages/gift-and-hospitality-registration-tool.aspx" target="_blank">Legal Compliance Registration Tool</a> page where you can find detailed instructions and guidance. </p>]]>
+                        </incorrectFeedback>
+                        <incorrectFeedbackpop>
+                            <![CDATA[]]>
+                        </incorrectFeedbackpop>
+                    </feedback>
+                </question> 
+            </questions>
+        </section>
+    </sections>
+</questionBank>

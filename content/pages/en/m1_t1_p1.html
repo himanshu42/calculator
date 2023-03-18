@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>page2</title>
+    <script type="text/javascript">
+      var page = {
+        tl: null,
+        mySlider: null,
+        animation1: "",
+        animation2: "",
+        animation3: "",
+        animation4: "",
+        total_duration: 10000,
+        pageInit: function () {
+          console.log("page init called");
+          page.mySlider = $("#progressSlider");
+          $(".navBtnContainer").hide();
+
+          page.callScrollerFn();
+          $(window).resize(function () {
+            page.callScrollerFn();
+          });
+
+          var aud = document.getElementById("myVideo1_1");
+          aud.onended = function () {
+            intro.sec2_active_da();
+          };
+
+          if (
+            model.bookMarkData == "" ||
+            model.bookMarkData.trim().length == 0
+          ) {
+            $(".slide1, .topicSection").fadeOut();
+            $(".playerCenterBtns").hide();
+            $(".topicSection[sectionID='intro']").show();
+            intro.pageInit();
+            setTimeout(function () {
+              page.playFirstSecAudio("intro");
+            }, 500);
+            $(".navBtnContainer").show();
+            $(".aeroplane").hide();
+            $(".backtohome").hide();
+            $(".jumptobacksec").hide();
+            $(".playerCenterBtns").show();
+          } else {
+            controller.setScreensAsPerLMSData();
+          }
+
+          if (model.screenStatusData.length == 0) {
+            controller.sectionStatusFn();
+            controller.updateSaveData();
+            console.log("Blank array Find =====>>> ");
+          }
+
+          $(".tabBtn").on("click", function () {
+            var getId = $(this).attr("data-attr");
+            $(".tabBtn").removeClass("currentTab");
+            $(this).addClass("currentTab");
+            $(".tabContent1 .stop").trigger("click");
+            $(".tabContent2 .stop").trigger("click");
+            $(".tabBtn").removeClass("active");
+            $(this).addClass("active");
+            $(".tabContent").hide();
+            $(".tabContent" + getId).show();
+            //$(".tabContent"+getId+" .tabInRight p").hide();
+            $(".tabContent" + getId + " .tabInRight #tab" + getId + "a").show();
+            var pb = setTimeout(function () {
+              $(".tabContent" + getId + " .play").trigger("click");
+              clearTimeout(pb);
+            }, 100);
+            if ($(this).hasClass("visited")) {
+              $(".tabBtnWrap").addClass("visited");
+              $(".tabBtnWrap").removeClass("active");
+            } else {
+              if ($(this).hasClass("active")) {
+                $(".tabBtnWrap").addClass("active");
+                $(".tabBtnWrap").removeClass("visited");
+              }
+            }
+          });
+
+          page.section3Audiocontrol();
+          page.tabContent1Audiocontrol();
+          page.tabContent2Audiocontrol();
+
+          page.openSecOnclick();
+
+          $("#audiocontrolBtn").trigger("click");
+
+          console.log("page init called >>>><<<<");
+
+          $(".ExitBtn#exitCourse").hide();
+          $(".ExitBtn#exitCourse")
+            .off("click")
+            .on("click", function () {
+              window.close();
+              window.parent.close();
+            });
+        },
+        section3Audiocontrol: function () {
+          var audio;
+          //Hide Pause
+          $("#section3 .pause").hide();
+          initAudio($("#section3 #playlist li:first-child"));
+          function initAudio(element) {
+            var current_Audio = element.attr("player_audio");
+            $("#tabAudio3").attr(
+              "src",
+              "content/audio/mp3/en/" + current_Audio
+            );
+            $("#tabAudio3").get(0).load();
+            //audio = new Audio('content/audio/mp3/en/'+ current_Audio);
+          }
+
+          $("#section3 .play").click(function () {
+            $("#tabAudio3").get(0).play();
+            $("#section3 .play").hide();
+            $("#section3 .pause").show();
+            showDuration();
+          });
+
+          $("#section3 .pause").click(function () {
+            $("#tabAudio3").get(0).pause();
+            $("#section3 .play").show();
+            $("#section3 .pause").hide();
+          });
+
+          $("#section3 .stop").click(function () {
+            $("#tabAudio3").get(0).pause();
+            $("#tabAudio3").get(0).currentTime = 0;
+          });
+
+          $("#volume").change(function () {
+            $("#tabAudio3").get(0).volume = parseFloat(this.value / 10);
+          });
+
+          function disclosedData() {
+            // $("#v1").val("Prof. James Smith");
+            // $("#v2").val("Crop Science");
+            // $("#v3").val("Seed & Traits");
+            // $("#v4").val("Speaker agreement");
+            // $("#v5").val('0 - 10.000 EUR (leave out the "2.300 >")');
+            // $("#v6").val("Germany");
+            // $("#v7").val("Germany");
+            // $("#v8").val("January 16th, 2021");
+            $("#scrn10_5").removeClass("disable_button");
+            $("#scrn10_3").removeClass("disable_text");
+            $("input:text").addClass("active_field");
+            $(".input_overlay_div").removeClass("highlighted");
+            model.verticalScreenStatusData[2] = true;
+          }
+        },
+        tabContent1Audiocontrol: function () {
+          //Hide Pause
+          $(".tabContent1 .pause").hide();
+          initAudio($(".tabContent1 #playlist li:first-child"));
+          function initAudio(element) {
+            var current_Audio = element.attr("player_audio");
+            $("#tabAudio1").attr(
+              "src",
+              "content/audio/mp3/en/" + current_Audio
+            );
+            $("#tabAudio1").get(0).load();
+            //  $("#tabAudio1") = new Audio('content/audio/mp3/en/'+ current_Audio);
+          }
+
+          $(".tabContent1 .stop").click(function () {
+            $("#tabAudio1").get(0).pause();
+            $("#tabAudio1").get(0).currentTime = 0;
+          });
+
+          $("#volume").change(function () {
+            $("#tabAudio1").volume = parseFloat(this.value / 10);
+          });
+
+          function showDuration() {}
+
+          function activeTab() {
+            $(".tabBtn1").addClass("visited");
+            $(".tabBtn2").removeClass("disable");
+            $(".tabBtn2").addClass("active");
+
+            if ($(".tabBtn1").hasClass("visited")) {
+              $(".tabBtnWrap").addClass("visited");
+              $(".tabBtnWrap").removeClass("active");
+            } else {
+              if ($(".tabBtn1").hasClass("active")) {
+                $(".tabBtnWrap").addClass("active");
+                $(".tabBtnWrap").removeClass("visited");
+              }
+            }
+
+            // $(".tabBtn2").trigger('click');
+            // $('.tabContent2 .play').trigger('click');
+          }
+        },
+        tabContent2Audiocontrol: function () {
+          var audio;
+          //Hide Pause
+          $(".tabContent2 .pause").hide();
+          initAudio($(".tabContent2 #playlist li:first-child"));
+          function initAudio(element) {
+            var current_Audio = element.attr("player_audio");
+            $("#tabAudio2").attr(
+              "src",
+              "content/audio/mp3/en/" + current_Audio
+            );
+            $("#tabAudio2").get(0).load();
+            // audio = new Audio('content/audio/mp3/en/'+ current_Audio);
+          }
+
+          $(".tabContent2 .play").click(function () {
+            $("#tabAudio2").get(0).play();
+            $(".tabContent2 .play").hide();
+            $(".tabContent2 .pause").show();
+            showDuration();
+          });
+
+          $(".tabContent2 .pause").click(function () {
+            $("#tabAudio2").get(0).pause();
+            $(".tabContent2 .play").show();
+            $(".tabContent2 .pause").hide();
+            var time_t1 = setTimeout(function () {
+              $(".tabContent2 .adChar3").removeClass("active");
+              $(".tabContent2 .adChar4").removeClass("active");
+              clearTimeout(time_t1);
+            }, 100);
+          });
+
+          $(".tabContent2 .stop").click(function () {
+            $("#tabAudio2").get(0).pause();
+            $("#tabAudio2").get(0).currentTime = 0;
+          });
+
+          $("#volume").change(function () {
+            $("#tabAudio2").get(0).volume = parseFloat(this.value / 10);
+          });
+
+          function showDuration() {}
+
+          function activeSecondtab() {
+            $(".tabBtn2").addClass("visited");
+            $("#screen5 .stbtncontner")
+              .removeClass("disable")
+              .addClass("active");
+            if ($(".tabBtn2").hasClass("visited")) {
+              $(".tabBtnWrap").addClass("visited");
+              $(".tabBtnWrap").removeClass("active");
+            } else {
+              if ($(".tabBtn2").hasClass("active")) {
+                $(".tabBtnWrap").addClass("active");
+                $(".tabBtnWrap").removeClass("visited");
+              }
+            }
+          }
+        },
+        unloadPage: function () {
+          model.tl.clear();
+        },
+        onComplete: function () {},
+        openSecOnclick: function () {},
+
+        callDataLmsFn: function (elm) {
+          var getSecID = elm.parents(".topicSection").attr("sectionID");
+          if (getSecID == "leaps") {
+            page.sendDataInLMS(getSecID, leaps, 1);
+          } else if (getSecID == "wallStreet") {
+            page.sendDataInLMS(getSecID, wallStreet, 1);
+          } else if (getSecID == "brussels") {
+            page.sendDataInLMS(getSecID, brussels, 1);
+          } else if (getSecID == "blend") {
+            page.sendDataInLMS(getSecID, blend, 1);
+          } else if (getSecID == "kenya") {
+            page.sendDataInLMS(getSecID, kenya, 1);
+          } else if (getSecID == "supplier") {
+            page.sendDataInLMS(getSecID, supplier, 1);
+          } else if (getSecID == "outro") {
+            page.sendDataInLMS(getSecID, outro, 1);
+          }
+        },
+
+        sendDataInLMS: function (secID, obj, slideN) {
+          var secID = secID;
+          var curScr = obj.currentScreen - slideN;
+          $.each(model.screenStatusData, function (k, v) {
+            if (v.T == secID) {
+              v.ST[curScr].S = true;
+              controller.updateSaveData();
+              return false;
+            }
+          });
+          controller.callPinCompletedFn();
+          if (secID == "outro" && obj.currentScreen == 4) {
+            $(".ExitBtn#exitCourse").show();
+            SetLessonStatus("completed");
+            doLMSCommit();
+          } else {
+            $(".ExitBtn#exitCourse").hide();
+          }
+        },
+
+        getObjName: function (jumpID) {
+          if (jumpID == "blend") {
+            $(".slide1").addClass("berlin_zoom page_Scalediv");
+            return blend;
+          } else if (jumpID == "kenya") {
+            $(".slide1").addClass("page_Scalediv");
+            return kenya;
+          } else if (jumpID == "supplier") {
+            $(".slide1").addClass("supplier_zoom page_Scalediv");
+            return supplier;
+          } else if (jumpID == "outro") {
+            $(".slide1").addClass("outro_zoom page_Scalediv");
+            return outro;
+          } else if (jumpID == "leaps") {
+            $(".slide1").addClass("leaps_zoom page_Scalediv");
+            return leaps;
+          } else if (jumpID == "brussels") {
+            $(".slide1").addClass("brussels_zoom page_Scalediv");
+            return brussels;
+          } else if (jumpID == "wallStreet") {
+            $(".slide1").addClass("wallstreet_zoom page_Scalediv");
+            return wallStreet;
+          }
+        },
+
+        playFirstSecAudio: function (secID) {
+          var firstAudioname = $(
+            ".topicSection[sectionID='" + secID + "'] .sCreenCount"
+          )
+            .eq(0)
+            .attr("audioName");
+          audioController.clearAudio();
+          setTimeout(function () {
+            audioController.playSecAudio(firstAudioname);
+          }, 500);
+        },
+
+        callScrollerFn: function () {
+          if (window.innerWidth == 1920) {
+            $("body").removeClass("scroll_1366").addClass("scroll_1920");
+          } else if (window.innerWidth == 1366) {
+            $("body").removeClass("scroll_1366").addClass("scroll_1920");
+          } else {
+            $("body").removeClass("scroll_1366 scroll_1920");
+          }
+        },
+        anim1Done: function () {
+          //intro.muteAudioForScreen();
+        },
+      };
+    </script>
+    <style type="text/css">
+      .warpperarea,
+      .row,
+      .container {
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+      }
+
+      .scroll_1920 {
+        overflow-y: hidden;
+        height: 969px;
+      }
+
+      .scroll_1920 #MainC,
+      .scroll_1920 .player_container_style,
+      .scroll_1920 .oveflodiv,
+      .scroll_1920 .mp-pusher,
+      .scroll_1920 .scroller,
+      .scroll_1920 .scroller-inner,
+      .scroll_1920 .warpperarea,
+      .scroll_1920 .row,
+      .scroll_1920 .container,
+      .scroll_1920 #player_contentArea,
+      .scroll_1920 #player_content,
+      .scroll_1920 .m1t1p1#pageDiv,
+      .scroll_1920 .topicSection,
+      .scroll_1920 .slide1.mapModule,
+      .scroll_1920 .innerWarpperarea,
+      .scroll_1920 .mc,
+      .scroll_1920 .sCreenCount {
+        height: 969px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="pageDiv" pageType="" class="m1t1p1" animType="audioTimeline">
+      <audio id="audio_player" class="local_player" controls></audio>
+      <div class="whole_p_div"></div>
+      <div class="container">
+        <div class="row" audioId="1">
+          <div class="rightNavWrap navHide">
+            <div class="navWrap nav1" data-attr="1" secId="1">
+              <div class="navIcon" id="intro"></div>
+              <div class="navPulse"></div>
+              <div class="navd1 navdd">
+                <p>Intro</p>
+              </div>
+            </div>
+            <div class="navArrow"></div>
+            <div class="navWrap nav2" data-attr="1" secId="2">
+              <div class="navIcon" id="dp"></div>
+              <div class="navPulse"></div>
+              <div class="navd2 navdd">
+                <p>Design Principle</p>
+              </div>
+            </div>
+            <div class="navArrow"></div>
+            <div class="navWrap nav3" data-attr="1" secId="7">
+              <div class="navIcon" id="dg"></div>
+              <div class="navPulse"></div>
+              <div class="navd3 navdd">
+                <p>Design Guidance</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="warpperarea" id="fullpage">
+            <section class="section fp-auto-height" id="section0">
+              <div class="key_objective_wrapDiv">
+                <div class="key_objective_innerDiv">
+                  <video id="myVideo1_1" controls="true" autoplay="">
+                    <source
+                      src="content/video/en/m1_t1_p1/Real_Design_Principles.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+              <div id="scrn1_2"></div>
+              <div
+                class="Down_arrowIcon disable click_div"
+                data-attr="1"
+                secId="1"
+              >
+                <div class="arrowhover">
+                  <!-- <img src="content/images/pages/m1_t1_p1/slide4/Scroll_Mouse.png" class="arrowbottom" style="pointer-events: none;">
+                                        <p class="scrollcls">SCROLL</p> -->
+                </div>
+                <img
+                  src="content/images/pages/m1_t1_p1/slide1/Scroll_Small_Arrow.png"
+                  class="arrowbottom"
+                  style="pointer-events: none"
+                />
+                <img
+                  src="content/images/pages/m1_t1_p1/slide1/Scroll_Large_Arrow.png"
+                  class="arrowbottom1"
+                  style="pointer-events: none"
+                />
+              </div>
+              <!---- Intro section start here -->
+
+              <!---- Intro section end here -->
+            </section>
+
+            <section
+              class="section fp-auto-height"
+              id="section1"
+              audioName="m1_t1_p1_pop1a"
+            >
+              <!---- Intro section start here -->
+
+              <div class="Up_arrowIcon click_div" data-attr="0">
+                <svg
+                  version="1.1"
+                  style="pointer-events: none"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="11.192px"
+                  height="30.385px"
+                  viewBox="0 0 11.192 20.385"
+                  enable-background="new 0 0 11.192 20.385"
+                  xml:space="preserve"
+                >
+                  <polyline
+                    fill="none"
+                    stroke="#10384f"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    points="1,19.385 
+                                    10.192,10.193 1,1 "
+                  />
+                </svg>
+              </div>
+              <div class="bgnew5" id="scrn1_7a">
+                <div class="header_title" id="scrn1_7">
+                  <div class="header_logo"></div>
+
+                  <p class="logotext logotext14">REAL Design Principles</p>
+                </div>
+
+                <div class="bgnew1" id="scrn1_8"></div>
+                <div class="bgnew2" id="scrn1_9"></div>
+                <div class="bgnew3" id="scrn1_10"></div>
+
+                <div id="scrn1_10a"></div>
+              </div>
+              <div class="section_innerDiv bgnew4" id="scrn1_11">
+                <div class="header_title" id="scrn1_17">
+                  <div class="header_logo"></div>
+                  <p class="logotext logotext14">
+                    The Touchpoint Fitness Toolbox
+                  </p>
+                </div>
+                <div class="tooltext tooltext1" id="scrn1_13">
+                  <h1>Design Principles</h1>
+                  <p>
+                    describe how effective and meaningful customer interactions
+                    express in design & tech quality
+                  </p>
+
+                  <div class="v_line"></div>
+                  <div class="h_line"></div>
+                </div>
+                <div class="tooltext tooltext2" id="scrn1_14">
+                  <h1>Design Guidance</h1>
+                  <p>
+                    provides visual examples & best<br />
+                    practices for each principle
+                  </p>
+                  <div class="v_line"></div>
+                  <div class="h_line"></div>
+                </div>
+                <div class="tooltext tooltext3" id="scrn1_15">
+                  <h1>Touchpoint Fitness Check</h1>
+                  <p>
+                    evaluates a touchpoint along design principles, quantifies
+                    its quality with a score and suggests CX improvements
+                    (design/tech)
+                  </p>
+                  <div class="v_line"></div>
+                  <div class="h_line"></div>
+                </div>
+                <div class="tooltext tooltext4" id="scrn1_16">
+                  <h1>Briefing & Training</h1>
+                  <p>
+                    enable brand & agency teams to increase and control
+                    touchpoint <br />fitness and grow their CX design<br />
+                    skillset
+                  </p>
+                  <div class="v_line"></div>
+                  <div class="h_line"></div>
+                </div>
+                <div class="icon_div1" id="scrn1_12"></div>
+                <!-- <div id="scrn8_7"></div> -->
+              </div>
+              <!-- <button class="btn btnnew1 btn-primary disable1 click_div" id="scrn1_12a" data-attr="1" secId="1">Play</button>
+                            <button class="btn btnnew2 btn-primary disable2 " id="scrn1_12b" data-attr="2" secId="2">Pause</button> -->
+
+              <div
+                class="Down_arrowIcon disable click_div"
+                data-attr="2"
+                secId="2"
+              >
+                <div class="arrowhover">
+                  <!-- <img src="content/images/pages/m1_t1_p1/slide1/Scroll_Mouse_Dark.png" class="arrowbottom" style="pointer-events: none;">
+                                        <p class="scrollcls1">SCROLL</p> -->
+                </div>
+                <img
+                  src="content/images/pages/m1_t1_p1/slide1/Scroll_Small_Arrow_Dark.png"
+                  class="arrowbottom"
+                  style="pointer-events: none"
+                />
+                <img
+                  src="content/images/pages/m1_t1_p1/slide1/Scroll_Large_Arrow_Dark.png"
+                  class="arrowbottom1"
+                  style="pointer-events: none"
+                />
+              </div>
+              <div id="scrn1_18"></div>
+              <!---- Intro section end here -->
+            </section>
+
+            <section
+              class="section fp-auto-height section2new"
+              id="section2"
+              audioName="m1_t1_p1_pop2"
+            >
+              <div class="background-image1" id="scrn2_1a1"></div>
+              <div class="Up_arrowIcon click_div" data-attr="1">
+                <svg
+                  version="1.1"
+                  style="pointer-events: none"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="11.192px"
+                  height="30.385px"
+                  viewBox="0 0 11.192 20.385"
+                  enable-background="new 0 0 11.192 20.385"
+                  xml:space="preserve"
+                >
+                  <polyline
+                    fill="none"
+                    stroke="#10384f"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    points="1,19.385 
+                                10.192,10.193 1,1 "
+                  />
+                </svg>
+              </div>
+              <div class="demo_wrap"></div>
+
+              <div class="middle_div">
+                <div class="left_text" id="scrn2_1">The</div>
+                <div class="right_text" id="scrn2_2">Principles</div>
+                <div class="start_logo" id="scrn2_3">
+                  <div class="logos_text logotextnew11" id="scrn2_4">
+                    <span>R</span><span>E</span><span>A</span><span>L</span>
+                  </div>
+                </div>
+                <div class="cir1 cir">
+                  R
+                  <div class="cir_Title" id="scrn2_4a">
+                    <h1>Relevant</h1>
+                    <!-- <p>useful, empathic,<br> up-to-date </p> -->
+                  </div>
+                  <div class="cir1_highlighter highlight"></div>
+                </div>
+                <div class="cir2 cir">
+                  E
+                  <div class="cir_Title" id="scrn2_4b">
+                    <h1>Ethical</h1>
+                    <!-- <p>honest, fair,<br> conscious </p> -->
+                  </div>
+                  <div class="cir2_highlighter highlight"></div>
+                </div>
+                <div class="cir3 cir">
+                  A
+                  <div class="cir_Title" id="scrn2_4c">
+                    <h1>Accessible</h1>
+                    <!-- <p>easy to use,<br> comprehensible,<br> efficient </p> -->
+                  </div>
+                  <div class="cir3_highlighter highlight"></div>
+                </div>
+                <div class="cir4 cir">
+                  L
+                  <div class="cir_Title" id="scrn2_4d">
+                    <h1>Light</h1>
+                    <!-- <p>nimble, speedy,<br> responsive </p> -->
+                  </div>
+                  <div class="cir4_highlighter highlight"></div>
+                </div>
+
+                <div class="bubble_down">
+                  <span class="red bubble_div bubble1"></span>
+                  <span class="red bubble_div bubble2"></span>
+                  <span class="red bubble_div bubble3"></span>
+                  <span class="red bubble_div bubble4"></span>
+                  <span class="red bubble_div bubble5"></span>
+                  <span class="red bubble_div bubble6"></span>
+                  <span class="red bubble_div bubble7"></span>
+                  <span class="red bubble_div bubble8"></span>
+                  <span class="red bubble_div bubble9"></span>
+                  <span class="red bubble_div bubble10"></span>
+                  <span class="green bubble_div bubble11"></span>
+                  <span class="green bubble_div bubble12"></span>
+                  <span class="green bubble_div bubble13"></span>
+                  <span class="green bubble_div bubble14"></span>
+                  <span class="green bubble_div bubble15"></span>
+                  <span class="blue bubble_div bubble16"></span>
+                  <span class="blue bubble_div bubble17"></span>
+                  <span class="blue bubble_div bubble18"></span>
+                  <span class="blue bubble_div bubble19"></span>
+                  <span class="blue bubble_div bubble20"></span>
+                  <span class="blue bubble_div bubble21"></span>
+                  <span class="blue bubble_div bubble22"></span>
+                  <span class="blue bubble_div bubble23"></span>
+                  <span class="blue bubble_div bubble24"></span>
+                  <span class="blue bubble_div bubble25"></span>
+                  <span class="yellow bubble_div bubble26"></span>
+                  <span class="yellow bubble_div bubble27"></span>
+                  <span class="yellow bubble_div bubble28"></span>
+                  <span class="yellow bubble_div bubble29"></span>
+                  <span class="yellow bubble_div bubble30"></span>
+                </div>
+              </div>
+
+              <div class="butons_div disable" id="scrn2_5">
+                <div class="button button1 buttonnew222" id="scrn2_5a"></div>
+                <div class="buttonnew" id="scrn2_5b"></div>
+                <div class="button button2 buttonnew222" id="scrn2_5c"></div>
+              </div>
+
+              <div class="bottom_text" id="scrn2_6">
+                Inspired by Forrester, Contentsquare, DT Consulting, Publicis
+                Sapient, Hogarth,<br />
+                Nielsen Norman Group and the International Organization for
+                Standardization
+              </div>
+
+              <div class="header_title" id="scrn2_7">
+                <div class="header_logo"></div>
+                <p class="logotext logotext1222">REAL Design Principles</p>
+              </div>
+              <div id="scrn2_8"></div>
+              <div id="scrn2_9"></div>
+              <div id="scrn2_10"></div>
+              <div id="scrn2_11"></div>
+              <div id="scrn2_12"></div>
+              <div id="scrn2_13"></div>
+              <div id="scrn2_14"></div>
+
+              <div
+                class="Down_arrowIcon disable click_div"
+                data-attr="3"
+                secId="3"
+              >
+                <div class="arrowhover">
+                  <!-- <img src="content/images/pages/m1_t1_p1/slide1/Scroll_Mouse_Dark.png" class="arrowbottom" style="pointer-events: none;">
+                                        <p class="scrollcls1">SCROLL</p> -->
+                </div>
+                <img
+                  src="content/images/pages/m1_t1_p1/slide1/Scroll_Small_Arrow_Dark.png"
+                  class="arrowbottom"
+                  style="pointer-events: none"
+                />
+                <img
+                  src="content/images/pages/m1_t1_p1/slide1/Scroll_Large_Arrow_Dark.png"
+                  class="arrowbottom1"
+                  style="pointer-events: none"
+                />
+              </div>
+            </section>
+
+            <section
+              class="section fp-auto-height"
+              id="section3"
+              audioName="m1_t1_p1_pop4"
+            >
+              <div class="Up_arrowIcon click_div" data-attr="2">
+                <svg
+                  version="1.1"
+                  style="pointer-events: none"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="11.192px"
+                  height="30.385px"
+                  viewBox="0 0 11.192 20.385"
+                  enable-background="new 0 0 11.192 20.385"
+                  xml:space="preserve"
+                >
+                  <polyline
+                    fill="none"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    points="1,19.385 
+            10.192,10.193 1,1 "
+                  />
+                </svg>
+              </div>
+              <div class="section_innerDiv newsectionbg" id="scrn3_1a">
+                <div class="row">
+                  <div class="newlogoheader">
+                    <div class="header_title" id="scrn3_1">
+                      <div class="header_logo"></div>
+                      <p class="logotext logotext11">
+                        Design Principles Examples
+                      </p>
+                    </div>
+                    <div class="logo_right" id="scrn3_2">
+                      <img
+                        src="content/images/pages/m1_t1_p1/slide4/Pg4_Real_Small.png"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="newtext" id="scrn3_3">
+                    <h1 class="textnew1" id="scrn3_3a">Relevant</h1>
+                    <img
+                      src="content/images/pages/m1_t1_p1/slide4/Pg3_R_White.png"
+                      class="imager11"
+                      id="scrn3_3b"
+                    />
+                    <div class="newbd1" id="scrn3_3c"></div>
+                    <h1 class="textnew2" id="scrn3_3d">Useful</h1>
+                    <h1 class="textnew21" id="scrn3_3d1">Empathic</h1>
+                    <h1 class="textnew22" id="scrn3_3d2">Up-to-date</h1>
+                  </div>
+                  <div class="newtext1" id="scrn3_4">
+                    <h1 class="textnew3">Examples for Design Principles</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="newbgclr" id="scrn3_5">
+                <div class="newtext2" id="scrn3_6">
+                  <img
+                    src="content/images/pages/m1_t1_p1/slide4/Pg3_Email_Icon.png"
+                    id="scrn3_6a"
+                  />
+                  <p class="parablue" id="scrn3_6b">
+                    The target audience is able to comprehend at first sight
+                    main topic of the touchpoint and the benefit it offers to
+                    them
+                  </p>
+                </div>
+                <div class="newtext3" id="scrn3_7">
+                  <img
+                    src="content/images/pages/m1_t1_p1/slide4/Pg3_Internet_Icon.png"
+                    id="scrn3_7a"
+                  />
+                  <p class="parablue parablue11" id="scrn3_7b">
+                    The touchpoint provides learning & decision support
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="Down_arrowIcon disable click_div"
+                data-attr="4"
+                secId="4"
+              >
+                <div class="arrowhover">
+                  <!-- <img src="content/images/pages/m1_t1_p1/slide4/Scroll_Mouse.png" class="arrowbottom" style="pointer-events: none;">
+                                        <p class="scrollcls">SCROLL</p> -->
+                </div>
+                <img
+                  src="content/images/pages/m1_t1_p1/slide1/Scroll_Small_Arrow.png"
+                  class="arrowbottom"
+                  style="pointer-events: none"
+                />
+                <img
+                  src="content/images/pages/m1_t1_p1/slide1/Scroll_Large_Arrow.png"
+                  class="arrowbottom1"
+                  style="pointer-events: none"
+                />
+              </div>
+              <div id="scrn3_8"></div>
+            </section>
+
+            <section
+              class="section fp-auto-height section4"
+              id="section4"
+              audioName="m1_t1_p1_pop5"
+            >
+              <div class="Up_arrowIcon click_div" data-attr="3">
+                <svg
+                  version="1.1"
+                  style="pointer-events: none"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="11.192px"
+                  height="30.385px"
+                  viewBox="0 0 11.192 20.385"
+                  enable-background="new 0 0 11.192 20.385"
+                  xml:space="preserve"
+                >
+                  <polyline
+                    fill="none"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    points="1,19.385 
+                                10.192,10.193 1,1 "
+                  />
+                </svg>
+              </div>
+              <div class="section_innerDiv newsectionbg" id="scrn4_1a">
+                <div class="row">
+                  <div class="newlogoheader">
+                    <div class="header_title" id="scrn4_1">
+                      <div class="header_logo"></div>
+                      <p class="logotext logotext11">
+                        Design Principles Examples
+                      </p>
+                    </div>
+                    <div class="logo_right" id="scrn4_2">
+                      <img
+                        src="content/images/pages/m1_t1_p1/slide4/Pg5_Real_Small.png"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="newtext" id="scrn4_3">
+                    <h1 class="textnew1" id="scrn4_3a">Ethical</h1>
+                    <img
+                      src="content/images/pages/m1_t1_p1/slide4/Pg4_E_White.png"
+                      class="imager11"
+                      id="scrn4_3b"
+                    />
+                    <div class="newbd1" id="scrn4_3c"></div>
+                    <h1 class="textnew2" id="scrn4_3d">Fair</h1>
+                    <h1 class="textnew21" id="scrn4_3d1">Honest</h1>
+                    <h1 class="textnew22" id="scrn4_3d2">Concious</h1>
+                  </div>
+                  <div class="newtext1" id="scrn4_4">
+                    <h1 class="textnew3">Examples for Design Principles</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="newbgclr" id="scrn4_5">
+                <div class="newtext2" id="scrn4_6">
+                  <img
+                    src="content/images/pages/m1_t1_p1/slide4/Pg3_Email_Icon.png"
+                    id="scrn4_6a"
+                  />
+                  <p class="parablue" id="scrn4_6b">
+                    The touchpoint offers content which respects diversity and
+                    its free from harmful stereotypes, e.g. in language, images
+                    or customization options
+                  </p>
+                </div>
+                <div class="newtext3" id="scrn4_7">
+                  <img
+                    src="content/images/pages/m1_t1_p1/slide4/Pg3_Internet_Icon.png"
+                    id="scrn4_7a"
+                  />
+                  <p class="parablue parablue11" id="scrn4_7b">
+                    The website is open/upfront/transparent about the usage of
+                    personal data (why/how/who)
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="Down_arrowIcon disable click_div"
+                data-attr="5"
+                secId="5"
+              >
+                <div class="arrowhover">
+                  <!-- <img src="content/images/pages/m1_t1_p1/slide4/Scroll_Mouse.png" class="arrowbottom" style="pointer-events: none;">
+                                        <p class="scrollcls">SCROLL</p> -->
+                </div>
+                <img
+                  src="content/images/pages/m1_t1_p1/slide1/Scroll_Small_Arrow.png"
+                  class="arrowbottom"
+                  style="pointer-events: none"
+                />
+                <img
+                  src="content/images/pages/m1_t1_p1/slide1/Scroll_Large_Arrow.png"
+                  class="arrowbottom1"
+                  style="pointer-events: none"
+                />
+              </div>
+              <div id="scrn4_8"></div>
+            </section>
+
+            <section
+              class="section fp-auto-height section5"
+              id="section5"
+              audioName="m1_t1_p1_pop6a"
+            >
+              <div class="Up_arrowIcon click_div" data-attr="4">
+                <svg
+                  version="1.1"
+                  style="pointer-events: none"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="11.192px"
+                  height="30.385px"
+                  viewBox="0 0 11.192 20.385"
+                  enable-background="new 0 0 11.192 20.385"
+                  xml:space="preserve"
+                >
+                  <polyline
+                    fill="none"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    points="1,19.385 
+                                10.192,10.193 1,1 "
+                  />
+                </svg>
+              </div>
+              <div class="section_innerDiv newsectionbg" id="scrn5_1a">
+                <div class="row">
+                  <div class="newlogoheader">
+                    <div class="header_title" id="scrn5_1">
+                      <div class="header_logo"></div>
+                      <p class="logotext logotext11">
+                        Design Principles Examples
+                      </p>
+                    </div>
+                    <div class="logo_right" id="scrn5_2">
+                      <img
+                        src="content/images/pages/m1_t1_p1/slide4/Pg6_Real_Small.png"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="newtext" id="scrn5_3">
+                    <h1 class="textnew1" id="scrn5_3a">Accessible</h1>
+                    <img
+                      src="content/images/pages/m1_t1_p1/slide4/Pg5_A_White.png"
+                      class="imager11"
+                      id="scrn5_3b"
+                    />
+                    <div class="newbd1" id="scrn5_3c"></div>
+                    <h1 class="textnew2" id="scrn5_3d">Easy to use</h1>
+                    <h1 class="textnew21" id="scrn5_3d1">Comprehensible</h1>
+                    <h1 class="textnew22" id="scrn5_3d2">Efficient</h1>
+                  </div>
+                  <div class="newtext1" id="scrn5_4">
+                    <h1 class="textnew3">Examples for Design Principles</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="newbgclr" id="scrn5_5">
+                <div class="newtext2" id="scrn5_6">
+                  <img
+                    src="content/images/pages/m1_t1_p1/slide4/Pg3_Email_Icon.png"
+                    id="scrn5_6a"
+                  />
+                  <p class="parablue" id="scrn5_6b">
+                    The copy of the call-to action (CTA) is self-explanatory and
+                    does clearly indicates what to expect after clicking on it
+                  </p>
+                </div>
+                <div class="newtext3" id="scrn5_7">
+                  <img
+                    src="content/images/pages/m1_t1_p1/slide4/Pg3_Internet_Icon.png"
+                    id="scrn5_7a"
+                  />
+                  <p class="parablue parablue11" id="scrn5_7b">
+                    The website is intuitive and easy to navigate for any user
+                  </p>
+                </div>
+              </div>
+              <div
+                class="Down_arrowIcon disable click_div"
+                data-attr="6"
+                secId="6"
+              >
+                <div class="arrowhover">
+                  <!-- <img src="content/images/pages/m1_t1_p1/slide4/Scroll_Mouse.png" class="arrowbottom" style="pointer-events: none;">
+                                        <p class="scrollcls">SCROLL</p> -->
+                </div>
+                <img
+                  src="content/images/pages/m1_t1_p1/slide1/Scroll_Small_Arrow.png"
+                  class="arrowbottom"
+                  style="pointer-events: none"
+                />
+                <img
+                  src="content/images/pages/m1_t1_p1/slide1/Scroll_Large_Arrow.png"
+                  class="arrowbottom1"
+                  style="pointer-events: none"
+                />
+              </div>
+              <div id="scrn5_8"></div>
+            </section>
+
+            <section
+              class="section fp-auto-height section6"
+              id="section6"
+              audioName="m1_t1_p1_pop8"
+            >
+              <div class="Up_arrowIcon click_div" data-attr="5">
+                <svg
+                  version="1.1"
+                  style="pointer-events: none"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="11.192px"
+                  height="30.385px"
+                  viewBox="0 0 11.192 20.385"
+                  enable-background="new 0 0 11.192 20.385"
+                  xml:space="preserve"
+                >
+                  <polyline
+                    fill="none"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    points="1,19.385 
+                                10.192,10.193 1,1 "
+                  />
+                </svg>
+              </div>
+              <div class="section_innerDiv newsectionbg" id="scrn6_1a">
+                <div class="row">
+                  <div class="newlogoheader">
+                    <div class="header_title" id="scrn6_1">
+                      <div class="header_logo"></div>
+                      <p class="logotext logotext11">
+                        Design Principles Examples
+                      </p>
+                    </div>
+                    <div class="logo_right" id="scrn6_2">
+                      <img
+                        src="content/images/pages/m1_t1_p1/slide4/Pg7_Real_Small.png"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="newtext" id="scrn6_3">
+                    <h1 class="textnew1" id="scrn6_3a">Light</h1>
+                    <img
+                      src="content/images/pages/m1_t1_p1/slide4/Pg6_L_White.png"
+                      class="imager11"
+                      id="scrn6_3b"
+                    />
+                    <div class="newbd1" id="scrn6_3c"></div>
+                    <h1 class="textnew2" id="scrn6_3d">Nimble</h1>
+                    <h1 class="textnew21" id="scrn6_3d1">Speedy</h1>
+                    <h1 class="textnew22" id="scrn6_3d2">Responsible</h1>
+                  </div>
+                  <div class="newtext1" id="scrn6_4">
+                    <h1 class="textnew3">Examples for Design Principles</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="newbgclr" id="scrn6_5">
+                <div class="newtext2" id="scrn6_6">
+                  <img
+                    src="content/images/pages/m1_t1_p1/slide4/Pg3_Email_Icon.png"
+                    id="scrn6_6a"
+                  />
+                  <p class="parablue" id="scrn6_6b">
+                    Content is split into easily absorable "snack-sized" pieces
+                    to reduce the density of information
+                  </p>
+                </div>
+                <div class="newtext3" id="scrn6_7">
+                  <img
+                    src="content/images/pages/m1_t1_p1/slide4/Pg3_Internet_Icon.png"
+                    id="scrn6_7a"
+                  />
+                  <p class="parablue parablue11" id="scrn6_7b">
+                    The navigation and interface design is easy to learn and
+                    remember
+                  </p>
+                </div>
+              </div>
+              <div
+                class="Down_arrowIcon disable click_div"
+                data-attr="7"
+                secId="7"
+              >
+                <div class="arrowhover">
+                  <!-- <img src="content/images/pages/m1_t1_p1/slide4/Scroll_Mouse.png" class="arrowbottom" style="pointer-events: none;">
+                                        <p class="scrollcls">SCROLL</p> -->
+                </div>
+                <img
+                  src="content/images/pages/m1_t1_p1/slide1/Scroll_Small_Arrow.png"
+                  class="arrowbottom"
+                  style="pointer-events: none"
+                />
+                <img
+                  src="content/images/pages/m1_t1_p1/slide1/Scroll_Large_Arrow.png"
+                  class="arrowbottom1"
+                  style="pointer-events: none"
+                />
+              </div>
+              <div id="scrn6_8"></div>
+            </section>
+            <section
+              class="section fp-auto-height section7"
+              id="section7"
+              audioName="m1_t1_p1_pop8a"
+            >
+              <!---- Intro section start here -->
+              <div class="background-image1" id="scrn7_1a1"></div>
+              <div class="Up_arrowIcon click_div" data-attr="6">
+                <svg
+                  version="1.1"
+                  style="pointer-events: none"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="11.192px"
+                  height="30.385px"
+                  viewBox="0 0 11.192 20.385"
+                  enable-background="new 0 0 11.192 20.385"
+                  xml:space="preserve"
+                >
+                  <polyline
+                    fill="none"
+                    stroke="#10384f"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    points="1,19.385 
+                                10.192,10.193 1,1 "
+                  />
+                </svg>
+              </div>
+
+              <div class="header_title" id="scrn7_1">
+                <div class="header_logo"></div>
+                <p class="logotext logotext1212">Design Guidance</p>
+              </div>
+              <div class="logo_right" id="scrn7_2">
+                <img
+                  src="content/images/pages/m1_t1_p1/slide4/Pg8_Real_Small.png"
+                />
+              </div>
+              <div class="section_innerDiv slidenew1" id="scrn7_3">
+                <div class="bgnew1" id="scrn7_4"></div>
+                <div class="bgnew2" id="scrn7_5"></div>
+                <div class="bgnew3" id="scrn7_6"></div>
+                <div class="section_innerDiv bgnew4" id="scrn7_7">
+                  <div class="tooltext tooltext1" id="scrn7_8">
+                    <h1>Design Principles</h1>
+                    <p>
+                      describe how effective and meaningful customer
+                      interactions express in design & tech quality
+                    </p>
+
+                    <div class="v_line"></div>
+                    <div class="h_line"></div>
+                  </div>
+                  <div class="tooltext tooltext2" id="scrn7_9">
+                    <h1>Design Guidance</h1>
+                    <p id="scrn7_9a">
+                      provides visual examples & best<br />
+                      practices for each principle
+                    </p>
+                    <div class="v_line"></div>
+                    <div class="h_line"></div>
+                  </div>
+                  <!-- <div class="tooltext tooltext3" id="scrn7_10">
+                    <h1>Touchpoint Fitness Check</h1>
+                    <div class="v_line"></div>
+                    <div class="h_line"></div>
+                  </div> -->
+                  <!-- <div class="tooltext tooltext4" id="scrn7_11">
+                    <h1>Briefing & Training</h1>
+
+                    <div class="v_line"></div>
+                    <div class="h_line"></div>
+                  </div> -->
+                  <div class="icon_div1" id="scrn7_12"></div>
+                </div>
+                <div id="scrn7_13"></div>
+              </div>
+              <div class="section_innerDiv1 slidenew2" id="scrn7_14">
+                <div class="slide4_div1 slide4_div" id="scrn7_15">
+                  <div class="block_div block_div1" id="scrn7_15a">
+                    <div class="block_title">DESIGN PRINCIPLE</div>
+                    <div class="block_text">
+                      <img
+                        style="width: 155px"
+                        src="content/images/pages/m1_t1_p1/slide4/Gfx_2.png"
+                        class="center-block"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="block_div block_div2" id="scrn7_15b">
+                    <div class="block_title">Dimension</div>
+                    <div class="block_text">
+                      <div class="dimension_div">
+                        <div class="ring1">R</div>
+                        <div class="ring2">E</div>
+                        <div class="ring3">A</div>
+                        <div class="ring4">L</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="block_div block_div3" id="scrn7_15c">
+                    <div class="block_title">Channel</div>
+                    <div class="block_text">
+                      <div class="block_div3_1"></div>
+                      <div class="divider"></div>
+                      <div class="block_div3_2"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide4_div2 slide4_div" id="scrn7_16"></div>
+                <div class="slide4_div3 border-div slide4_div" id="scrn7_17">
+                  <div class="slide4_left">
+                    <div class="block_div block_div4" id="scrn7_17a">
+                      <div class="block_title">DO THIS</div>
+                      <div class="block_text"></div>
+                    </div>
+
+                    <div class="block_div block_div5" id="scrn7_17b">
+                      <div class="block_title">AVOID THAT</div>
+                      <div class="block_text"></div>
+                    </div>
+                  </div>
+
+                  <div class="slide4_right">
+                    <div class="block_div block_div6" id="scrn7_17c">
+                      <div class="block_title">VISUAL EXAMPLE</div>
+                      <div class="block_text"></div>
+                    </div>
+                  </div>
+
+                  <div class="clear_left"></div>
+                </div>
+
+                <div class="clear_left"></div>
+
+                <div id="scrn7_18"></div>
+              </div>
+              <div
+                class="Down_arrowIcon disable click_div"
+                data-attr="8"
+                secId="8"
+              >
+                <div class="arrowhover">
+                  <!-- <img src="content/images/pages/m1_t1_p1/slide1/Scroll_Mouse_Dark.png" class="arrowbottom" style="pointer-events: none;">
+                                        <p class="scrollcls1">SCROLL</p> -->
+                </div>
+                <img
+                  src="content/images/pages/m1_t1_p1/slide1/Scroll_Small_Arrow_Dark.png"
+                  class="arrowbottom"
+                  style="pointer-events: none"
+                />
+                <img
+                  src="content/images/pages/m1_t1_p1/slide1/Scroll_Large_Arrow_Dark.png"
+                  class="arrowbottom1"
+                  style="pointer-events: none"
+                />
+              </div>
+
+              <!---- Intro section end here -->
+            </section>
+            <section
+              class="section fp-auto-height section8"
+              id="section8"
+              audioName="m1_t1_p1_pop9"
+            >
+              <div class="background-image1" id="scrn8_1a1"></div>
+              <div class="Up_arrowIcon click_div" data-attr="7">
+                <svg
+                  version="1.1"
+                  style="pointer-events: none"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="11.192px"
+                  height="30.385px"
+                  viewBox="0 0 11.192 20.385"
+                  enable-background="new 0 0 11.192 20.385"
+                  xml:space="preserve"
+                >
+                  <polyline
+                    fill="none"
+                    stroke="#10384f"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    points="1,19.385 
+                                10.192,10.193 1,1 "
+                  />
+                </svg>
+              </div>
+              <div class="section_innerDiv" id="scrn8_1a">
+                <div class="header_title" id="scrn8_1">
+                  <div class="header_logo"></div>
+                  <div class="header_logo1"></div>
+                  <p class="logotext logotext121">Design Guidance Example</p>
+                </div>
+                <div class="logo_right" id="scrn8_2">
+                  <img
+                    src="content/images/pages/m1_t1_p1/slide4/Pg10_Real_Small.png"
+                  />
+                </div>
+                <div class="content1" id="scrn8_3">
+                  <div class="content1a newcontenttop11">
+                    <p class="scrn9top1">DESIGN PRINCIPLE</p>
+                    The main topic of the email and the purpose it serves is
+                    made clear at first sight.
+                    <div class="newicons11">
+                      <img
+                        src="content/images/pages/m1_t1_p1/slide9/Pg8_Email_Icon.png"
+                        id="scrn8_3a"
+                        class="scale0"
+                      />
+                      <img
+                        src="content/images/pages/m1_t1_p1/slide9/Pg8_R_Small.png"
+                        id="scrn8_3b"
+                        class="scale0"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content1" id="scrn8_4">
+                  <div class="content1b">DO THIS</div>
+                  <div class="content1c">
+                    State the topic and the purpose of the email transparently
+                    and easy to grasp for the reader in subject line, email
+                    teaser line & the emails intro section. Express the purpose
+                    of the email as an improved state, ability or advantage
+                    gained through the information given in the email.
+                  </div>
+                </div>
+
+                <div class="content1" id="scrn8_5">
+                  <div class="content1b cross">AVOID THIS</div>
+                  <div class="content1c">
+                    Use subject line that do not resonate with the content of
+                    the email or neglects to nail down with a few words, what
+                    the email is about and why bayer is sending it. If you
+                    introduce the main topic, the topic is not connected to a
+                    positive outcome proposition to patients or the HCP
+                    themselves.
+                  </div>
+                </div>
+
+                <div class="screen6_mob" id="scrn8_7">
+                  <div class="callOut6_1" id="scrn8_8">
+                    <span></span>
+                    Header and introduction sums up key information <br />(WHAT
+                    / WHEN / WHERE)
+                  </div>
+                  <div class="callOut6_2" id="scrn8_9">
+                    <span></span>
+                    Introduction highlights positive outcomes for the target
+                    audience using growth- and benefit oriented verbs
+                    <br />(e.g. learn how to improve…)
+                  </div>
+                </div>
+
+                <div id="scrn8_6"></div>
+              </div>
+              <div
+                class="Down_arrowIcon disable click_div"
+                data-attr="9"
+                secId="9"
+              >
+                <div class="arrowhover">
+                  <!-- <img src="content/images/pages/m1_t1_p1/slide1/Scroll_Mouse_Dark.png" class="arrowbottom" style="pointer-events: none;">
+                                        <p class="scrollcls1">SCROLL</p> -->
+                </div>
+                <img
+                  src="content/images/pages/m1_t1_p1/slide1/Scroll_Small_Arrow_Dark.png"
+                  class="arrowbottom"
+                  style="pointer-events: none"
+                />
+                <img
+                  src="content/images/pages/m1_t1_p1/slide1/Scroll_Large_Arrow_Dark.png"
+                  class="arrowbottom1"
+                  style="pointer-events: none"
+                />
+              </div>
+            </section>
+            <section
+              class="section fp-auto-height section9"
+              id="section9"
+              audioName="m1_t1_p1_pop10"
+            >
+              <div class="background-image1" id="scrn9_1a1"></div>
+              <div class="section_innerDiv" id="scrn9_1a">
+                <div
+                  class="Up_arrowIcon click_div disable"
+                  data-attr="8"
+                  secId="8"
+                >
+                  <svg
+                    version="1.1"
+                    style="pointer-events: none"
+                    id="Layer_3"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="11.192px"
+                    height="30.385px"
+                    viewBox="0 0 11.192 20.385"
+                    enable-background="new 0 0 11.192 20.385"
+                    xml:space="preserve"
+                  >
+                    <polyline
+                      fill="none"
+                      stroke="#10384f"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      points="1,19.385 
+                                10.192,10.193 1,1 "
+                    />
+                  </svg>
+                </div>
+
+                <div class="header_title" id="scrn9_1">
+                  <div class="header_logo"></div>
+
+                  <p class="logotext logotext1312">
+                    The Touchpoint Fitness Toolbox
+                  </p>
+                </div>
+                <div class="tooltext tooltext1" id="scrn9_3">
+                  <h1>Design Principles</h1>
+                  <p>
+                    describe how effective and meaningful customer interactions
+                    express in design & tech quality
+                  </p>
+
+                  <div class="v_line"></div>
+                  <div class="h_line"></div>
+                </div>
+                <div class="tooltext tooltext2" id="scrn9_4">
+                  <h1>Design Guidance</h1>
+                  <p>
+                    provides visual examples & best<br />
+                    practices for each principle
+                  </p>
+                  <div class="v_line"></div>
+                  <div class="h_line"></div>
+                </div>
+                <div class="tooltext tooltext3" id="scrn9_5">
+                  <h1>Touchpoint Fitness Check</h1>
+                  <p>
+                    evaluates a touchpoint along design principles, quantifies
+                    its quality with a score and suggests CX improvements
+                    (design/tech)
+                  </p>
+                  <div class="v_line"></div>
+                  <div class="h_line"></div>
+                </div>
+                <div class="tooltext tooltext4" id="scrn9_6">
+                  <h1>Briefing & Training</h1>
+                  <p>
+                    enable brand & agency teams to increase and control
+                    touchpoint <br />fitness and grow their CX design<br />
+                    skillset
+                  </p>
+                  <div class="v_line"></div>
+                  <div class="h_line"></div>
+                </div>
+                <div class="icon_div1" id="scrn9_2"></div>
+                <div id="scrn9_7"></div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div
+        id="anim100"
+        tw_from="0_0"
+        tw_dur="0.5"
+        tw_to="0_0"
+        ease="P2_IO"
+        tw_start="10000"
+        tw_stop=""
+      ></div>
+    </div>
+    <div class="itextNext">Click Next to proceed.</div>
+  </body>
+</html>

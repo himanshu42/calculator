@@ -1,0 +1,118 @@
+
+@font-face {
+	font-family: 'centralesansbold';
+	src: url('fonts/centralesans-bold-webfont.svg#centralesansbold') format('svg'),url('centralesans-bold-webfont.eot');
+	src: url('fonts/centralesans-bold-webfont.svg#centralesansbold') format('svg'),url('centralesans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/centralesans-bold-webfont.woff') format('woff'),
+		 url('fonts/centralesans-bold-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'centralesansmedium';
+	src: url('fonts/centralesans-medium-webfont.svg#centralesansmedium') format('svg'),url('centralesans-medium-webfont.eot');
+	src: url('fonts/centralesans-medium-webfont.svg#centralesansmedium') format('svg'),url('centralesans-medium-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/centralesans-medium-webfont.woff') format('woff'),
+		 url('fonts/centralesans-medium-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}		
+
+@font-face {
+	font-family: 'centralesansmediumitallic';
+	src: url('fonts/centralesans-mediumitalic-webfont.svg#centralesansmediumitallic') format('svg'),url('centralesans-mediumitalic-webfont.eot');
+	src: url('fonts/centralesans-mediumitalic-webfont.svg#centralesansmediumitallic') format('svg'),url('centralesans-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/centralesans-mediumitalic-webfont.woff') format('woff'),
+		 url('fonts/centralesans-mediumitalic-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}		
+
+
+@font-face {
+    font-family: 'centralesanslight';
+    src: url('fonts/centralesans-light-webfont.eot');
+    src: url('fonts/centralesans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/centralesans-light-webfont.woff') format('woff'),
+         url('fonts/centralesans-light-webfont.ttf') format('truetype'),
+         url('fonts/centralesans-light-webfont.svg#centralesanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'centralesansbook';
+    src:  url('fonts/centralesans-book-webfont.ttf');
+    src:  url('fonts/centralesans-book-webfont.woff') format('woff'),
+          url('fonts/centralesans-book-webfont.woff2') format('woff2'),
+          url('fonts/centralesans-book-webfont.ttf') format('truetype');
+          
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'centralesansxbold';
+    /*src:  url('fonts/centralesans-xbold-webfont.woff.ttf');*/
+    src:  url('fonts/centralesans-xbold-webfont.woff') format('woff'),
+          url('fonts/centralesans-xbold-webfont.woff2') format('woff2');
+          /*url('fonts/centralesans-book-webfont.ttf') format('truetype');*/
+          
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'centralesanslightitallic';
+	src: url('fonts/centralesans-lightitalic-webfont.svg#centralesansmediumitallic') format('svg'),url('centralesans-lightitalic-webfont.eot');
+	src: url('fonts/centralesans-lightitalic-webfont.svg#centralesansmediumitallic') format('svg'),url('centralesans-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/centralesans-lightitalic-webfont.woff') format('woff'),
+		 url('fonts/centralesans-lightitalic-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'centralesansbookitalic';
+	src: url('fonts/centralesans-bookitalic-webfont.svg#centralesansmediumitallic') format('svg'),url('centralesans-bookitalic-webfont.eot');
+	src: url('fonts/centralesans-bookitalic-webfont.svg#centralesans-bookitalic-webfont') format('svg'),url('centralesans-bookitalic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/centralesans-bookitalic-webfont.woff') format('woff'),
+		 url('fonts/centralesans-bookitalic-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}	
+
+
+@font-face {
+	font-family: 'centralesansbolditalic';
+	src: url('fonts/centralesans-bolditalic-webfont.svg#centralesansmediumitallic') format('svg'),url('centralesans-bolditalic-webfont.eot');
+	src: url('fonts/centralesans-bolditalic-webfont.svg#centralesans-bolditalic-webfont') format('svg'),url('centralesans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/centralesans-bolditalic-webfont.woff') format('woff'),
+		 url('fonts/centralesans-bolditalic-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Glyphicons Halflings";
+	src: url('glyphicons-halflings-regular.eot');
+	src: url('fonts/glyphicons-halflings-regular.svg#glyphicons-halflings-regular') format('svg'),url('glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/glyphicons-halflings-regular.woff') format('woff'),
+		 url('fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+		 url('fonts/glyphicons-halflings-regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}		
+
+
+
+
+
+
+
+

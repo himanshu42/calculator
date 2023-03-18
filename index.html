@@ -1,0 +1,1984 @@
+<script>
+    var spcolor="Blue";
+    var spstatus="Unmute";
+</script>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The REAL Principles</title>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
+    <meta name="author" content="author">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <!--<meta name="viewport" content="user-scalable = yes">-->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" > -->
+    <!-- <link rel="stylesheet" type="text/css" href="content/css/reset.css" /> -->
+    <link rel="stylesheet" media="screen" href="content/css/philips.css" />
+    <link rel="stylesheet" media="screen" href="content/css/fonts.css" />
+    <link rel="stylesheet" media="screen" href="content/css/player.css" />
+    <script type="text/javascript" src="content/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="content/js/utils/DetectDevice.js"></script>
+    <script type="text/javascript" src="content/js/philips.min.js"></script>
+    <script type="text/javascript" src="content/js/utils/SystemDetect.js"></script>
+    <script type="text/javascript" src="content/js/player/preloadImages.js"></script>
+    <script type="text/javascript" src="content/js/utils/preloadCssImages.jQuery_v5.js"></script>
+    <script type="text/javascript" src="content/js/utils/imageLoader.js"></script>
+    <script type="text/javascript" src="content/js/utils/utils.js"></script>
+    <script type="text/javascript" src="content/js/utils/DebuggerFunctions.js"></script>
+    <!--<script type="text/javascript" src="content/js/apiwrapper.js"></script>-->
+    <!--<script type="text/javascript" src="content/js/utils/soundmanager2-nodebug-jsmin.js"></script>
+    <script type="text/javascript" src="content/js/utils/soundmanager2.js"></script>-->
+    <script type="text/javascript" src="content/js/player/model.js"></script>
+    <script type="text/javascript" src="content/js/player/audioController.js"></script>
+    <script type="text/javascript" src="content/js/player/glossary.js"></script>
+    <script type="text/javascript" src="content/js/player/resource.js"></script>
+    <script type="text/javascript" src="content/js/player/controlsHandeler.js"></script>
+    <script type="text/javascript" src="content/js/player/controller.js"></script>
+    <script type="text/javascript" src="content/js/player/animationController.js"></script>
+    <script type="text/javascript" src="content/js/player/template.js"></script>
+    <script type="text/javascript" src="content/js/player/interactivePopup.js"></script>
+    <script type="text/javascript" src="content/js/player/timeline.js"></script>
+    <!-- <script type="text/javascript" src="content/js/player/accordion.js"></script> -->
+    <!-- <script type="text/javascript" src="content/js/player/questionsBank.js"></script> -->
+    <!-- <script type="text/javascript" src="content/js/player/dragAndDrop.js"></script> -->
+    <!-- <script type="text/javascript" src="content/js/player/assessment.js"></script> -->
+    <!-- <script type="text/javascript" src="content/js/player/post_assessment.js"></script> -->
+    <!-- <script type="text/javascript" src="content/js/player/search.js"></script> -->
+    <script type="text/javascript" src="content/js/enscroll-0.6.2.min.js"></script>
+    <script type="text/javascript" src="content/js/player/audioTimeline.js"></script>
+    <script type="text/javascript" src="content/js/player/events.js"></script>
+    <script type="text/javascript" src="content/js/video.js"></script>
+    <!-- <script type="text/javascript" src="content/js/kenya.js"></script> -->
+    <!-- <script type="text/javascript" src="content/js/blend.js"></script>     -->
+    <!-- <script type="text/javascript" src="content/js/supplier.js"></script> -->
+    <!-- <script type="text/javascript" src="content/js/leaps.js"></script> -->
+    <!-- <script type="text/javascript" src="content/js/wallStreet.js"></script> -->
+    <!-- <script type="text/javascript" src="content/js/brussels.js"></script> -->
+    <!-- <script type="text/javascript" src="content/js/outro.js"></script> -->
+    <script type="text/javascript" src="content/js/intro.js"></script>
+    <script type="text/javascript" src="content/js/map.js"></script>
+    <!-- <script type="text/javascript" src="content/js/endJourny.js"></script>  -->
+
+    <link rel="stylesheet" href="content/css/video-js.css" type="text/css" />
+    <!-- SCORM related files -->
+    <script type="text/javascript" src="content/js/apiwrapper.js"></script>
+    <script type="text/javascript" src="content/js/scofunctions.js"></script>
+    <!-- SCORM related files -->
+    <!--GreenSock lib-->
+    <script type="text/javascript" src="content/js/greensock/TweenMax.min.js"></script>
+    <script type="text/javascript" src="content/js/greensock/TimelineMax.min.js"></script>
+    <!-- translation -->
+    <!--  <link rel="stylesheet" href="content/pages/ch/ch.css" type="text/css"></link>
+    <link rel="stylesheet" href="content/pages/ja/ja.css" type="text/css"></link> -->
+    <!--GreenSock lib-->
+    <!--for remote debugging-->
+    <!-- <script src="http://jsconsole.com/remote.js?DC7593CD-68F8-48EB-A465-FB5B951B38D8"></script> -->
+    <!--  menu js and Css-->
+    <link rel="stylesheet" href="content/css/menu.css" type="text/css">
+    <!--<script type="text/javascript" src="content/js/jquery-1.4.4.min.js"></script>-->
+    <script type="text/javascript" src="content/js/jquery.ztree.core-3.5.js"></script>
+    <script type="text/javascript" src="content/js/jquery.ztree.excheck-3.5.js"></script>
+    <script type="text/javascript" src="content/js/menu.js"></script>
+    <!--  menu js and Css -->
+    <!--  JQuery UI Js and Css-->
+    <link rel="stylesheet" href="content/css/jquery-ui.css" type="text/css">
+    <script type="text/javascript" src="content/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="content/js/jquery-asPieProgress.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.js"></script>-->
+    <!--<script type="text/javascript" src="content/js/jquery-ui-1.8.16.custom.min.js"></script>-->
+    <!--  JQuery UI js and Css -->
+    <!-- for touch-->
+    <script type="text/javascript" src="content/js/jquery.ui.touch-punch.min.js"></script>
+    <!-- touch end-->
+    <!-- vanderlee_coverflow -->
+    <script type="text/javascript" src="content/js/vanderlee_coverflow/reflection.js"></script>
+    <script type="text/javascript" src="content/js/vanderlee_coverflow/jquery.mousewheel.js"></script>
+    <!--<script type="text/javascript" src="content/js/vanderlee_coverflow/jquery.touchSwipe.min.js"></script>-->
+    <script type="text/javascript" src="content/js/vanderlee_coverflow/jquery.interpolate.js"></script>
+    <script type="text/javascript" src="content/js/vanderlee_coverflow/jquery.coverflow.js"></script>
+    <!-- vanderlee_coverflow -->
+    <script type="text/javascript" src="content/js/player/carousal.js"></script>
+    <!-- Questions CSS-->
+    <link rel="stylesheet" media="screen" href="content/css/questions.css" />
+    <!-- Font Style -->
+    <link rel="stylesheet" media="screen" href="content/css/iconCss/css/fontello.css" />
+    <link rel="stylesheet" href="content/css/iconCss/css/fontello.css">
+    <link rel="stylesheet" href="content/css/iconCss/css/animation.css">
+    <link rel="stylesheet" href="content/css/custom.css">
+    <link rel="stylesheet" href="content/css/flex.css">
+    <!-- <link rel="stylesheet" href="content/css/kenya.css"> -->
+    <!-- <link rel="stylesheet" href="content/css/blend.css">     -->
+    <!-- <link rel="stylesheet" href="content/css/supplier.css"> -->
+    <!-- <link rel="stylesheet" href="content/css/leaps.css"> -->
+    <!-- <link rel="stylesheet" href="content/css/wallstreet.css"> -->
+    <!-- <link rel="stylesheet" href="content/css/Brussels.css"> -->
+    <!-- <link rel="stylesheet" href="content/css/outro.css"> -->
+    <link rel="stylesheet" href="content/css/intro.css">
+    <link rel="stylesheet" href="content/css/map.css">
+    <link rel="stylesheet" href="content/css/style.css">
+
+    <!--  for scroll -->
+    <link rel="stylesheet" href="content/js/scroll/jquery.mCustomScrollbar.css" />
+    <script type="text/javascript" src="content/js/scroll/jquery.mCustomScrollbar.js"></script>
+    <!--course color-->
+    <script type="text/javascript" src="content/js/player/handle_color.js"></script>
+    <script type="text/javascript" src="content/js/jquery-ui-touch-punch.js"></script>
+    <!--  <script type="text/javascript" src="content/js/player/animations/classie.js"></script> -->
+    <script src="content/js/modernizr.custom.js" type="text/javascript"></script>
+    <!-- <script src="content/js/classie.js" type="text/javascript"></script> -->
+    <!-- <script src="content/js/mlpushmenu.js" type="text/javascript"></script> -->
+    <script type="text/javascript" src="content/js/language.js"></script>
+
+    <script type="text/javascript" src="content/js/jquery.fullpage.extensions.min.js"></script>
+    <script type="text/javascript" src="content/js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="content/js/custom.js"></script>
+    <style>
+        .mutebtn{
+            display: none;
+        }
+    </style>
+    <script>
+    var width = window.innerWidth;
+    var height_de = window.innerHeight;
+    if (typeof(console) == "undefined") {
+        console = {};
+        console.log = function() {};
+        console.error = function() {};
+    }
+    $(document).ready(function() {
+        // $("#launchbtn").off("click").on("click", function(){
+        //     model.showPage(model.currentModule, model.currentTopic, model.currentPage);
+        //     $(".index_first, #splashContainer").fadeOut();
+        //     audElem.get(0).pause();
+        //     controller.startCourseFromWelcomePage()            
+        // });
+        //  $("#Continue").off("click").on("click", function(){                 
+        //     $(".index_first, #splashContainer").fadeOut();                
+        //     $("#wlcmAud").get(0).pause();       
+        //     model.showPage(model.currentModule, model.currentTopic, model.currentPage);            
+        // });
+       
+                                                            
+        //  $(".sowaccord ul li").click(function() {
+        //     //alert($(".sowaccord ul li a").index($(this)))
+        //     model.resource_Array[$(".resources li").index($(this))] = 1;
+        //     //alert(model.resource_Array)
+        //     $(this).addClass("actme");
+        //     controller.checkResourseCompletion()
+        //     controller.updateSaveData()
+        // });
+        /*  $("#debuger_btn").click(function() {
+                $(".debbugger_popup").fadeIn();
+          });          
+          $("#Close_btn_debugger").click(function() {
+                $(".debbugger_popup").fadeOut();
+          });*/
+        $(".downdivs_dv").hide();
+        $(".selectdv").click(function(e) {
+            $(".downdivs_dv").slideToggle();
+            e.stopPropagation();
+        });
+        $(".selectdv ul li").click(function(e) {
+            var selectVal = $(this).html();
+            language.setLang = selectVal;
+            language.userlanguage = $(this).attr('lang')
+            //language.userlanguage = "en"
+            $(".holder").html(selectVal);
+            // $('.btn_sele').removeClass('disable');
+            $('.cursor_no_drop').css('display', 'none');
+            $(".downdivs_dv").hide();
+            e.stopPropagation();
+        });
+        $(document).click(function() { $(".downdivs_dv").hide(); });
+
+
+        $(".resources li a").click(function() {
+            model.resource_Array[$(".resources li a").index($(this))] = 1;
+            //$(".resources li a").index($(this)).addClass("actme");
+            setActmeClass($(".resources li a").index($(this)))
+            
+            controller.checkResourseCompletion()
+            controller.updateSaveData();
+        });
+        // if(language.userlanguage =='es'){
+        //    $(".nfeedback::before").addClass("es_nfeedback::before");
+        // }
+
+        $(".clickaccord").click(function() {
+
+            // $(".clickaccord").removeClass("addcls");
+            //$(".addcls").removeClass("addcls");
+            $(this).toggleClass("addcls").siblings().removeClass("addcls");
+            $(this).parent(".myaccording").siblings().children(".addcls").toggleClass("addcls");
+
+            $(this).next(".sowaccord").slideToggle('slow').siblings(".sowaccord").slideUp('slow');
+            $(this).parent(".myaccording").siblings().children(".sowaccord").slideUp('slow');;
+        });
+
+
+        controller.init();
+
+
+        // $(".videopls").on('click', function(){
+        //     $(this).fadeOut();
+        //     //alert($('.mysplash').currentTime())
+        //     //$('.mysplash').each(function(){
+        //         //if($(this).currentTime() > 11 || $(this).currentTime() == 10 ) {
+        //             $(".videopls").fadeIn();
+        //             $('.mysplash').play();
+        //         //};
+        //     //})
+
+
+        // });
+        
+       $("#volcontrol").slider({
+            value  : 75,
+            step   : 1,
+            range  : 'min',
+            min    : 0,
+            max    : 100,
+            change : function(){            
+                audioController.updateVolume();
+            }
+        });
+
+       
+        $('#audioOnOff').on('click', function() {
+            if ($(this).hasClass("oncontrolv")) {
+               // $('#volcontrol').removeClass('active');
+                $(this).removeClass("oncontrolv");
+                $(this).removeClass("audioON");
+                audioController.unmuteAudio();
+            }
+            else
+            {
+                $(this).addClass("oncontrolv");
+                $(this).addClass("audioON");
+                audioController.muteAudio();
+              //  $('#volcontrol').addClass('active');
+            }
+        });
+
+        
+        //$("#backAudio").get(0).load();      
+        //$('#audiocontrolBtn').addClass("pauseAudio");
+
+        /*$('#audiocontrolBtn').off("click").on('click', function() {
+            if($(this).hasClass("pauseAudio")) {                    
+                $('#audiocontrolBtn').removeClass("pauseAudio");
+                $("#backAudio").get(0).play();
+                $("#backAudio").prop("volume", 0.1);  
+            }
+            else
+            {       
+                $("#backAudio").get(0).pause();  
+                $('#audiocontrolBtn').addClass("pauseAudio");
+            }
+        });*/ 
+      
+       
+        $('#homefor').on('click', function() {
+
+            model.showPage(1, 4, 1)
+            $(this).css({ 'pointer-events': 'none' });
+            $('#homefiv').css({ 'pointer-events': 'auto' });
+            $('#homeSic').css({ 'pointer-events': 'auto' });
+            $('#homethr').css({ 'pointer-events': 'auto' });
+            $('#homeSec').css({ 'pointer-events': 'auto' });
+            $('#hutClic').css({ 'pointer-events': 'auto' });
+
+        });
+
+        $('#homefiv').on('click', function() {
+
+            model.showPage(1, 5, 1)
+            $(this).css({ 'pointer-events': 'none' });
+            $('#homefor').css({ 'pointer-events': 'auto' });
+            $('#homeSic').css({ 'pointer-events': 'auto' });
+            $('#homethr').css({ 'pointer-events': 'auto' });
+            $('#homeSec').css({ 'pointer-events': 'auto' });
+            $('#hutClic').css({ 'pointer-events': 'auto' });
+        });
+        $('#homeSic').on('click', function() {
+
+            model.showPage(1, 6, 1)
+            $(this).css({ 'pointer-events': 'none' });
+            $('#homefiv').css({ 'pointer-events': 'auto' });
+            $('#homefor').css({ 'pointer-events': 'auto' });
+            $('#homethr').css({ 'pointer-events': 'auto' });
+            $('#homeSec').css({ 'pointer-events': 'auto' });
+            $('#hutClic').css({ 'pointer-events': 'auto' });
+        });
+ 
+
+        $('#treeMenu').enscroll({
+            showOnHover: true,
+            verticalTrackClass: 'track3',
+            verticalHandleClass: 'handle3'
+        });
+        $('.transcript_Container_inner').enscroll({
+            showOnHover: true,
+            verticalTrackClass: 'track3',
+            verticalHandleClass: 'handle3'
+        });
+        $('.rowdivs').enscroll({
+            showOnHover: true,
+            verticalTrackClass: 'track3',
+            verticalHandleClass: 'handle3'
+        });
+
+        $("#treeMenu li a").attr("title", "");
+
+        $('.glossaryPopupWrap').enscroll({
+            showOnHover: false,
+            verticalTrackClass: 'track3',
+            verticalHandleClass: 'handle3'
+        });
+        
+
+        setLoop();
+    });
+
+    $(window).resize(function() {
+        setLoop();
+    });
+    // $(document, window).on('click',function() {
+    //    setLoop();
+    // });
+
+    function setActmeClass(num)
+    {
+        $(".resources li").each(function(ind)
+        {
+            if(ind == num)
+            {
+                $(this).addClass("actme");    
+            }
+        })
+    }
+
+    function setLoop() {
+        width = window.innerWidth;
+        height_de = window.innerHeight;
+        controller.adapted();
+        var isiOS = isMobile.iOS();
+        var isAndroid = isMobile.Android();
+        if(isiOS || isAndroid){
+            if (window.parent.matchMedia("(orientation: portrait)").matches) {
+                $('.portMode_Div').show()
+                $('.landscapeMode_Div').hide();
+                audioController.muteAudio();
+                $('#backAudio').prop('muted', true);
+            }
+            if (window.parent.matchMedia("(orientation: landscape)").matches) {
+                $('.portMode_Div').hide();
+                $('.landscapeMode_Div').show();
+                if (!model.isMute) {
+                    audioController.unmuteAudio();
+                    $('#backAudio').prop('muted', false);
+                }
+            }
+        }
+
+    }
+
+    var isMobile = {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+        },
+        any: function() {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        }
+    };
+
+    
+    </script>
+    <link rel="stylesheet" type="text/css" href="content/css/demo.css" />
+    <!--  <link rel="stylesheet" type="text/css" href="content/css/icons.css" /> -->
+    <link rel="stylesheet" type="text/css" href="content/css/component.css" />
+    <link rel="stylesheet" type="text/css" href="content/css/shell.css" />
+    <style type="text/css">
+    @import url(//fonts.googleapis.com/earlyaccess/notosanssc.css);
+    @import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+/*    b, strong {
+        font-weight: bold !important;
+    }*/
+   
+
+    .cursor_no_drop.langg {
+
+        position: absolute;
+        width: 309px;
+        height: 50px;
+        bottom: 80px;
+        left: 40px;
+        cursor: no-drop;
+    } 
+
+    #skip.hiddenskip {
+        display: none!important;
+    }
+
+    #MainC {
+        width: 1920px;        
+        height: 969px;
+        background: transparent;
+        position: relative; 
+        left: 50%;
+        top: 50%;
+        overflow: hidden;
+        text-shadow: none;
+    }
+
+    .portMode_Div {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 9;
+        display: none;
+        background: #ffffff;
+        padding: 1.5em;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .portMode_Div .portraitContent {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    @media (max-width: 1366px){
+        /*#MainC {
+            width: 1366px;
+            height: 657px;
+        }*/
+    }
+
+    .MainC.non_addaptive {
+        width: 100%;       
+        background: #ffffff;
+        transform: none !important;  
+        float: left;
+        height: 100%;      
+    }
+
+    #player_menuWrapper {
+        display: block !important;
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+    #scrollbox3 {
+        overflow: auto;
+        width: 400px;
+        height: 360px;
+        padding: 0 5px;
+        border: 1px solid #b7b7b7;
+    }
+
+    .track3 {
+        width: 8px;
+        background: #e7cedb;
+        margin-right: -12px;
+        border-radius: 0px;
+        -webkit-transition: background 0.1s linear;
+        transition: background 0.1s linear;
+    }
+
+    #treeMenu~div {
+        position: absolute;
+        left: 600px !important;
+    }
+
+    .handle3 {
+        width: 8px;
+        background: #888888;
+        border-radius: 0px;
+        -webkit-transition: width 0.1s;
+        transition: width 0.1s;
+    }
+
+    .track3:hover .handle3,
+    .track3.dragging .handle3 {
+        width: 8px;
+    }
+    .backtohome svg path {
+        fill: #fff !important;
+    }
+    .aeroplane svg path:nth-child(1) {
+        fill: transparent !important;
+    }
+    .transcript_Container_inner~div>.track3 {
+        width: 5px;
+        right: 0px;
+        background: #d1d3d4;
+        margin-right: 2px;
+        border-radius: 0px;
+        -webkit-transition: background 0.1s linear;
+        transition: background 0.1s linear;
+        margin-top: 3px;
+    }
+
+    #audiocontrolBtn{
+        background: url(content/images/pages/m1_t1_p1/music_icon.svg);
+        width: 40px;
+        height: 50px;
+        background-repeat: no-repeat;
+        transition: all 0.4s ease-in-out 0s;
+    }
+
+    #audiocontrolBtn:hover{
+        transform: scale(1.07);
+    }
+
+    #audiocontrolBtn.pauseAudio{
+        background: url(content/images/pages/m1_t1_p1/music_dis_icon.svg);
+        background-repeat: no-repeat;
+        bottom: 9px;
+    }
+
+    .transcript_Container_inner~div>.track3>.handle3 {
+        width: 5px;
+        right: 0px;
+        background: #6d6e71;
+        border-radius: 0px;
+        -webkit-transition: width 0.1s;
+        transition: width 0.1s;
+    }
+    /* glossary page pop css */
+
+    #glossary {}
+
+    #glossary .rowdivs {
+        background: none;
+    }
+
+    #glossary #myUL {
+        background: none !important;
+    }
+
+    #glossary #myUL li {
+        background: none !important;
+    }
+
+    #glossary #myUL li {
+        border-top: none !important;
+        border-bottom: 1px solid rgba(203, 203, 203, 0.3) !important;
+        border-right: none !important;
+        border-left: none !important;
+    }
+
+    #glossary #myUL li span.lefttext {
+        border-right: 1px solid rgba(203, 203, 203, 0.3) !important;
+    }
+
+    #glossary #myUL li a {
+        color: #fff !important;
+    }
+
+    #glossary .searchBox input {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.2) url("content/images/shell/lens_grey.png") no-repeat 10px center;
+        height: 43px;
+        border-radius: 3px;
+        font-size: 16px;
+    }
+
+    #resourcePopup #glossary h2 {
+        background: none;
+        font-size: 30px;
+        font-family: "centralesansbook", Arial, Helvetica, sans-seri;
+        padding: 0;
+    }
+
+    /*.shellPopupWrap .handle3 {
+        background: #003478 !important;
+    }*/
+
+    #glossary .rowdivs~div>.track3 {
+        background: rgba(203, 203, 203, 0.5);
+    }
+
+    #glossary ::-webkit-input-placeholder {
+        color: #fff;
+    }
+    /* Chrome/Opera/Safari */
+
+    #glossary ::-moz-placeholder {
+        color: #fff;
+    }
+    /* Firefox 19+ */
+
+    #glossary :-ms-input-placeholder {
+        color: #fff;
+    }
+    /* IE 10+ */
+
+    #glossary ::-moz-placeholder {
+        color: #fff;
+    }
+    /* Firefox 18- */
+
+    #glossary ::-ms-clear {
+        display: none;
+    }
+    /* glossary page pop css end*/
+
+    #player_content {
+        position: absolute;
+    }
+
+    .mc {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    .resourceBarCode{
+        display: block;
+        margin: 10px 0 6px 0;
+        clear: both;
+    }
+
+    .videopls {
+        float: left;
+        width: 85px;
+        height: 63px;
+        background: #333;
+        color: #fff;
+        position: absolute;
+        left: 317px;
+        top: 190px;
+        display: none;
+        background: url("content/images/pages/global/mail.png") no-repeat;
+        background-position: 0px -66px;
+        cursor: pointer;
+    }
+
+    .videopls:hover {
+        background-position: 0px -1px;
+    }
+
+    .page_nav {
+        width: 50px;
+        display: none;
+        position: relative;
+        top: 120px;
+        z-index: 111;
+        display: none !important;
+    }
+
+    .hold {
+
+        width: 100%;
+    }
+
+    .home_nug {
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+
+    .home_nug>img {
+
+        cursor: pointer;
+    }
+
+    .home_nug::after {
+        content: url(content/images/pages/global/line.png);
+        position: absolute;
+        top: 33px;
+        right: 24px;
+    }
+
+    .sec_nug {
+
+        width: 100%;
+        position: relative;
+        text-align: center;
+        margin-top: 42px;
+        cursor: pointer;
+    }
+
+    .sec_nug::after {
+        content: url(content/images/pages/global/line.png);
+        position: absolute;
+        top: 33px;
+        right: 24px;
+    }
+
+    .thr_nug {
+
+        width: 100%;
+        position: relative;
+        text-align: center;
+        margin-top: 42px;
+        cursor: pointer;
+    }
+
+    .thr_nug::after {
+        content: url(content/images/pages/global/line.png);
+        position: absolute;
+        top: 33px;
+        right: 24px;
+    }
+
+    .for_nug {
+
+        width: 100%;
+        position: relative;
+        text-align: center;
+        margin-top: 42px;
+        cursor: pointer;
+    }
+
+    .for_nug::after {
+        content: url(content/images/pages/global/line.png);
+        position: absolute;
+        top: 33px;
+        right: 24px;
+    }
+
+    .fiv_nug {
+
+        width: 100%;
+        position: relative;
+        text-align: center;
+        margin-top: 42px;
+        cursor: pointer;
+    }
+
+    .fiv_nug::after {
+        content: url(content/images/pages/global/line.png);
+        position: absolute;
+        top: 33px;
+        right: 24px;
+    }
+
+    .six_nug {
+
+        width: 100%;
+        position: relative;
+        text-align: center;
+        margin-top: 42px;
+        cursor: pointer;
+    }
+
+    .fir_nug {
+        position: relative;
+        top: 42px;
+        left: 13px;
+    }
+
+    .fir_nug_yel {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 11;
+        display: none;
+    }
+
+    .sec_nug_yel {
+
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 11;
+        display: none;
+    }
+
+    .thr_nug_yel {
+
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 11;
+        display: none;
+    }
+
+    .for_nug_yel {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 11;
+        display: none;
+    }
+
+    .fiv_nug_yel {
+
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 11;
+        display: none;
+    }
+
+    .six_nug_yel {
+
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 11;
+        display: none;
+    }
+
+    .home_nug:hover>.cover,
+    .firs_nug:hover>.cover,
+    .secs_nug:hover>.cover,
+    .thrs_nug:hover>.cover,
+    .fors_nug:hover>.cover,
+    .fivs_nug:hover>.cover,
+    .sixs_nug:hover>.cover {
+        top: 14px;
+        visibility: visible;
+    }
+
+    .hold {
+        counter-reset: section
+    }
+
+    .tool_tip {
+        width: 252px;
+        height: 44px;
+        background-color: #e98300;
+        border-radius: 4px;
+        position: absolute;
+        left: 26px;
+        top: -20px;
+        /* text-align: center; */
+        line-height: 16px;
+        display: flex;
+        color: #cae3e9;
+        align-items: center;
+        text-align: left !important;
+        padding: 5px 10px !important;
+    }
+
+    .tool_tip:before {
+        counter-increment: section;
+        content: counter(section) ". ";
+        float: left;
+        padding-right: 10px;
+    }
+
+
+    .home_nug .tool_tip:before {
+        display: none
+    }
+
+    .firs_nug {
+
+        position: relative;
+        top: 42px;
+        left: 13px;
+    }
+
+    .hold>div img {
+        cursor: pointer;
+    }
+
+    .thrs_nug {
+        position: relative;
+        top: 84px;
+        left: 13px;
+    }
+
+    .thrs_nug::after {
+        content: url(content/images/pages/global/line.png);
+        position: absolute;
+        top: 33px;
+        right: 37px;
+    }
+
+    .firs_nug:after {
+        content: url(content/images/pages/global/line.png);
+        position: absolute;
+        top: 33px;
+        left: 12px;
+    }
+
+    .hold .asdv:after {
+        left: 12px;
+    }
+
+    .secs_nug {
+        position: relative;
+        top: 125px;
+        left: 13px;
+    }
+
+    .secs_nug::after {
+        content: url(content/images/pages/global/line.png);
+        position: absolute;
+        top: 33px;
+        right: 37px;
+    }
+
+    .fors_nug {
+        position: relative;
+        top: 167px;
+        left: 13px;
+    }
+
+    .fors_nug::after {
+        content: url(content/images/pages/global/line.png);
+        position: absolute;
+        top: 33px;
+        right: 37px;
+    }
+
+    .fivs_nug {
+        position: relative;
+        top: 208px;
+        left: 13px;
+    }
+
+    .lk {
+
+        position: absolute;
+        left: 43px;
+        padding-top: 7px;
+    }
+
+    .pos {
+
+        padding-top: 14px;
+    }
+
+
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-right: 11px solid #e98300;
+        border-bottom: 10px solid transparent;
+        position: absolute;
+        left: 15px;
+        bottom: -12px;
+    }
+
+    #audiocontrolBtn{position: absolute;
+    left: 75px;
+    bottom: 0;
+    cursor: pointer;
+    display: none;}
+
+    .cover {
+
+        position: relative;
+        left: 11px;
+        top: 4px;
+        transition: all 0.5s ease;
+        visibility: hidden;
+    }
+
+    .fix {
+
+        position: absolute;
+        left: 32px !important;
+    }
+
+    .player_backBtn_style+#player_nextBtn+.nabtn1 {
+        display: none;
+    }
+    #section_backBtn{background-position: -58px -117px;pointer-events: none; opacity: 0.5;}
+    #section_nextBtn{background-position: -221px -117px;pointer-events: none; opacity: 0.5;}
+
+    #section_backBtn.active{background-position: -58px -35px;pointer-events: auto; opacity: 1;}
+    #section_nextBtn.active{background-position: -221px -35px;pointer-events: auto;opacity: 1;}
+
+    #section_nextBtn.nextDisable{opacity: 0.5!important; pointer-events: none!important;}
+     #section_backBtn.backDisable{opacity: 0.5!important; pointer-events: none!important;}
+
+    #section_backBtn.enableState{opacity: 1!important; pointer-events: auto!important;} 
+
+    #section_nextBtn.visitedSlide{opacity: 1!important; pointer-events: auto!important;}
+
+    .navBtnContainer svg polyline {
+        stroke: #fff !important;
+    }
+    .player_nextBtn_style+.nabtn1+.nabtn2 {
+        display: none;
+    }
+
+    .asdv {
+        width: 23px;
+    }
+    /*.videopls b{ color: #3c3c3c; font-size: 16px; font-family: 'centralesansbookitalic'; }
+    .videopls span{background: url("content/images/pages/global/mail_normal.png") no-repeat 0px 9px;  float: left; width: 92px; height: 66px;  }*/
+     .ldtext h2 {
+        font-size: 24px;
+        /* color: #e9c5cb; */
+        color: #fff;
+        padding: 30px 0 46px 0;
+    }
+    .user_name {
+       /* position: absolute;
+        top: -6px;
+        left: 100px;*/
+        font-size: 20px;
+    }
+/*.debbugger_popup {
+    position: absolute;
+    height: 70%;
+    width: 500px;
+    right: 108px;
+    top: 94px;
+    z-index: 100;
+    display: none;
+    background: #fff;
+    color: #3c3c3c;
+}
+.debbugger_popup .content_debugger {
+    height: 428px;
+    overflow-y: auto;
+    padding: 0px 20px;
+}
+.debbugger_popup .content_debugger p{ 
+    color: blue !important;
+    font-size: 10px;
+}
+#Close_btn_debugger {
+   position: absolute;
+   right: 10px;
+   top:10px;
+   background-color: #e4e4e4;
+}
+.debbugger_popup h5{
+margin: 22px;
+    font-size: 18px;
+    font-family: centralesansbold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #3c3c3c;
+}
+    #debuger_btn {
+background-image: url(content/images/pages/global/download.png) !important;
+    background-repeat: no-repeat !important;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-size: 100% 100%;
+    border-radius: 3px;
+        position: absolute;
+    right: 61px;
+    top: 10px;
+    }*/
+    .disable_pointer_none {
+        pointer-events: none !important;
+    }
+    #progressSlider{display: none;}
+    #volcontrol, #volcontrol2 {
+        position: absolute;
+        top: 17px;
+        left: 4.5%;
+        width: 170px !important;
+        height: 3px;
+        background: #dadada;
+        display: none;
+        transition: all ease 0.5s;
+    }
+
+    #volcontrol2{top: inherit; bottom: 92px;}
+
+    #volcontrol.active{left: 125px; display: block;opacity: 1}
+    #volcontrol2.active{left: 90px; display: block;opacity: 1}
+
+     
+    #volcontrol .ui-slider-handle.ui-state-default.ui-corner-all, #volcontrol2 .ui-slider-handle.ui-state-default.ui-corner-all{
+        background: #89d329;
+        height: 20px;
+        width: 20px !important;
+        display: block;
+    }
+
+    #volcontrol.blue_volumeButton .ui-slider-handle.ui-state-default.ui-corner-all, #volcontrol2 .ui-slider-handle.ui-state-default.ui-corner-all{
+        background: #10384f !important;
+    }
+    #volcontrol .ui-slider .ui-slider-range, #volcontrol2 .ui-slider .ui-slider-range{background: #fff;}
+    #audioOnOff {
+        /*background: url(content/images/pages/global/volumebtn.png);
+        background-repeat: no-repeat;
+        transition: all 0.5s ease 0s;
+        display: inline-block;
+        margin: 0px 0px 0px 10px;
+        height: 47px !important;
+        background-size: cover;
+        width: 62px !important;
+        cursor: pointer;*/
+        width: 52px;
+        height: 48px;
+        /*background-position: -589px -48px;*/
+        margin: 15px 0px 0px 55px;
+    }
+
+
+
+
+    .mp3_playerControl{  
+        width: 100% !important;
+        height: 4px;
+        background: #004625;
+        transition: all ease 0.5s;
+        margin-bottom: 7px;
+
+    } 
+    .mp3_playerControl .ui-slider-handle.ui-state-default.ui-corner-all{
+        background: #2b6636;
+        height: 15px;
+        width: 15px !important;
+        display: block;
+    }
+    .ui-slider-horizontal .ui-slider-handle {
+        top: 1px;
+    }
+    .ui-slider .ui-slider-range{
+        background: #89d329;
+        border-radius: unset;
+    }
+
+    
+    /*#volcontrol .ui-slider .ui-slider-range, #volcontrol2 .ui-slider .ui-slider-range{background: #fff;}*/
+     
+    #audioOnOff svg path {
+        fill: #89d329;
+    }
+    #audioOnOff svg{cursor: pointer;transition: all ease 0.5s;}
+    #audioOnOff svg:hover{transform: scale(1.07);}
+    #audioOnOff span{position: absolute;left: 0;bottom:-20px;transition: all ease 0.5s;display: block;width: 177px;color: #fff;font-size: 18px;font-family: 'helveticaneuemedium';letter-spacing: 1px;opacity: 0;display: none;}
+    }
+    
+    
+    
+  /*  .aeroplane  {
+        background: url(content/images/pages/global/mappin.png);
+        background-repeat: no-repeat;
+        transition: all 0.5s ease 0s;
+        display: inline-block;
+        background-size: cover;
+        width: 60px !important;
+        height: 60px !important;
+        cursor: pointer;
+        visibility: hidden;
+        pointer-events: none;
+    }*/
+
+    @media (max-width: 1366px){
+       #audiocontrolBtn {             
+            left: 35px;
+        }
+        #audioOnOff { 
+            margin: 15px 0px 0px 10px;
+        }
+    }
+    @media(max-width: 1366px){
+        #audioOnOff{
+            margin-left: 0px;
+        }
+    }
+    @media screen and (width: 1024px) and (orientation:landscape) {
+        #treeMenu~div {
+            left: 500px !important;
+        }
+    }
+    @media screen and (max-width: 1023px) and (orientation:portrait) {
+        .transcript_Container_inner~div>.track3 {
+            margin-top: 21px !important;
+            height: 89px !important;
+        }
+    }
+
+
+
+    #audioOnOff.oncontrolv #Layer_1{
+        display: none;
+    }
+    #audioOnOff.oncontrolv #Layer_2{
+        display: block;
+    }
+    #audioOnOff #Layer_1{
+        display: block;
+    }
+    #audioOnOff #Layer_2{
+        display: none;
+    }
+
+
+
+    </style>
+</head>
+
+<body class="notIE9" onunload="controller.unloadPage()" onbeforeunload="controller.unloadPage()" onload="myFunction()">
+
+    <script>
+        function myFunction() {
+        //   document.getElementById("myVideo1_1").removeAttribute("controls"); 
+        }
+        </script>
+            <noscript>
+        <div class="player_noscriptmsg_style">This course requires JavaScript to run. Please enable JavaScript. Please contact your local IT Helpdesk for further support.</div>
+    </noscript>
+    <div class="portMode_Div">
+        <div class="portraitContent">
+            <p>Please change the orientation of the device to landscape mode and refresh to view the course.</p>
+        </div>
+    </div>
+
+    <div class="MainC framewrap landscapeMode_Div" id="MainC">
+    <!-- <div class="debbugger_popup">
+        <h5 class="heading_deb">Debugger</h5>
+        <div id="Close_btn_debugger" class="spriteIcon closeBtn" title="Debugger"></div>
+        <div class="content_debugger">
+ 
+        </div>
+
+    </div>     -->    
+        <div id='player_audioWrapper' class='player_audio_style'>
+            <audio id="player_audio" preload="none" src="" type="audio/mp3">audio holder</audio>
+            <audio id="popupAudio" preload="none" type="audio/mp3">audio holder</audio>
+            <audio id="tabAudio1" src="" type="audio/mp3">audio holder</audio>
+            <audio id="tabAudio2" src="" type="audio/mp3">audio holder</audio>
+            <audio id="tabAudio3" src="" type="audio/mp3">audio holder</audio>
+            <!-- <audio id="backAudio" src="content/audio/mp3/en/background_music.mp3" controls loop class="local_player"></audio>  -->
+            <!-- <audio id="CorrectAns" preload="none" type="audio/mp3">audio holder</audio> -->
+        </div>
+        <div class="player_container_style">
+            <div id="player_preLoader" class="player_preLoader_style">
+                <!-- <img src="content/images/shell/loader.gif" class="player_loaderImg_style"> -->
+                <div class="player_loaderImg_style spinner_cube">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="oveflodiv">
+                <div class="mp-pusher" id="">
+                    <div class="scroller">
+                        <div class="scroller-inner">
+                            <div class="container myheader header main_title3">
+                                <!-- <div id="player_menuBtn" class="spriteIcon menuBtn" title="Menu"></div> -->
+                                <div class="Overlays2"></div>
+                                <div class="main_title3">
+                                    <div class="logo_aa">The REAL Principles</div>
+<!--                                     <div class="logo_container">
+                                        <section id="player_moduleTitleBg" class="player_moduleTitleBg_style">
+                                            <div class="module_band">
+                                                <div id="player_moduleTitle" class="player_moduleTitle_style">Module introduction</div>
+                                                <div class="player_courseTitle"></div>
+                                            </div>
+                                        </section>
+                                    </div> -->
+                                    <!-- mp-menu -->
+                                    <nav id="mp-menu" class="mp-menu">
+                                        <!-- <div class="menuHeader">Menu</div> -->
+                                        <div class="bg menu_bg"></div>
+                                        <section id="player_menuWrapper" class="player_menuWrapper_style">
+                                            <div class="menuSome">
+                                                <div class="tree_wrapper">
+                                                    <ul id="treeMenu" class="ztree"></ul>
+                                                </div>
+                                                <div class="image" id="treemenu_image"></div>
+                                            </div>
+                                        </section>
+                                    </nav>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <!-- <div class="page_nav">
+                                    <div class="hold">
+                                        <div class="home_nug">
+                                            <div class="cover">
+                                                <div class="triangle fix"></div>
+                                                <div class="tool_tip lk"></div>
+                                            </div>
+                                            <img id="hutClic" src="content/images/pages/global/hut.png">
+                                        </div>
+                                        <div class="firs_nug asdv">
+                                            <div class="cover">
+                                                <div class="triangle"></div>
+                                                <div class="tool_tip pos"></div>
+                                            </div>
+                                            <img id="homeSec" src="content/images/pages/global/cir.png">
+                                            <div class="fir_nug_yel">
+                                                <img src="content/images/pages/global/yelcir.png">
+                                            </div>
+                                        </div>
+                                        <div class="thrs_nug asdv">
+                                            <div class="cover">
+                                                <div class="triangle"></div>
+                                                <div class="tool_tip"></div>
+                                            </div>
+                                            <img id="homefor" src="content/images/pages/global/cir.png">
+                                            <div class="thr_nug_yel">
+                                                <img src="content/images/pages/global/yelcir.png">
+                                            </div>
+                                        </div>                                        
+                                        <div class="secs_nug asdv">
+                                            <div class="cover">
+                                                <div class="triangle"></div>
+                                                <div class="tool_tip pos"></div>
+                                            </div>
+                                            <img id="homethr" src="content/images/pages/global/cir.png">
+                                            <div class="sec_nug_yel">
+                                                <img src="content/images/pages/global/yelcir.png">
+                                            </div>
+                                        </div>
+
+                                        <div class="fors_nug asdv">
+                                            <div class="cover">
+                                                <div class="triangle"></div>
+                                                <div class="tool_tip pos">”</div>
+                                            </div>
+                                            <img id="homefiv" src="content/images/pages/global/cir.png">
+                                            <div class="for_nug_yel">
+                                                <img src="content/images/pages/global/yelcir.png">
+                                            </div>
+                                        </div>
+                                        <div class="fivs_nug asdv">
+                                            <div class="cover">
+                                                <div class="triangle"></div>
+                                                <div class="tool_tip"></div>
+                                            </div>
+                                            <img id="homeSic" src="content/images/pages/global/cir.png">
+                                            <div class="fiv_nug_yel">
+                                                <img src="content/images/pages/global/yelcir.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                 <buttons id="debuger_btn" title=""> </buttons>
+                                <utility class="main_title3">
+                                    
+                                    <div class="highligher_onoff"></div>
+                                    <buttons id="cross_button" class="spriteIcon closeBtn" title="Close"></buttons>
+                             
+                                    <buttons id="player_helpBtn" class="spriteIcon helpBtn" title="Help"></buttons>
+                                    <buttons id="player_glossaryBtn" class="spriteIcon bookBtn" title="Resources"></buttons>
+                               
+                                   
+                                    
+                                </utility>
+                            </div>
+                            <section id="player_contentArea" class="player_contentArea_style">
+                                <!-- <div class="help_btns_overlay" id="help_box"></div> -->
+                                <!-- <div id="player_helpBtn" class="helpBtn" title="Help"></div> -->
+                                <div class="text-right helpBtnContainer">
+                                    <div class="playerRightBtns">
+                                        <!--  <div id="player_backBtn" class="spriteIcon backBtn player_backBtn_style" title="Back">
+                                            </div>
+                                        <div id="player_nextBtn" class="spriteIcon nextBtn player_nextBtn_style" title="Next">
+                                           </div> -->
+                                    </div>
+                                </div>
+                               <!--  <div class="navBtnContainer">
+                                    <div id="player_backBtn" class="spriteIcon player_backBtn_style" title=""></div>
+                                    <div class="pagecount">1/4</div>
+                                    <div id="player_nextBtn" class="spriteIcon player_nextBtn_style" title=""></div>
+                                </div> -->
+                                
+                                
+                                <div class="navBtnContainer">
+                                    <div id="section_backBtn" class="" title="">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                             width="19.636px" height="36.072px" viewBox="0 0 19.636 36.072" enable-background="new 0 0 19.636 36.072" xml:space="preserve">
+                                        <polyline fill="none" stroke="#000000" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" points="18.035,1.6 
+                                            1.6,18.036 18.035,34.472 "/>
+                                        </svg>
+                                    </div>
+                                    <div class="pagecount"></div>
+                                    <div id="section_nextBtn" class="" title="">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                             width="19.636px" height="36.072px" viewBox="0 0 19.636 36.072" style="enable-background:new 0 0 19.636 36.072;"
+                                             xml:space="preserve">
+                                        <polyline style="fill:none;stroke:#000000;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round;" points="1.6,34.472 
+                                            18.035,18.036 1.6,1.6 "/>
+                                        </svg>
+                                    </div>
+
+                                    <!-- <div class="CTABtn">
+                                        CTA button
+                                    </div>
+
+                                    <div class="CTABtn_con" id="brussels_con">
+                                        <div class="cta_text_con">Leave conversation</div>
+                                    </div>
+                                    <div class="ExitBtn" id="exitCourse">
+                                        <div class="ext_text">End Training</div>
+                                    </div> -->
+
+                                   <!--  <div class="CTABtnouter_con" id="outer_con">
+                                        <div class="cta_text_con">Leave hangar</div>
+                                    </div> -->
+                                    
+                                </div>
+                                
+                                <div class="mc horizontal">
+                                    <div id="player_content" class="player_content_style player_content"></div>
+                                </div>
+                                <div id="transcript_Container">
+                                    <div class="transcript_Container_heading"> Transcript </div>
+                                    <div class="transcipt_close" title=""></div>
+                                    <div class="transcript_Container_inner">
+                                        <div class="transcriptDilog"></div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="footer">
+                                <div class="footauto">
+                                    <div class="footarea">
+                                        <!-- <div class="itextNext">Click/tap the next arrow to continue.  </div> -->
+                                        <!--todo: change 8-->
+                                        <div class="playerCenterBtns">
+                                            <div class="abbot" title=""></div>
+                                            <buttons id="player_transcriptDilogBtn" class="spriteIcon  transcriptBtn margin_left_52" title=""></buttons>
+                                            <div class="abbot audio" title=""></div>
+                                            <!-- <buttons id="audioOnOff" class="spriteIcon audioON" title=""></buttons> -->
+
+                                           <!--  <buttons id="audioOnOff" class="audioON" title="">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 width="44.322px" height="36.012px" viewBox="0 0 44.322 36.012" style="enable-background:new 0 0 44.322 36.012;"
+                                                 xml:space="preserve">
+                                            <path id="blue_volIcon" style="fill:#89d329;" d="M37.105,34.946c0.365,0,0.729-0.145,1.004-0.43c3.949-4.138,6.213-10.156,6.213-16.514
+                                                c0-6.356-2.267-12.373-6.213-16.511c-0.528-0.553-1.408-0.573-1.959-0.046c-0.554,0.529-0.574,1.406-0.047,1.958
+                                                c3.463,3.628,5.451,8.948,5.451,14.599c0,5.651-1.986,10.973-5.451,14.601c-0.527,0.553-0.507,1.43,0.047,1.959
+                                                C36.417,34.82,36.761,34.946,37.105,34.946"/>
+                                            <path id="blue_volIcon1" style="fill:#89d329;" d="M32.498,30.672c0.35,0,0.697-0.131,0.967-0.393c3.082-3.009,4.851-7.481,4.851-12.274
+                                                c0-4.794-1.769-9.266-4.851-12.274c-0.547-0.533-1.424-0.524-1.959,0.025c-0.535,0.548-0.524,1.424,0.024,1.958
+                                                c2.55,2.489,4.015,6.242,4.015,10.294s-1.467,7.802-4.015,10.291c-0.549,0.534-0.558,1.411-0.024,1.959
+                                                C31.777,30.535,32.139,30.672,32.498,30.672"/>
+                                            <path id="blue_volIcon2" style="fill:#89d329;" d="M27.056,23.869c-0.587,0.49-0.665,1.363-0.176,1.951c0.274,0.326,0.669,0.497,1.065,0.497
+                                                c0.313,0,0.627-0.106,0.888-0.322c2.178-1.819,3.479-4.808,3.479-7.991c0-3.231-1.332-6.244-3.561-8.062
+                                                c-0.594-0.485-1.467-0.39-1.95,0.2c-0.483,0.593-0.394,1.465,0.2,1.947c1.59,1.297,2.54,3.507,2.54,5.914
+                                                C29.539,20.376,28.611,22.57,27.056,23.869"/>
+                                            <path id="blue_volIcon3" style="fill:#89d329;" d="M18.115,31.863l-9.518-7.115c-0.24-0.179-0.531-0.276-0.831-0.276H2.771V11.542h4.996
+                                                c0.3,0,0.591-0.097,0.831-0.276l9.518-7.117V31.863z M18.67,0.275L7.308,8.773H1.386C0.619,8.773,0,9.391,0,10.158v15.699
+                                                c0,0.766,0.619,1.385,1.386,1.385h5.922l11.362,8.495c0.244,0.183,0.537,0.275,0.83,0.275c0.211,0,0.425-0.05,0.619-0.146
+                                                c0.469-0.236,0.767-0.714,0.767-1.239V1.383c0-0.524-0.298-1.003-0.767-1.239C19.651-0.086,19.088-0.039,18.67,0.275"/>
+                                            </svg>
+
+                                            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="38.76px" height="36.012px" viewBox="0 0 38.76 36.012" enable-background="new 0 0 38.76 36.012" xml:space="preserve">
+<path id="blue_volIcon4" fill="#89D329" d="M18.115,31.862l-9.518-7.114c-0.24-0.18-0.531-0.276-0.831-0.276H2.771v-12.93h4.996
+    c0.3,0,0.591-0.098,0.831-0.276l9.518-7.117L18.115,31.862L18.115,31.862z M18.67,0.274L7.308,8.772H1.386
+    C0.619,8.772,0,9.391,0,10.158v15.698c0,0.767,0.619,1.386,1.386,1.386h5.922l11.362,8.494c0.244,0.184,0.537,0.275,0.83,0.275
+    c0.211,0,0.425-0.05,0.619-0.146c0.469-0.236,0.767-0.715,0.767-1.239V1.383c0-0.524-0.298-1.003-0.767-1.239
+    C19.651-0.086,19.088-0.039,18.67,0.274"/>
+<path fill="#89D329" id="blue_volIcon5" d="M25.49,25.761c-0.32,0-0.64-0.122-0.884-0.366c-0.488-0.488-0.488-1.279,0-1.768l12.021-12.021
+    c0.488-0.488,1.279-0.488,1.768,0s0.488,1.279,0,1.768L26.374,25.395C26.129,25.639,25.81,25.761,25.49,25.761z"/>
+<path fill="#89D329" id="blue_volIcon6" d="M37.51,25.761c-0.32,0-0.64-0.122-0.884-0.366L24.606,13.373c-0.488-0.488-0.488-1.279,0-1.768
+    s1.279-0.488,1.768,0l12.021,12.021c0.488,0.488,0.488,1.279,0,1.768C38.15,25.639,37.83,25.761,37.51,25.761z"/>
+</svg>
+
+                                                <span>Volume control</span>
+                                            </buttons> -->
+
+                                            <buttons id="audiocontrolBtn" title=""> </buttons>
+
+                                            <audioPlacement>
+                                                <div class="abbot" title=""></div>
+                                                <buttons id="play_pause" class="spriteIcon pauseBtn" title=""></buttons>
+                                                <buttons id="player_reloadPageBtn" class="spriteIcon replayBtn " title=""></buttons>
+                                            </audioPlacement>
+                                            <div class="audiodone_cover"></div>
+                                           <!--  <input type="range" id="volcontrol" name="vol" min="0" max="50"> -->
+                                            <div id="volcontrol"></div>
+                                            <div id="volcontrol2"></div>
+                                            <!-- <div id="progressOverlay"></div>
+                                            <div aria-disabled="true" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="progressSlider">
+                                                <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+                                            </div> -->
+                                            <!-- menu -->
+                                            <div class="menu_btns_overlay" id="box"></div>
+                                            <div class="player_pageNumber_style">
+                                                <div id="player_pageNumber" class=""></div>
+                                            </div>
+                                            <div class="ams1 amsdiv"></div>
+                                            <div class="ams2 amsdiv"></div>
+                                            <div class="ams3 amsdiv"></div>
+                                            <div class="ams4 amsdiv"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           <!--  <div id="player_audioPopupWrapper" class="player_audioPopupWrapper">
+                                <div class="player_popupScreenContainer">
+                                    <p style="color:#3c3c3c">This course is supported by audio and video. Since these multimedia elements incur carrier data charges over a cellular network, we advise you to allow multimedia playback only when you are accessing the course through WiFi or broadband network.</p>
+                                    <div class="player_audioPopup_BtnContainer">
+                                        <button id="player_audio_yes" onClick="controller.setUserAudioPreference(1);" class="clickButton" style="color: #fff;">Okay</button>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!--bookmark div-->
+                            <div class="popupScreen" id="player_bookmarkPopupWrapper">
+                                <div class="feedbackContainer">
+                                    <div class="feedbackTitle"></div>
+                                    <div class="feedcontent"></div>
+                                    <div class="bookmarkPopupButton">
+                                        <button onClick="model.setBookmarkLocation();" class="Yesbutton clickButton hvr-bounce-to-left"></button>
+                                        <button onClick="model.closeBookmarkPopup();" class="Nobutton clickButton hvr-bounce-to-left"></button>
+                                    </div>
+                                    <div class="noteContent"></div>
+                                </div>
+                            </div>
+                            <div class="worlddiv">
+                                <div class="ldtext">
+                                    <h1></h1>
+                                    <div class="user_name"></div>
+                                    <h2></h2>
+                                    <div class="continue_btn2 hvr-bounce-to-left"></div>
+                                </div>
+                                <div class="quotedv">
+                                    <div class="at1"></div>
+                                    <div class="at2"></div>
+                                </div>
+                            </div>
+                            <div class="scrollcover">
+                                <div class="logo_index"><!-- <img src="content/images/pages/global/logo_index.png"> --></div>
+                                <div class="left_index"><!-- <img src="content/images/pages/global/map.png"> --></div>
+                                <div class="marginauto">
+                                    <div class="marginautoin">
+                                        <div class="selectitext"><i>Select your preferred language.</i></div>
+                                        <div class="select_box">
+                                            <div class="selectdv">
+                                                <div class="holder">Select</div>
+                                                <div class="downdivs_dv">
+                                                    <ul>
+                                                        <li lang="en" class="">English</li>
+                                                        <li lang="es" class="">Spanish</li>
+                                                        <li lang="de" class="">German</li>
+                                                        <li lang="it" class="">Italian</li>
+                                                        <li lang="nl" class="">Dutch</li>
+                                                        <li lang="fr" class="">French</li>
+                                                        <li lang="po" class="">Portuguese</li>
+                                                        <li lang="pl" class="">Polish</li>
+                                                        <li lang="ru" class="">Russian</li>
+                                                        <li lang="ja" class="">Japanese</li>
+                                                        <li lang="ch" class="">Chinese</li>  
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clickButton btn_sele hvr-bounce-to-left">Submit</div>
+                                        <div class="cursor_no_drop langg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="splash_wrapp"></div> -->
+                            <div id="splashContainer">
+                               <img src="content/images/pages/global/logo.png">
+                                    <div class="start_txt">
+                                        <span class="sp_txt">Lorem ipsum dolor sitam<br>
+                                            <b>Consectetur adipiscing EL, sed do HC usmod</b></span><br>
+                                        <div id="Continue" class="startlevel clickButton hvr-bounce-to-left">Start<span></span></div>
+                                        <div id="player_audio_yes" class="startInit">
+                                            <div class="mediaPlayBtn">
+                                                <div class="mediaContent">
+                                                    <div class="iconSet"><img src="content/images/pages/global/icon.png" /></div>
+                                                    <p>Please view the course in <br />Google Chrome/Firefox browser <br />for the best experience.</p>
+                                                    <!-- <div class="letsGoBtn">Let's Go</div> -->
+                                                    <div class="letsGoBtn active">
+                                                        <svg version="1.1" class="btnstb" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="220px" height="56px" viewBox="0 0 220 56" enable-background="new 0 0 220 56" xml:space="preserve">
+                                                            <polygon fill="#ffffff" points="0,0 0,56 148.396,56 165.067,0 "></polygon>
+                                                            <polygon fill="#89d329" points="220,0 164.137,0 147.457,56 220,56 "></polygon>
+                                                        </svg>
+                                                        <svg version="1.1" class="arwBtn" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11.192px" height="20.385px" viewBox="0 0 11.192 20.385" enable-background="new 0 0 11.192 20.385" xml:space="preserve">
+                                                            <polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="1,19.385 
+                                                            10.192,10.193 1,1 "></polyline>
+                                                        </svg>
+                                                        <div class="letsGotxt">Let's Go</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="courseLoading">
+                                                <span>Loading please wait...</span>
+                                                <span class="loading">
+                                                    <span></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="callout"><b>Pocecat</b><br><span> and <b>Except</b></span><br><span class="txt2">Adolor</span></div>
+                                    </div>
+                                                              
+                            </div>
+                            <div id="HelpDiv" class="shell_help_popup">
+                                <!-- <div class="bg" id="bg"></div> -->
+                                <article class="contentItem" id="content">
+                                    <div id="shell_help_popup_exit" title="Close" class="shell_pop_exit spriteIcon"> </div>
+                                    <div class="common_table">
+                                        <div class="common_table_cell">
+                                            <div class="shellPopupWrap Help_wrapper">
+                                                <div class="shellPopupContent">
+                                                    <div class="shell_h_popup_header" id="shell_r_popup_header">
+                                                        <div class="shell_popup_header">
+                                                            <h2>Navigation help</h2> </div>
+                                                    </div>
+                                                    <div class="shell_gray" id="help_popup">
+                                                        <div class="helptop">
+                                                            <div class="hpcon">This module has audio narration. Ensure your headphones or speakers are operational. The following elements will help you navigate in this module: </div>
+                                                        </div>
+                                                        <div class="fullaged">
+                                                            <ul class="">
+                                                                <li class="">
+                                                                    <div class="lefttrt"><span class="spriteIcon nextI"></span></div>
+                                                                    <div class="righttrt">Click <b>Next</b> to move to the next page.</div>
+                                                                </li>
+                                                                <li class="">
+                                                                    <div class="lefttrt"><span class="spriteIcon backI"></span></div>
+                                                                    <div class="righttrt">Click <b>Back</b> to go back to the previous page.</div>
+                                                                </li>
+                                                                <li class="">
+                                                                    <div class="lefttrt"><span class="spriteIcon playI"></span><span class="spriteIcon pauseI"></span></div>
+                                                                    <div class="righttrt"> Click <b>Play/Pause</b> to play or pause the visuals on the screen.</div>
+                                                                </li>
+                                                                <!-- <li class="">
+                                                                    <div class="lefttrt"><span class="spriteIcon menuI"></span></div>
+                                                                    <div class="righttrt"> Click <b>Menu</b> to view the course menu and navigate to any topic of the module</div>
+                                                                </li> -->
+                                                                <li class="">
+                                                                    <div class="lefttrt"><span class="spriteIcon replayI"></span></div>
+                                                                    <div class="righttrt">Click <b>Replay/Refresh</b> to play the screen again.</div>
+                                                                </li>
+                                                                <li class="">
+                                                                    <div class="lefttrt"><span class="spriteIcon audioI"></span><span class="spriteIcon audioOI"></span></div>
+                                                                    <div class="righttrt">Click <b>Audio On/Off</b> to turn the audio on or off.</div>
+                                                                </li>
+                                                                <li class="">
+                                                                    <div class="lefttrt"><span class="spriteIcon transcriptI"></span></div>
+                                                                    <div class="righttrt">Click <b>Transcript</b> to view the audio transcript of the current screen.</div>
+                                                                </li>
+                                                                <li class="">
+                                                                    <div class="lefttrt"><span class="spriteIcon helpI"></span></div>
+                                                                    <div class="righttrt">Click <b>Help</b> to get navigation help on the module.</div>
+                                                                </li>
+                                                                <!-- <li class="">
+                                                                    <div class="lefttrt"><span class="spriteIcon glosarryI"></div>
+                                                                    <div class="righttrt">Click <b>Glossary</b> to know the expansions of the acronyms used in the module</div>
+                                                                </li>  -->
+                                                                <li class="">
+                                                                    <div class="lefttrt"><span class="spriteIcon bookI"></span></div>
+                                                                    <div class="righttrt">Click <b>Resources</b> to access the Philips GBP Toolkit with documents and intranet links for additional reading.</div>
+                                                                </li>
+                                                                <li class="">
+                                                                    <div class="lefttrt"><span class="spriteIcon closeI"></span></div>
+                                                                    <div class="righttrt">Click <b>Exit</b> to quit the module.</div>
+                                                                </li>
+                                                                <li class="">
+                                                                    <div class="lefttrt"><img src="content/images/pages/global/scroll.png" alt="" class=""></div>
+                                                                    <div class="righttrt">Drag <b>Seek/Progress</b> Bar to scroll through the content of the current screen.</div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                </article>
+                                </div>
+                                <!--- ****** RESOURCES ***** -->
+                                <div id="glossaryPopup" class="shell_help_popup">
+                                    <!-- <div class="bg" id="bg1"></div> -->
+                                    <article class="contentItem" id="content1">
+                                        <div id="shell_glossary_popup_exit" title="" class="shell_pop_exit spriteIcon"> </div>
+                                        <div class="shellPopupWrap Help_wrapper">
+                                            <div class="shell_h_popup_header">
+                                                <div class="shell_popup_header">
+                                                    <h2><b>Resources</b></h2>
+                                                </div>
+                                            </div>
+                                            <div class="shellPopupContent glossaryPopupWrap">
+                                                <div class="shell_h_popup_header">
+                                                    <div class="shell_popup_header">
+                                                        <h3>Remember:</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="shell_gray">
+                                                    <!-- <p class="white-pra">If you have any questions or concerns, you have an obligation as a Philips employee to:</p>
+                                                    <ul class="bullet_ul bullet2">
+                                                        <li>Seek guidance using available resources on the Philips <a href="https://intranet.philips.com/Pages/United-States-Legal-Compliance.aspx" target="_blank">intranet</a>, or</li>
+                                                        <li>Speak with your supervisor, or</li>
+                                                        <li>Speak with your functional lead (ex. Finance, Human Resources Representative),</li>
+                                                    </ul>
+                                                    <p class="white-pra or_text">or</p>
+                                                    <ul class="bullet_ul bullet2">
+                                                        <li>Speak with Philips <a href="https://intranet.philips.com/pages/legal.aspx" target="_blank">Legal</a> or a <a href="https://share-intra.philips.com/sites/STS20130612143045/Lists/GBP%20Compliance%20Officer%20database/Overview.aspx" target="_blank">Compliance Officer</a>, or</li>
+                                                        <li>Contact <a href="http://philips.ethicspoint.com/" target="_blank">Philips Speak Up</a> (the Philips Ethics Line) by:
+                                                            <ul>
+                                                            <li>Finding your local number on the <a href="http://philips.ethicspoint.com/" target="_blank">Philips Speak Up</a> (the Philips Ethics Line) website, or</li>
+                                                            <li>Visiting the <a href="http://philips.ethicspoint.com/" target="_blank">Philips Speak Up</a> (the Philips Ethics Line) website to register your concern</li>
+                                                            <li>Using the mobile version of the Philips Speak Up by clicking <a href="https://eur01.safelinks.protection.outlook.com/?url=http://philipsmobile.ethicspoint.com/&data=02|01||c961fafd6a924ae1b65308d85e3efd30|1a407a2d76754d178692b3ac285306e4|0|0|637362971912339372&sdata=vQ8siVkZV%2BZJqZ/yiJcncGyjK571XmZEw0KDjox%2BRFk%3D&reserved=0" target="_blank">here</a> or using the QR code.
+                                                                <div class="resourceBarCode">
+                                                                    <img src="content/images/pages/global/barCode.gif">
+                                                                </div>
+                                                            </li>
+                                                            <li>Both avenues are available 24 X 7 X 365 with the option to remain anonymous and are operated by an independent third party</li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul> -->
+                                                </div>
+                                                <div class="shell_h_popup_header">
+                                                    <div class="shell_popup_header">
+                                                        <h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="shell_gray">
+                                                    <!-- <ul class="forword_ul">
+                                                        <li><a href="https://intranet.philips.com/Pages/General-Business-Principles.aspx" target="_blank">Philips General Principles</a></li>
+                                                        <li><a href="https://intranet.philips.com/Pages/United-States-Legal-Compliance.aspx" target="_blank">Philips North America LLC Compliance Program</a></li>
+                                                        <li><a href="https://intranet.philips.com/Pages/United-States-Ethics-and-Business-Conduct-Program.aspx" target="_blank">Philips North America LLC Policies</a></li>
+                                                        <li><a href="https://share-intra.philips.com/sites/STS20130612143045/Lists/GBP%20Compliance%20Officer%20database/Overview.aspx" target="_blank">GBP Compliance Officers</a></li>
+                                                        <li><a href="https://intranet.philips.com/Pages/gift-and-hospitality-registration-tool.aspx" target="_blank">Legal Compliance Registration Tool</a></li>
+                                                        <li><a href="https://www.globaleventmanagementtool.com/" target="_blank">Global Event Management Tool</a></li>
+                                                        <li><a href="https://intranet.philips.com/Pages/Privacy.aspx" target="_blank">Philips North America Privacy</a></li>
+                                                        <li><a href="https://intranet.philips.com/Pages/Foundation.aspx" target="_blank">Philips Foundation</a></li>
+                                                        <li><a href="https://intranet.philips.com/Pages/Philips-Cares.aspx" target="_blank">Philips Cares</a></li>
+                                                        <li><a href="https://intranet.philips.com/Pages/Fair-Market-Value-Global.aspx" target="_blank">FMV Global Page – including HCP Checklist</a></li>
+                                                        <li><a href="https://intranet.philips.com/SiteAssets/North%20America/Global%20Policy.pdf" target="_blank">Philips Global Policy on Interactions with HCPs</a></li>
+                                                        <li><a href="https://intranet.philips.com/Pages/Global-Healthcare-Compliance-Program.aspx" target="_blank">Philips Global health care Compliance Page</a></li>
+                                                    </ul> -->
+                                                </div>
+                                                <div class="shell_h_popup_header">
+                                                    <div class="shell_popup_header">
+                                                        <h3>Key Terms</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="shell_gray">
+                                                    <ul class="bullet_ul bullet2">
+                                                        <li>uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                                                    </ul>
+                                                </div>
+                                                <!-- <div class="shell_h_popup_header">
+                                                    <div class="shell_popup_header">
+                                                        <h3>PDF</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="shell_gray">
+                                                    <ul>
+                                                        <li><a href="content/pdf/en/Ethics.pdf" target="_blank">Five key principles</a></li>
+                                                    </ul>
+                                                </div><br> -->
+
+                                                <!-- <div class="shell_gray">
+                                                    <div class="resources">
+                                                        <div class="myaccording">
+                                                            <div class="clickaccord" tool-value ='1'><span></span></div>
+                                                            <div class="sowaccord">
+                                                                <ul>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="clickaccord"><span tool-value ='2'></span></div>
+                                                            <div class="sowaccord">
+                                                                <ul>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="clickaccord" tool-value ='3'><span></span></div>
+                                                            <div class="sowaccord">
+                                                                <ul>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="clickaccord" tool-value ='4'><span></span></div>
+                                                            <div class="sowaccord">
+                                                                <ul>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="clickaccord" tool-value ='5'><span></span></div>
+                                                            <div class="sowaccord">
+                                                                <ul>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                 
+                                                                </ul>
+                                                            </div>
+                                                            <div class="clickaccord" tool-value ='6'><span></span></div>
+                                                            <div class="sowaccord">
+                                                                <ul><li><a href="" target="_blank"></a></li>
+                                                                <li><a href="" target="_blank"></a></li></ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="myaccording">
+                                                            <div class="clickaccord" tool-value ='7'><span></span></div>
+                                                            <div class="sowaccord">
+                                                                <ul>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="clickaccord" tool-value ='8'><span></span></div>
+                                                            <div class="sowaccord">
+                                                                <ul>
+                                                                    <li><a href="" target="_blank"></a></li>                                                                    
+                                                                </ul>
+                                                            </div>
+                                                            <div class="clickaccord" tool-value ='9'><span></span></div>
+                                                            <div class="sowaccord">
+                                                                <ul>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="clickaccord" tool-value ='10'><span></span></div>
+                                                            <div class="sowaccord">
+                                                                <ul>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="clickaccord" tool-value ='11'><span></span></div>
+                                                            <div class="sowaccord">
+                                                                <ul>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="clickaccord" tool-value ='12'><span></span></div>
+                                                            <div class="sowaccord">
+                                                                <ul>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                    <li><a href="" target="_blank"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <!--- ****** glossary start here ***** -->
+                                <!--- ****** glossary end here ***** -->
+                                <div id="blank_tween"></div>
+                                <!---->
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player_chromeError_style">
+                            <div class="cbText" style="margin:0 auto;margin-top:225px;width:400px;height:170px;color:#ffffff;background-color:#c00010;padding:20px;font-size:18px;">Due to the security restrictions inherent to Google Chrome the course will need to be run in one of the following supported browsers if you wish to run this locally:
+                                <ul>
+                                    <li>Internet Explorer</li>
+                                    <li>Firefox</li>
+                                    <li>Safari</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="player_systemNotSupported" class="player_noscriptmsg_style" style="display:none">This browser is not supported.</div>
+                        <div id="player_orientationPortrait" class="player_noscriptmsg_style" style="display:none">This course is best suited for Landscape mode.</div>
+                        <div class="popupScreen" id="shell_e_ppopup">
+                            <div class="feedbackContainer">
+                                <div class="feedbackTitle">Exit</div>
+                                <div class="feedcontent">Are you sure you want to exit this course?</div>
+                                <div class="bookmarkPopupButton">
+                                    <button id="shell_yes_btn" class="Yesbutton clickButton hvr-bounce-to-left"></button>
+                                    <button id="shell_no_btn" class="Nobutton clickButton hvr-bounce-to-left"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ***************************resources  end & exit open ***********************-->
+                    </div>
+    <section id="imagesLoader" style="position: absolute;left: 0;top: 0; height: 1px; width: 1px;overflow: hidden; display: none;">
+        <div class="courseImages"></div>
+    </section>
+    <div class="mutebtn" id="mutebtn">
+        <script>
+            $(document).ready(function(){
+                $("#mtbtn").click(function(){
+                    if(a==1)
+                    {
+                        $("#mtbtn").attr("src","content/pages/image/"+spcolor+"_Mute.png");
+                        a=0;
+                        spstatus="Mute";
+                        console.log("mute all audios...");
+                        var audios = document.getElementsByTagName("audio"),
+                        i,
+                        len = audios.length;
+                        for (i = 0; i < len; i++) {
+                        console.log(audios[i]);
+                        audios[i].muted = true;
+                        }
+
+                        var videos = document.getElementsByTagName("video"),
+                        i,
+                        len = videos.length;
+                        for (i = 0; i < len; i++) {
+                        console.log(videos[i]);
+                        videos[i].muted = true;
+                        }
+                    }
+                    else
+                    {
+                        $("#mtbtn").attr("src","content/pages/image/"+spcolor+"_Unmute.png");
+                        a=1;
+                        spstatus="Unmute";
+                        console.log("unmute all audios...");
+                        var audios = document.getElementsByTagName("audio"),
+                            i,
+                            len = audios.length;
+                        for (i = 0; i < len; i++) {
+                            console.log(audios[i]);
+                            audios[i].muted = false;
+                        }
+
+                        var videos = document.getElementsByTagName("video"),
+                        i,
+                        len = videos.length;
+                        for (i = 0; i < len; i++) {
+                        console.log(videos[i]);
+                        videos[i].muted = false;
+                        }
+                    }
+                    
+                });
+            });
+        </script>
+        <img id="mtbtn" src="content/pages/image/Blue_Unmute.png" alt="no image">
+    </div>
+</body>
+</html>

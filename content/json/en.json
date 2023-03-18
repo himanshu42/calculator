@@ -1,0 +1,316 @@
+{
+	"courseTitle": {
+		"Title": "Philips Policy on Interactions with U.S. HCPs"
+	},
+	"uititle": {
+		"Menu": "Menu",
+		"mClose": "Close",
+		"Help": "Help",
+		"Exit": "Exit",
+		"Transcript": "Transcript",
+		"tClose": "Close",
+		"Audio": "Audio On/Off",
+		"PlayPause": "Play/Pause",
+		"Replay": "Replay",
+		"Back": "Back",
+		"Next": "Next",
+		"hClose": "Close",
+		"gClose": "Close",
+		"Resources": "Resources",
+		"rClose": "Close",
+		"nextNodrop":"Next",
+		"backNodrop":"Back"
+	},
+	"uidialogues": {
+		"FirstPage":{
+           "ldtext1":"Hello",
+           "ldtext2":"Welcome to the <br> <b>Philips Policy on Interactions with U.S. HCPs</b> course! <p class='Note_color'>Note: After the introduction and the pre-assessment, this course uses machine audio that is switched OFF by default. You can complete the course without audio; however, you can switch it ON at any time during the course if you wish.</p>",
+           "continue_btn2":"Start",
+           "quotedv1":"<b>Quality</b> <span>and</span>",
+           "quotedv2":"<b>Integrity</b> <span>always</span>"
+		},
+		"player_popupScreenContainer":"This course is supported by audio and video. Since these multimedia elements incur carrier data charges over a cellular network, we advise you to allow multimedia playback only when you are accessing the course through WiFi or broadband network.",
+		"Bookmarking": {
+			"feedbackTitle": "Bookmark",
+			"feedcontent": "Do you want to continue where you left off?",
+			"Yesbutton": "Yes",
+			"Nobutton": "No",
+			"noteContent": "Note: Please view the course in Google Chrome/Firefox browser for the best experience."
+		},
+		"Transcript": {
+			"transcriptTitle": "Transcript"
+		},
+		"Exitpopup": {
+			"feedbackTitle": "Exit",
+			"feedcontent": "Are you sure you want to exit this course?",
+			"Yesbutton": "Yes",
+			"Nobutton": "No"
+		},
+		"HelpPopup": {
+			"feedbackTitle": "Navigation help",
+			"feedcontent": "The following elements help you navigate this module easily and quickly:",
+			"iconText": [
+				"Click <b>Next</b> to move to the next page.",
+				"Click <b>Back</b> to go back to the previous page.",
+				"Click <b>Play/Pause</b> to play or pause the visuals on the screen.",
+				"Click <b>Replay/Refresh</b> to play the screen again.",
+				"Click <b>Audio On/Off</b> to turn the audio on or off.",
+				"Click <b>Transcript</b> to view the audio transcript of the current screen.",
+				"Click <b>Help</b> to get navigation help on the module.",
+				"Click <b>Resources</b> to access the Philips GBP Toolkit with documents and intranet links for additional reading.",
+				"Click <b>Exit</b> to quit the module.",
+				"Drag <b>Seek/Progress</b> Bar to scroll through the content of the current screen."				
+			]
+		},
+		"MenuPopup": {
+			"feedcontent": "Click each topic to learn more about Philips 6.0.",
+			"iconText": [
+				"Introducing the next step!",
+				"Phil leaves for work",
+				"Phil goes for lunch",
+				"Phil troubleshoots an issue",
+				"Phil plays ‘Who am I?'",
+				"Phil overhears some conversations"
+			]
+		},
+		"Resources": [
+			{
+				"TitleContent1": "Philips GBP Toolkit"
+			},
+			{
+				"TitleContent2": "Select a topic to view the supporting documents associated with it."
+			},
+			{
+				"Understanding Healthcare Compliance": [
+					{
+						"text": "Equipment Demonstration & Evaluation",
+						"path": "content/pdf/en/Understanding-Healthcare-compliance/Equipment-Demonstration-&-Evaluation.pdf"
+					},
+					{
+						"text": "Undue Influence",
+						"path": "content/pdf/en/Understanding-Healthcare-compliance/Undue-influence.pdf"
+					}
+				]
+			},
+			{
+				"Aligning with Antitrust": [
+					{
+						"text": "Commercially Sensitive Information",
+						"path": "content/pdf/en/Aligning-with-Antitrust/Commercially-sensitive-information.pdf"
+					},
+					{
+						"text": "Resale Price Maintenance",
+						"path": "content/pdf/en/Aligning-with-Antitrust/Resale-price-maintenance.pdf"
+					},
+					{
+						"text": "Tendering",
+						"path": "content/pdf/en/Aligning-with-Antitrust/Tendering.pdf"
+					},
+					{
+						"text": "Antitrust Laws and Rules",
+						"path": "https://intranet.philips.com/Pages/Antitrust-laws-and-rules.aspx"
+					}
+				]
+			},
+			{
+				"Trading Within the Limits of Export Control": [
+					{
+						"text": "Business Partners",
+						"path": "content/pdf/en/Trading-within-the-limits-of-export-control/Business-Partners.pdf"
+					},
+					{
+						"text": "Business Travelers",
+						"path": "content/pdf/en/Trading-within-the-limits-of-export-control/Business-travelers.pdf"
+					},
+					{
+						"text": "Developing Mobile Apps",
+						"path": "content/pdf/en/Trading-within-the-limits-of-export-control/Developing-Mobile-Apps.pdf"
+					},
+					{
+						"text": "Export Controls",
+						"path": "content/pdf/en/Trading-within-the-limits-of-export-control/Export-controls.pdf"
+					},
+					{
+						"text": "Sanctions and Embargoes",
+						"path": "content/pdf/en/Trading-within-the-limits-of-export-control/Sanctions-and-embargoes.pdf"
+					},
+					{
+						"text": "PROTECT Tool",
+						"path": "http://pww.export-control-protect.corp.philips.com/PROTECT/html/philips/search/p-search_party.html"
+					},
+					{
+						"text": "How to Use PROTECT",
+						"path": "https://intranet.philips.com/Pages/Export-Controls-PROTECT-advice-system.aspx"
+					},
+					{
+						"text": "List of Export Control Officers",
+						"path": "http://pww.export-control-protect.corp.philips.com/PROTECT/html/philips/search/p-search_eco.html"
+					},
+					{
+						"text": "Sanction Screening and Know Your Business Partner",
+						"path": "https://intranet.philips.com/Pages/Export-Controls-know-your-customer.aspx"
+					}
+				]
+			},
+			{
+				"Ensuring Data Privacy": [
+					{
+						"text": "Developing Mobile Apps",
+						"path": "content/pdf/en/Ensuring-data-privacy/Developing-Mobile-Apps.pdf"
+					},
+					{
+						"text": "Personal Data Breach",
+						"path": "content/pdf/en/Ensuring-data-privacy/Personal-Data-Breach.pdf"
+					},
+					{
+						"text": "Privacy Rules",
+						"path": "content/pdf/en/Ensuring-data-privacy/Privacy-rules.pdf"
+					},
+					{
+						"text": "Secondary Purposes of Personal Data",
+						"path": "content/pdf/en/Ensuring-data-privacy/Secondary-Purposes-of-Personal-Data.pdf"
+					},
+					{
+						"text": "Details on Course of Action Personal Data Breach",
+						"path": "https://intranet.philips.com/Pages/Privacy-data-breach.aspx"
+					},
+					{
+						"text": "Intranet Page Privacy",
+						"path": "https://intranet.philips.com/pages/privacy.aspx"
+					}
+				]
+			},
+			{
+				"Avoiding Corruption and Bribery": [
+					{
+						"text": "ABAC Manual",
+						"path": "content/pdf/en/Avoiding-corruption-and-bribery/ABAC-Manual.pdf"
+					},
+					{
+						"text": "ABAC Policy",
+						"path": "content/pdf/en/Avoiding-corruption-and-bribery/ABAC-Policy.pdf"
+					},
+					{
+						"text": "Business Partners",
+						"path": "content/pdf/en/Avoiding-corruption-and-bribery/Business-Partners.pdf"
+					},{
+						"text": "Gifts & Hospitality",
+						"path": "content/pdf/en/Avoiding-corruption-and-bribery/Gifts-&-hospitality.pdf"
+					},
+					{
+						"text": "Resale Partner Incentive Programs",
+						"path": "content/pdf/en/Avoiding-corruption-and-bribery/Resale-Partner-Incentive-Programs.pdf"
+					},
+					{
+						"text": "Tendering",
+						"path": "content/pdf/en/Avoiding-corruption-and-bribery/Tendering.pdf"
+					},
+					{
+						"text": "Handling Gifts & Hospitality",
+						"path": "content/pdf/en/Avoiding-corruption-and-bribery/Gifts-Hospitality-Procedures-and-Guideline.pdf"
+					}
+				]
+			},
+			{
+				"The Valuing of HR Business Principles": [
+					{
+						"text": "Fair Employment Policy",
+						"path": "content/pdf/en/The-valuing-of-HR-business-principles/Fair-employment-policy.pdf"
+					},
+					{
+						"text": "Inclusion & Diversity Policy",
+						"path": "content/pdf/en/The-valuing-of-HR-business-principles/Inclusion-&-Diversity-policy.pdf"
+					}
+				]
+			},
+			{
+				"Quality, Always": [
+					{
+						"text": "Introduction to Quality",
+						"path": "content/pdf/en/Quality-always/Introduction-to-Quality.pdf"
+					},
+					{
+						"text": "Quality Impacts",
+						"path": "content/pdf/en/Quality-always/Quality-impacts.pdf"
+					},
+					{
+						"text": "Customer Feedback Management Site",
+						"path": "https://www.philips.com/a-w/cfm-system.html"
+					},
+					{
+						"text": "Q&R Policies & Procedures",
+						"path": "https://intranet.philips.com/Pages/Q-R-documents-and-procedures.aspx"
+					},
+					{
+						"text": "Regulatory Developments",
+						"path": "content/pdf/en/Quality-always/Regulatory-Developments.pdf"
+					}
+				]
+			},
+			{
+				"Ensuring Security": [
+					{
+						"text": "Group Security Portal",
+						"path": "https://share.philips.com/sites/STS020170831152504/gs/SitePages/Home.aspx"
+					}					
+				]
+			},
+			{
+				"Prioritizing Health and Safety at Work": [
+					{
+						"text": "Occupational Health & Safety Policy",
+						"path": "content/pdf/en/Prioritizing-health-and-safety-at-work/Occupational-Health-&-Safety-policy.pdf"
+					},
+					{
+						"text": "Signs and Symptoms of Stress",
+						"path": "content/pdf/en/Prioritizing-health-and-safety-at-work/Signs-and-Symptoms-of-Stress.pdf"
+					},
+					{
+						"text": "Slip, Trips and Falls",
+						"path": "content/pdf/en/Prioritizing-health-and-safety-at-work/Slips-trips-and-falls.gif"
+					},
+					{
+						"text": "Personal Effectiveness Program on Philips University",
+						"path": "https://intranet.philips.com/pages/university.aspx"
+					}
+				]
+			},
+			{
+				"Using Social Media Responsibly": [
+					{
+						"text": "Philips Employee Social Media Guidelines",
+						"path": "https://share-intra.philips.com/sites/STS20140203154502/digital-hub/Digital%2020%20Library/Social%20Media%20Guidelines/Philips_employee_social_media_guidelines_Aug%2028_2017.pdf"
+					}
+				]
+			},
+			{
+				"Respecting Human Rights": [
+					{
+						"text": "Human Rights Policy",
+						"path": "content/pdf/en/Respecting-Human-rights/Human-Rights-policy.pdf"
+					},
+					{
+						"text": "Human Rights Report",
+						"path": "content/pdf/en/Respecting-Human-rights/Human-Rights-report.pdf"
+					},
+					{
+						"text": "Philips's Business and Human Rights Strategy",
+						"path": "https://intranet.philips.com/Pages/Human-Rights.aspx"
+					}
+				]
+			},
+			{
+				"Raise a Report": [
+					{
+						"text": "Complaints and Investigations",
+						"path": "content/pdf/en/raise-a-report/complaints-and-investigations.pdf"
+					},					
+					{
+						"text": "List of GBP Compliance Officers",
+						"path": "https://share-intra.philips.com/sites/STS20130612143045/Lists/GBP Compliance Officer database/Overview.aspx"
+					}
+				]
+			}
+		]
+	}
+}
