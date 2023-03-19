@@ -1242,9 +1242,9 @@ var intro = {
 
         $(".pagecount").html(
           intro.currentScreen +
-            "&nbsp;&nbsp;/&nbsp;&nbsp;" +
-            intro.SkrnCount +
-            ""
+          "&nbsp;&nbsp;/&nbsp;&nbsp;" +
+          intro.SkrnCount +
+          ""
         );
 
         $("#section_backBtn").css("pointer-events", "none");
@@ -2032,7 +2032,10 @@ var intro = {
       0.6,
       intro.sec2_active_da
     );
-    $(".mutebtn").css("display", "block");
+    z=0;
+    i=0;
+    setTimeout(function() {
+      $(".mutebtn").delay(10000).removeAttr("hidden");}, 4000);
   },
   screen1_video: function () {
     $("#myVideo1_1").attr(
@@ -2044,6 +2047,8 @@ var intro = {
     $("#myVideo1_1").attr("controls", "true");
   },
   sec2_active_da: function () {
+    $(".mutebtn").css("display", "block");
+    $("#mutebtn").css("display", "block");
     $("#section0 .Down_arrowIcon").removeClass("disable");
     $("#section0 .Down_arrowIcon").addClass("bounce");
     //model.verticalScreenStatusData[0] = true;
@@ -6793,7 +6798,7 @@ var intro = {
   sec7func1: function () {
     $("#screen7 .ver_line").addClass("lineanim7");
   },
-  sec7func2: function () {},
+  sec7func2: function () { },
   sec7func3: function () {
     intro.sendBookMrkData(1);
   },
@@ -7082,5 +7087,5 @@ var intro = {
     model.twinmaxSetVal("#scrn10_6", -20, null, 0);
     model.twinmaxSetVal("#scrn10_7", -20, null, 0);
   },
-  anim1Done: function () {},
+  anim1Done: function () { },
 };
