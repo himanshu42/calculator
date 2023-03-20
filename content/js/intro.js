@@ -2034,10 +2034,9 @@ var intro = {
     );
     z=0;
     i=0;
-    setTimeout(function() {
-      $(".mutebtn").delay(10000).removeAttr("hidden");}, 4000);
   },
   screen1_video: function () {
+    $(".mutebtn").removeAttr("hidden");
     $("#myVideo1_1").attr(
       "src",
       "content/video/en/m1_t1_p1/Real_Design_Principles.mp4"
@@ -2107,6 +2106,7 @@ var intro = {
 
   screen1a_anim: function () {
     model.verticalScreenStatusData[7] = true;
+    $(".sidenav").css("top", "-13px");
     $("#myVideo1_1").get(0).pause();
     $("#intro").attr("id", "navintro");
     $("#dprinciple").attr("id", "dp");
@@ -2508,6 +2508,7 @@ var intro = {
   /****screen2****/
   screen2_anim: function () {
     intro.volumeBlue_Nonactive();
+    $(".sidenav").css("top", "97px");
     $("#dp").attr("id", "dprinciple");
     $("#navintro").attr("id", "intro");
     $("#dguidance").attr("id", "dg");
@@ -5307,6 +5308,7 @@ var intro = {
   /****screen4****/
   screen7_anim: function () {
     model.verticalScreenStatusData[5] = true;
+    $(".sidenav").css("top", "200px");
     $("#dg").attr("id", "dguidance");
     $("#dprinciple").attr("id", "dp");
     $("#navintro").attr("id", "intro");
