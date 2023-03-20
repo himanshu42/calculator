@@ -4792,6 +4792,9 @@ var intro = {
   },
   /****screen4****/
   screen6_anim: function () {
+    $("#dp").attr("id", "dprinciple");
+    $("#navintro").attr("id", "intro");
+    $("#dguidance").attr("id", "dg");
     model.verticalScreenStatusData[4] = true;
 
     model.twinmaxstaggerToVal(
@@ -5055,6 +5058,9 @@ var intro = {
   },
   /****screen4****/
   screen6_animStop: function () {
+    $("#dp").attr("id", "dprinciple");
+    $("#navintro").attr("id", "intro");
+    $("#dguidance").attr("id", "dg");
     model.twinmaxstaggerToVal(
       "#scrn6_1a",
       0.5,
