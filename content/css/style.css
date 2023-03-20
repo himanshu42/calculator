@@ -563,15 +563,3 @@
   right: 0;
   cursor: pointer;
 }
-
-.sidenav{
-  background-color: #66b512;
-  width: 91px;
-  height: 66px;
-  border-radius: 67px;
-  position: absolute;
-  right: -116px;
-  top: -13px;
-  transition: 1s;
-}
-

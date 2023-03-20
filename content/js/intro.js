@@ -2106,7 +2106,6 @@ var intro = {
 
   screen1a_anim: function () {
     model.verticalScreenStatusData[7] = true;
-    $(".sidenav").css("top", "-13px");
     $("#myVideo1_1").get(0).pause();
     $("#intro").attr("id", "navintro");
     $("#dprinciple").attr("id", "dp");
@@ -2508,7 +2507,6 @@ var intro = {
   /****screen2****/
   screen2_anim: function () {
     intro.volumeBlue_Nonactive();
-    $(".sidenav").css("top", "97px");
     $("#dp").attr("id", "dprinciple");
     $("#navintro").attr("id", "intro");
     $("#dguidance").attr("id", "dg");
@@ -5308,7 +5306,6 @@ var intro = {
   /****screen4****/
   screen7_anim: function () {
     model.verticalScreenStatusData[5] = true;
-    $(".sidenav").css("top", "200px");
     $("#dg").attr("id", "dguidance");
     $("#dprinciple").attr("id", "dp");
     $("#navintro").attr("id", "intro");
