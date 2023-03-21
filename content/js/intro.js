@@ -154,6 +154,7 @@ var intro = {
       });
 
     function downAnim1() {
+      scrld=1;
       intro.setDefaultposition();
       audioController.clearAudio();
       intro.get_attr1 = 1;
@@ -391,6 +392,7 @@ var intro = {
     $("#section_backBtn")
       .off()
       .on("click", function () {
+        cpage=0;
         TweenMax.killAll(false, true, true, true);
         //$('.Intro_module .stbtncontner').removeClass('active');
         intro.setDefaultposition();
@@ -1301,6 +1303,7 @@ var intro = {
       });
   },
   slideMaindiv: function (val) {
+    cpage=0;
     if (intro.Screen_width >= 1920) {
       intro.addsectionClass(val, intro.Screen_height);
     } else if (intro.Screen_width > 1366 && $(window).width() < 1920) {
@@ -1310,6 +1313,7 @@ var intro = {
     }
   },
   addsectionClass: function (a, b) {
+    cpage=0;
     // for (var i = 1; i < $(".section").length; i++) {
     //         $(".warpperarea").removeClass("section"+i+"_slide"+b);
     //     }
@@ -1530,16 +1534,19 @@ var intro = {
     // },100);
   },
   active_Firstmenu: function () {
+    cpage=0;
     $(".rightNavWrap .navWrap").removeClass("current");
     $(".rightNavWrap .navWrap").eq(0).addClass("active current");
   },
   active_Secondmenu: function () {
+    cpage=0;
     model.menuCompletedState[0] = 1;
     $(".rightNavWrap .navWrap").eq(0).addClass("visited");
     $(".rightNavWrap .navWrap").removeClass("current");
     $(".rightNavWrap .navWrap").eq(1).addClass("active current");
   },
   active_Thirdmenu: function () {
+    cpage=0;
     model.menuCompletedState[1] = 1;
     $(".rightNavWrap .navWrap").eq(0).addClass("visited");
     $(".rightNavWrap .navWrap").eq(1).addClass("visited");
@@ -1547,6 +1554,7 @@ var intro = {
     $(".rightNavWrap .navWrap").eq(2).addClass("active current");
   },
   active_Fourthmenu: function () {
+    cpage=0;
     model.menuCompletedState[2] = 1;
     $(".rightNavWrap .navWrap").eq(0).addClass("visited");
     $(".rightNavWrap .navWrap").eq(1).addClass("visited");
@@ -1555,6 +1563,7 @@ var intro = {
     $(".rightNavWrap .navWrap").eq(3).addClass("active current");
   },
   active_Fifthmenu: function () {
+    cpage=0;
     model.menuCompletedState[3] = 1;
     $(".rightNavWrap .navWrap").eq(0).addClass("visited");
     $(".rightNavWrap .navWrap").eq(1).addClass("visited");
@@ -1564,6 +1573,7 @@ var intro = {
     $(".rightNavWrap .navWrap").eq(4).addClass("active current");
   },
   visitedAllmenu: function () {
+    cpage=0;
     model.menuCompletedState[4] = 1;
     $(".rightNavWrap .navWrap").removeClass("current");
     $(".rightNavWrap .navWrap").eq(0).addClass("visited");
@@ -1573,6 +1583,7 @@ var intro = {
     $(".rightNavWrap .navWrap").eq(4).addClass("visited");
   },
   checkMenuVisited: function () {
+    cpage=0;
     $(model.menuCompletedState).map(function (index, val) {
       if (val == 1) {
         $(".rightNavWrap .navWrap").eq(index).addClass("visited");
@@ -1581,6 +1592,7 @@ var intro = {
     });
   },
   slideUpMaindiv: function (val) {
+    cpage=0;
     if (intro.Screen_width >= 1920) {
       intro.addsectionUpClass(val, intro.Screen_height);
     } else if (intro.Screen_width > 1366 && $(window).width() < 1920) {
@@ -1593,8 +1605,9 @@ var intro = {
     // for (var i = 1; i < $(".section").length; i++) {
     //         $(".warpperarea").removeClass("section"+i+"_slide"+b);
     //     }
-
+    cpage=0;
     if (a == 0) {
+      cpage=0;
       intro.currentScreen == 7;
       $(".warpperarea").css("margin-top", 0);
       var left_margin = 0;
@@ -1610,6 +1623,7 @@ var intro = {
       var get_topM = -(a * b);
       $(".warpperarea").css("margin-top", get_topM);
     }
+    cpage=0;
 
     if (a == 0) {
       intro.setDefaultposition();
@@ -1661,8 +1675,10 @@ var intro = {
     }
 
     if (a == 6) {
+      cpage=0;
       $(".rightNavWrap").hide();
     } else {
+      cpage=0;
       $(".rightNavWrap").show();
     }
 
@@ -1671,6 +1687,7 @@ var intro = {
     // },100);
   },
   play_nextfunction: function () {
+    cpage=0;
     intro.getStatus = model.screenStatusData;
 
     $("#section3 .stop").trigger("click");
@@ -1905,6 +1922,7 @@ var intro = {
   },
 
   sendBookMrkData: function (num) {
+    cpage=0;
     var secID = "intro";
     var curScr = intro.currentScreen - num;
     $.each(model.screenStatusData, function (k, v) {
@@ -1917,6 +1935,7 @@ var intro = {
   },
 
   animnextscreen1Done: function () {
+    cpage=0;
     if (intro.currentScreen == 2) {
     } else {
       if (!intro.once_moved_to_2) {
@@ -1937,6 +1956,7 @@ var intro = {
     // model.isMute = true;
   },
   resizeEle: function () {
+    cpage=0;
     if ($(window).width() >= 1920) {
       intro.Screen_width = 1920;
       intro.Screen_height = 969;
@@ -1957,6 +1977,7 @@ var intro = {
       "left",
       "-" + (intro.currentScreen - 1) * intro.Screen_width + "px"
     );
+    cpage=0;
     $(".Intro_module .sCreenCount").css("width", intro.Screen_width + "px");
     for (i = 1; i <= intro.SkrnCount; i++) {
       var left_margin = intro.Screen_width * (i - 1);
@@ -1964,6 +1985,7 @@ var intro = {
     }
   },
   resSlideMaindiv: function (val) {
+    cpage=0;
     if (intro.Screen_width >= 1920) {
       intro.resAddsectionClass(val, intro.Screen_height);
     } else if (intro.Screen_width > 1366 && $(window).width() < 1920) {
@@ -1973,6 +1995,7 @@ var intro = {
     }
   },
   resAddsectionClass: function (a, b) {
+    cpage=0;
     // for (var i = 1; i < $(".section").length; i++) {
     //         $(".warpperarea").removeClass("section"+i+"_slide"+b);
     //     }
@@ -1984,6 +2007,8 @@ var intro = {
     }
   },
   setLineHeight: function () {
+    cpage=0;
+    scrld=1;
     var screenHeight = 0;
     if ($(window).width() >= 1920) {
       screenHeight = 969;
@@ -1996,10 +2021,14 @@ var intro = {
   },
 
   unloadPage: function () {
+    cpage=0;
+    scrld=1;
     console.log("page unloaded");
     model.tl.clear();
   },
   onComplete: function () {
+    cpage=0;
+    scrld=1;
     console.log("TL completed");
   },
   /****screen1****/
@@ -2046,6 +2075,7 @@ var intro = {
     $("#myVideo1_1").attr("controls", "true");
   },
   sec2_active_da: function () {
+    scrlpg1=true;
     $(".mutebtn").css("display", "block");
     $("#mutebtn").css("display", "block");
     $("#section0 .Down_arrowIcon").removeClass("disable");
@@ -2105,6 +2135,9 @@ var intro = {
   // },
 
   screen1a_anim: function () {
+    scrlup=2;
+    cpage=1;
+    
     model.verticalScreenStatusData[7] = true;
     $("#myVideo1_1").get(0).pause();
     $("#intro").attr("id", "navintro");
@@ -2310,6 +2343,7 @@ var intro = {
     );
   },
   screen1a_animDone: function () {
+    scrlpg2=true;
     // $("#section1 .btn-primary").removeClass("disable2");
     $("#section1 .Down_arrowIcon").removeClass("disable");
     $("#section1 .Down_arrowIcon").addClass("bounce");
@@ -2506,6 +2540,9 @@ var intro = {
 
   /****screen2****/
   screen2_anim: function () {
+    scrlup=3;
+    cpage=2;
+    
     intro.volumeBlue_Nonactive();
     $("#dp").attr("id", "dprinciple");
     $("#navintro").attr("id", "intro");
@@ -2825,6 +2862,7 @@ var intro = {
     $(".cir4_highlighter").addClass("highlighter");
   },
   scrn2_2dDone: function () {
+    scrlpg3=true;
     model.verticalScreenStatusData[0] = true;
     $(".butons_div").removeClass("disable");
     $("#section2 .Down_arrowIcon").removeClass("disable");
@@ -3146,6 +3184,9 @@ var intro = {
 
   /****screen3****/
   screen3_anim: function () {
+    scrlup=4;
+    cpage=3;
+    
     model.verticalScreenStatusData[1] = true;
     spcolor = "White";
     $("#mtbtn").attr(
@@ -3407,6 +3448,7 @@ var intro = {
     $("#scrn3_7a").addClass("scale100");
   },
   scr3Done: function () {
+    scrlpg4=true;
     $("#section3 .Down_arrowIcon").removeClass("disable");
     $("#section3 .Down_arrowIcon").addClass("bounce");
   },
@@ -3662,6 +3704,7 @@ var intro = {
   },
   /****screen4****/
   activeTab: function () {
+    // scrlpg5=true;
     $(".col3_1.click_div1").removeClass("disable");
     // $("#section3 .click_icon").removeClass("disable");
     // $("#section3 .highlighter_div").removeClass("disable");
@@ -3669,6 +3712,8 @@ var intro = {
     $("#section3 .Down_arrowIcon").addClass("bounce");
   },
   activeTabStop: function () {
+    // scrlpg6=true;
+    // scrlpg5=true;
     $("#section3 .Down_arrowIcon").removeClass("enable");
     $("#section3 .Down_arrowIcon").addClass("bounce");
   },
@@ -3728,6 +3773,9 @@ var intro = {
 
   /****screen4****/
   screen4_anim: function () {
+    scrlup=5;
+    cpage=4;
+    
     model.verticalScreenStatusData[2] = true;
 
     model.twinmaxstaggerToVal(
@@ -3998,6 +4046,7 @@ var intro = {
     $("#scrn4_7a").addClass("scale100");
   },
   scr4Done: function () {
+    scrlpg5=true;
     $("#section4 .Down_arrowIcon").removeClass("disable");
     $("#section4 .Down_arrowIcon").addClass("bounce");
   },
@@ -4266,6 +4315,9 @@ var intro = {
   },
   /****screen4****/
   screen5_anim: function () {
+    scrlup=6;
+    cpage=5;
+    
     model.verticalScreenStatusData[3] = true;
 
     model.twinmaxstaggerToVal(
@@ -4523,6 +4575,7 @@ var intro = {
     $("#scrn5_7a").addClass("scale100");
   },
   activeTab1: function () {
+    scrlpg6=true;
     $(".col3_1.click_div1").removeClass("disable");
 
     // $("#section5 .click_icon1").removeClass("disable");
@@ -4532,10 +4585,12 @@ var intro = {
     $("#section5 .Down_arrowIcon").addClass("bounce");
   },
   activeTab1Stop: function () {
+    scrlpg7=true;
     $("#section5 .Down_arrowIcon").removeClass("disable");
     $("#section5 .Down_arrowIcon").addClass("bounce");
   },
   scr5Done: function () {
+    scrlpg8=true;
     //$("#section4 .overview_div").removeClass("disable");
     $("#section5 .Down_arrowIcon").removeClass("disable");
     $("#section5 .Down_arrowIcon").addClass("bounce");
@@ -4792,6 +4847,9 @@ var intro = {
   },
   /****screen4****/
   screen6_anim: function () {
+    scrlup=7;
+    cpage=6;
+    
     $("#dp").attr("id", "dprinciple");
     $("#navintro").attr("id", "intro");
     $("#dguidance").attr("id", "dg");
@@ -5052,6 +5110,7 @@ var intro = {
     $("#scrn6_7a").addClass("scale100");
   },
   scr6Done: function () {
+    scrlpg7=true;
     // $("#section5 .overview_div").removeClass("disable");
     $("#section6 .Down_arrowIcon").removeClass("disable");
     $("#section6 .Down_arrowIcon").addClass("bounce");
@@ -5311,11 +5370,14 @@ var intro = {
   },
   /****screen4****/
   screen7_anim: function () {
+    scrlup=8;
+    cpage=7;
+    
     model.verticalScreenStatusData[5] = true;
     $("#dg").attr("id", "dguidance");
     $("#dprinciple").attr("id", "dp");
     $("#navintro").attr("id", "intro");
-    pcolor = "Blue";
+    spcolor = "Blue";
     $("#mtbtn").attr(
       "src",
       "content/pages/image/" + spcolor + "_" + spstatus + ".png"
@@ -5679,6 +5741,7 @@ var intro = {
     );
   },
   screen7part3Done: function () {
+    scrlpg8=true;
     // $("#section5 .overview_div").removeClass("disable");
 
     $("#section7 .Down_arrowIcon").removeClass("disable");
@@ -6027,6 +6090,9 @@ var intro = {
   },
   /****screen4****/
   screen8_anim: function () {
+    cpage=8;
+    scrlup=9;
+    
     model.verticalScreenStatusData[6] = true;
 
     model.twinmaxstaggerToVal(
@@ -6206,9 +6272,11 @@ var intro = {
     $("#scrn8_3b").addClass("scale100");
   },
   scr8Done: function () {
+    scrlpg9=true;
     // $("#section5 .overview_div").removeClass("disable");
 
     $("#section8 .Down_arrowIcon").removeClass("disable");
+    scrl=true;
     $("#section8 .Down_arrowIcon").addClass("bounce");
   },
   /****screen4****/
@@ -6359,6 +6427,9 @@ var intro = {
   },
   /****screen9****/
   screen9_anim: function () {
+    cpage=9;
+    scrlup=10;
+    
     model.verticalScreenStatusData[7] = true;
 
     model.twinmaxstaggerToVal(
@@ -6605,6 +6676,8 @@ var intro = {
   /****screen9****/
   /****screen9****/
   screen10_anim: function () {
+    scrlup=11;
+    
     model.verticalScreenStatusData[8] = true;
 
     model.twinmaxstaggerToVal(

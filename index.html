@@ -1,6 +1,19 @@
 <script>
     var spcolor="Blue";
     var spstatus="Unmute";
+    var scrlup=0;
+    var scrld=1;
+    var scrlpg1=false;
+    var scrlpg2=false;
+    var scrlpg3=false;
+    var scrlpg4=false;
+    var scrlpg5=false;
+    var scrlpg6=false;
+    var scrlpg7=false;
+    var scrlpg8=false;
+    var scrlpg9=false;
+    var scrlpg10=false;
+    var cpage=0;
 </script>
 <!DOCTYPE html>
 <html>
@@ -1168,7 +1181,7 @@ background-image: url(content/images/pages/global/download.png) !important;
     #audioOnOff svg{cursor: pointer;transition: all ease 0.5s;}
     #audioOnOff svg:hover{transform: scale(1.07);}
     #audioOnOff span{position: absolute;left: 0;bottom:-20px;transition: all ease 0.5s;display: block;width: 177px;color: #fff;font-size: 18px;font-family: 'helveticaneuemedium';letter-spacing: 1px;opacity: 0;display: none;}
-    }
+    
     
     
     
@@ -1980,5 +1993,79 @@ background-image: url(content/images/pages/global/download.png) !important;
         </script>
         <img id="mtbtn" src="content/pages/image/Blue_Unmute.png" alt="no image">
     </div>
+    <script>
+        var scrollableElement = document.body; //document.getElementById('scrollableElement');
+
+        scrollableElement.addEventListener('wheel', checkScrollDirection);
+
+        function checkScrollDirection(event) {
+        if (checkScrollDirectionIsUp(event)) {
+            console.log(scrlup)
+            $('#Up_arrowIcon'+scrlup+'').trigger('click');
+        } 
+        else 
+        {
+            console.log(scrlup)
+            if(scrlpg1==true && cpage==0)
+            {
+                $('#Down_arrowIcon1').trigger('click');
+            }
+            console.log("1"+scrlpg1,cpage);
+            console.log("2"+scrlpg2,cpage);
+            console.log("3"+scrlpg3,cpage);
+            console.log("4"+scrlpg4,cpage);
+            console.log("5"+scrlpg5,cpage);
+            console.log("6"+scrlpg6,cpage);
+            console.log("7"+scrlpg7,cpage);
+            console.log("8"+scrlpg8,cpage);
+            console.log("9"+scrlpg9,cpage);
+            console.log("10"+scrlpg10,cpage);
+            if(scrlpg2==true && cpage==1)
+            {
+                $('#Down_arrowIcon2').trigger('click');
+            }
+            if(scrlpg3==true && cpage==2)
+            {
+                $('#Down_arrowIcon3').trigger('click');
+            }
+            if(scrlpg4==true && cpage==3)
+            {
+                $('#Down_arrowIcon4').trigger('click');
+            }
+            if(scrlpg5==true && cpage==4)
+            {
+                $('#Down_arrowIcon5').trigger('click');
+            }
+            if(scrlpg6==true && cpage==5)
+            {
+                $('#Down_arrowIcon6').trigger('click');
+            }
+            if(scrlpg7==true && cpage==6)
+            {
+                $('#Down_arrowIcon7').trigger('click');
+            }
+            if(scrlpg8==true && cpage==7)
+            {
+                $('#Down_arrowIcon8').trigger('click');
+            }
+            if(scrlpg9==true && cpage==8)
+            {
+                $('#Down_arrowIcon9').trigger('click');
+            }
+            if(scrlpg10==true && cpage==9)
+            {
+                $('#Down_arrowIcon10').trigger('click');
+            }
+            
+        }
+        }
+
+        function checkScrollDirectionIsUp(event) {
+        if (event.wheelDelta) {
+            return event.wheelDelta > 0;
+        }
+        return event.deltaY < 0;
+        }
+    </script>
 </body>
 </html>

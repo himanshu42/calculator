@@ -43,8 +43,8 @@ var custom = {
                 model.get_val = true; 
                  
                 var st1 = setTimeout(function(){
-                    $.fn.fullpage.setAllowScrolling(false, 'down'); 
-                    $.fn.fullpage.setAllowScrolling(false, 'up'); 
+                    $.fn.fullpage.setAllowScrolling(true, 'down'); 
+                    $.fn.fullpage.setAllowScrolling(true, 'up'); 
                      
                     $.fn.fullpage.setKeyboardScrolling(false, 'down');                     
                     $.fn.fullpage.setKeyboardScrolling(false, 'up');
@@ -54,8 +54,8 @@ var custom = {
 
                 if (index == 1) {
                     var st2 = setTimeout(function(){
-                        $.fn.fullpage.setAllowScrolling(false, 'down'); 
-                        $.fn.fullpage.setAllowScrolling(false, 'up'); 
+                        $.fn.fullpage.setAllowScrolling(true, 'down'); 
+                        $.fn.fullpage.setAllowScrolling(true, 'up'); 
                         $.fn.fullpage.setKeyboardScrolling(false, 'down');                     
                         $.fn.fullpage.setKeyboardScrolling(false, 'up');
                         clearTimeout(st2)
