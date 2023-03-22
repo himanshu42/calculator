@@ -154,7 +154,7 @@ var intro = {
       });
 
     function downAnim1() {
-      scrld=1;
+      scrld = 1;
       intro.setDefaultposition();
       audioController.clearAudio();
       intro.get_attr1 = 1;
@@ -392,7 +392,7 @@ var intro = {
     $("#section_backBtn")
       .off()
       .on("click", function () {
-        cpage=0;
+        cpage = 0;
         TweenMax.killAll(false, true, true, true);
         //$('.Intro_module .stbtncontner').removeClass('active');
         intro.setDefaultposition();
@@ -426,18 +426,7 @@ var intro = {
             $(".Intro_module #myVideo").get(0).play();
             $("#section_backBtn").css("pointer-events", "none");
             $("#section_backBtn").css("opacity", "0.5");
-            /*if ($('.Intro_module .overlayLeft2').hasClass('add2')) {
-                        $('.Intro_module .overlayLeft2').removeClass('add2');
-                    }
-                    if ($('.Intro_module .line2').hasClass('lineanim2')) {
-                        $('.Intro_module .line2').removeClass('lineanim2');
-                    }
-                    if ($('.Intro_module .overlayLeft4').hasClass('add4')) {
-                        $('.Intro_module .overlayLeft4').removeClass('add4');
-                    }
-                    if ($('.Intro_module .line4').hasClass('lineanim4')) {
-                        $('.Intro_module .line4').removeClass('lineanim4');
-                    }*/
+
             model.twinmaxstaggerToVal(
               ".Intro_module #scrn1_1",
               0.5,
@@ -520,7 +509,7 @@ var intro = {
             );
             model.twinmaxstaggerToVal(
               ".Intro_module #scrn1_7",
-              0.5,
+              0,
               0,
               0,
               1,
@@ -618,7 +607,7 @@ var intro = {
             );
             model.twinmaxstaggerToVal(
               ".Intro_module #scrn2_7",
-              0.5,
+              0,
               0,
               0,
               1,
@@ -663,7 +652,7 @@ var intro = {
             $(".Intro_module .overlayLeft2").addClass("add2");
             model.twinmaxstaggerToVal(
               ".Intro_module #scrn3_2",
-              0.5,
+              0,
               0,
               0,
               1,
@@ -899,7 +888,7 @@ var intro = {
             // intro.screen2_anim()
             model.twinmaxstaggerToVal(
               ".Intro_module #scrn4_1",
-              0.5,
+              0,
               0,
               0,
               1,
@@ -913,7 +902,7 @@ var intro = {
             $(".Intro_module .overlayLeft4").addClass("add4");
             model.twinmaxstaggerToVal(
               ".Intro_module #scrn4_2",
-              0.5,
+              0,
               0,
               0,
               1,
@@ -1244,9 +1233,9 @@ var intro = {
 
         $(".pagecount").html(
           intro.currentScreen +
-          "&nbsp;&nbsp;/&nbsp;&nbsp;" +
-          intro.SkrnCount +
-          ""
+            "&nbsp;&nbsp;/&nbsp;&nbsp;" +
+            intro.SkrnCount +
+            ""
         );
 
         $("#section_backBtn").css("pointer-events", "none");
@@ -1303,7 +1292,7 @@ var intro = {
       });
   },
   slideMaindiv: function (val) {
-    cpage=0;
+    cpage = 0;
     if (intro.Screen_width >= 1920) {
       intro.addsectionClass(val, intro.Screen_height);
     } else if (intro.Screen_width > 1366 && $(window).width() < 1920) {
@@ -1313,7 +1302,7 @@ var intro = {
     }
   },
   addsectionClass: function (a, b) {
-    cpage=0;
+    cpage = 0;
     // for (var i = 1; i < $(".section").length; i++) {
     //         $(".warpperarea").removeClass("section"+i+"_slide"+b);
     //     }
@@ -1534,19 +1523,19 @@ var intro = {
     // },100);
   },
   active_Firstmenu: function () {
-    cpage=0;
+    cpage = 0;
     $(".rightNavWrap .navWrap").removeClass("current");
     $(".rightNavWrap .navWrap").eq(0).addClass("active current");
   },
   active_Secondmenu: function () {
-    cpage=0;
+    cpage = 0;
     model.menuCompletedState[0] = 1;
     $(".rightNavWrap .navWrap").eq(0).addClass("visited");
     $(".rightNavWrap .navWrap").removeClass("current");
     $(".rightNavWrap .navWrap").eq(1).addClass("active current");
   },
   active_Thirdmenu: function () {
-    cpage=0;
+    cpage = 0;
     model.menuCompletedState[1] = 1;
     $(".rightNavWrap .navWrap").eq(0).addClass("visited");
     $(".rightNavWrap .navWrap").eq(1).addClass("visited");
@@ -1554,7 +1543,7 @@ var intro = {
     $(".rightNavWrap .navWrap").eq(2).addClass("active current");
   },
   active_Fourthmenu: function () {
-    cpage=0;
+    cpage = 0;
     model.menuCompletedState[2] = 1;
     $(".rightNavWrap .navWrap").eq(0).addClass("visited");
     $(".rightNavWrap .navWrap").eq(1).addClass("visited");
@@ -1563,7 +1552,7 @@ var intro = {
     $(".rightNavWrap .navWrap").eq(3).addClass("active current");
   },
   active_Fifthmenu: function () {
-    cpage=0;
+    cpage = 0;
     model.menuCompletedState[3] = 1;
     $(".rightNavWrap .navWrap").eq(0).addClass("visited");
     $(".rightNavWrap .navWrap").eq(1).addClass("visited");
@@ -1573,7 +1562,7 @@ var intro = {
     $(".rightNavWrap .navWrap").eq(4).addClass("active current");
   },
   visitedAllmenu: function () {
-    cpage=0;
+    cpage = 0;
     model.menuCompletedState[4] = 1;
     $(".rightNavWrap .navWrap").removeClass("current");
     $(".rightNavWrap .navWrap").eq(0).addClass("visited");
@@ -1583,7 +1572,7 @@ var intro = {
     $(".rightNavWrap .navWrap").eq(4).addClass("visited");
   },
   checkMenuVisited: function () {
-    cpage=0;
+    cpage = 0;
     $(model.menuCompletedState).map(function (index, val) {
       if (val == 1) {
         $(".rightNavWrap .navWrap").eq(index).addClass("visited");
@@ -1592,7 +1581,7 @@ var intro = {
     });
   },
   slideUpMaindiv: function (val) {
-    cpage=0;
+    cpage = 0;
     if (intro.Screen_width >= 1920) {
       intro.addsectionUpClass(val, intro.Screen_height);
     } else if (intro.Screen_width > 1366 && $(window).width() < 1920) {
@@ -1605,9 +1594,9 @@ var intro = {
     // for (var i = 1; i < $(".section").length; i++) {
     //         $(".warpperarea").removeClass("section"+i+"_slide"+b);
     //     }
-    cpage=0;
+    cpage = 0;
     if (a == 0) {
-      cpage=0;
+      cpage = 0;
       intro.currentScreen == 7;
       $(".warpperarea").css("margin-top", 0);
       var left_margin = 0;
@@ -1623,7 +1612,7 @@ var intro = {
       var get_topM = -(a * b);
       $(".warpperarea").css("margin-top", get_topM);
     }
-    cpage=0;
+    cpage = 0;
 
     if (a == 0) {
       intro.setDefaultposition();
@@ -1675,10 +1664,10 @@ var intro = {
     }
 
     if (a == 6) {
-      cpage=0;
+      cpage = 0;
       $(".rightNavWrap").hide();
     } else {
-      cpage=0;
+      cpage = 0;
       $(".rightNavWrap").show();
     }
 
@@ -1687,7 +1676,7 @@ var intro = {
     // },100);
   },
   play_nextfunction: function () {
-    cpage=0;
+    cpage = 0;
     intro.getStatus = model.screenStatusData;
 
     $("#section3 .stop").trigger("click");
@@ -1922,7 +1911,7 @@ var intro = {
   },
 
   sendBookMrkData: function (num) {
-    cpage=0;
+    cpage = 0;
     var secID = "intro";
     var curScr = intro.currentScreen - num;
     $.each(model.screenStatusData, function (k, v) {
@@ -1935,7 +1924,7 @@ var intro = {
   },
 
   animnextscreen1Done: function () {
-    cpage=0;
+    cpage = 0;
     if (intro.currentScreen == 2) {
     } else {
       if (!intro.once_moved_to_2) {
@@ -1956,7 +1945,7 @@ var intro = {
     // model.isMute = true;
   },
   resizeEle: function () {
-    cpage=0;
+    cpage = 0;
     if ($(window).width() >= 1920) {
       intro.Screen_width = 1920;
       intro.Screen_height = 969;
@@ -1977,7 +1966,7 @@ var intro = {
       "left",
       "-" + (intro.currentScreen - 1) * intro.Screen_width + "px"
     );
-    cpage=0;
+    cpage = 0;
     $(".Intro_module .sCreenCount").css("width", intro.Screen_width + "px");
     for (i = 1; i <= intro.SkrnCount; i++) {
       var left_margin = intro.Screen_width * (i - 1);
@@ -1985,7 +1974,7 @@ var intro = {
     }
   },
   resSlideMaindiv: function (val) {
-    cpage=0;
+    cpage = 0;
     if (intro.Screen_width >= 1920) {
       intro.resAddsectionClass(val, intro.Screen_height);
     } else if (intro.Screen_width > 1366 && $(window).width() < 1920) {
@@ -1995,7 +1984,7 @@ var intro = {
     }
   },
   resAddsectionClass: function (a, b) {
-    cpage=0;
+    cpage = 0;
     // for (var i = 1; i < $(".section").length; i++) {
     //         $(".warpperarea").removeClass("section"+i+"_slide"+b);
     //     }
@@ -2007,8 +1996,8 @@ var intro = {
     }
   },
   setLineHeight: function () {
-    cpage=0;
-    scrld=1;
+    cpage = 0;
+    scrld = 1;
     var screenHeight = 0;
     if ($(window).width() >= 1920) {
       screenHeight = 969;
@@ -2021,14 +2010,14 @@ var intro = {
   },
 
   unloadPage: function () {
-    cpage=0;
-    scrld=1;
+    cpage = 0;
+    scrld = 1;
     console.log("page unloaded");
     model.tl.clear();
   },
   onComplete: function () {
-    cpage=0;
-    scrld=1;
+    cpage = 0;
+    scrld = 1;
     console.log("TL completed");
   },
   /****screen1****/
@@ -2061,8 +2050,8 @@ var intro = {
       0.6,
       intro.sec2_active_da
     );
-    z=0;
-    i=0;
+    z = 0;
+    i = 0;
   },
   screen1_video: function () {
     $(".mutebtn").removeAttr("hidden");
@@ -2075,7 +2064,7 @@ var intro = {
     $("#myVideo1_1").attr("controls", "true");
   },
   sec2_active_da: function () {
-    scrlpg1=true;
+    scrlpg1 = true;
     $(".mutebtn").css("display", "block");
     $("#mutebtn").css("display", "block");
     $("#section0 .Down_arrowIcon").removeClass("disable");
@@ -2135,9 +2124,8 @@ var intro = {
   // },
 
   screen1a_anim: function () {
-    scrlup=2;
-    cpage=1;
-    
+    scrlup = 2;
+    cpage = 1;
     model.verticalScreenStatusData[7] = true;
     $("#myVideo1_1").get(0).pause();
     $("#intro").attr("id", "navintro");
@@ -2151,7 +2139,7 @@ var intro = {
     $(".mutebtn").css("display", "block");
     model.twinmaxstaggerToVal(
       "#scrn1_7a",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -2163,7 +2151,7 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn1_7",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -2176,7 +2164,7 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn1_8",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -2238,7 +2226,7 @@ var intro = {
     model.twinmaxSetVal("#scrn1_7a", 0, null, 0);
     model.twinmaxstaggerToVal(
       "#scrn1_11",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -2343,7 +2331,7 @@ var intro = {
     );
   },
   screen1a_animDone: function () {
-    scrlpg2=true;
+    scrlpg2 = true;
     // $("#section1 .btn-primary").removeClass("disable2");
     $("#section1 .Down_arrowIcon").removeClass("disable");
     $("#section1 .Down_arrowIcon").addClass("bounce");
@@ -2540,9 +2528,8 @@ var intro = {
 
   /****screen2****/
   screen2_anim: function () {
-    scrlup=3;
-    cpage=2;
-    
+    scrlup = 3;
+    cpage = 2;
     intro.volumeBlue_Nonactive();
     $("#dp").attr("id", "dprinciple");
     $("#navintro").attr("id", "intro");
@@ -2554,7 +2541,7 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn2_1a1",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -2711,12 +2698,12 @@ var intro = {
 
     model.twinmaxstaggerToVal(
       "#scrn2_7",
-      0.5,
+      0,
       0,
       0,
       1,
       Linear.easeNone,
-      0.5,
+      0,
       null,
       null,
       0.6,
@@ -2862,7 +2849,7 @@ var intro = {
     $(".cir4_highlighter").addClass("highlighter");
   },
   scrn2_2dDone: function () {
-    scrlpg3=true;
+    scrlpg3 = true;
     model.verticalScreenStatusData[0] = true;
     $(".butons_div").removeClass("disable");
     $("#section2 .Down_arrowIcon").removeClass("disable");
@@ -2889,7 +2876,7 @@ var intro = {
   screen2_animStop: function () {
     model.twinmaxstaggerToVal(
       "#scrn2_1a1",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -3074,12 +3061,12 @@ var intro = {
 
     model.twinmaxstaggerToVal(
       "#scrn2_7",
-      0.5,
+      0,
       0,
       0,
       1,
       Linear.easeNone,
-      0.5,
+      0,
       null,
       null,
       0.6,
@@ -3184,9 +3171,8 @@ var intro = {
 
   /****screen3****/
   screen3_anim: function () {
-    scrlup=4;
-    cpage=3;
-    
+    scrlup = 4;
+    cpage = 3;
     model.verticalScreenStatusData[1] = true;
     spcolor = "White";
     $("#mtbtn").attr(
@@ -3195,7 +3181,7 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn3_1a",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -3221,7 +3207,7 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn3_2",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -3448,7 +3434,7 @@ var intro = {
     $("#scrn3_7a").addClass("scale100");
   },
   scr3Done: function () {
-    scrlpg4=true;
+    scrlpg4 = true;
     $("#section3 .Down_arrowIcon").removeClass("disable");
     $("#section3 .Down_arrowIcon").addClass("bounce");
   },
@@ -3456,7 +3442,7 @@ var intro = {
   screen3_animStop: function () {
     model.twinmaxstaggerToVal(
       "#scrn3_1a",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -3482,12 +3468,12 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn3_2",
-      0.5,
+      0,
       0,
       0,
       1,
       Linear.easeNone,
-      0.5,
+      0,
       null,
       null,
       0.6,
@@ -3749,7 +3735,7 @@ var intro = {
     //$('.overlayLeft2').addClass('add2');
     model.twinmaxstaggerToVal(
       ".Intro_module #scrn3_2",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -3773,14 +3759,13 @@ var intro = {
 
   /****screen4****/
   screen4_anim: function () {
-    scrlup=5;
-    cpage=4;
-    
+    scrlup = 5;
+    cpage = 4;
     model.verticalScreenStatusData[2] = true;
 
     model.twinmaxstaggerToVal(
       "#scrn4_1a",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -3793,7 +3778,7 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn4_1",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -3806,7 +3791,7 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn4_2",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -4046,7 +4031,7 @@ var intro = {
     $("#scrn4_7a").addClass("scale100");
   },
   scr4Done: function () {
-    scrlpg5=true;
+    scrlpg5 = true;
     $("#section4 .Down_arrowIcon").removeClass("disable");
     $("#section4 .Down_arrowIcon").addClass("bounce");
   },
@@ -4054,12 +4039,12 @@ var intro = {
   screen4_animStop: function () {
     model.twinmaxstaggerToVal(
       "#scrn4_1a",
-      0.5,
+      0,
       0,
       0,
       1,
       Linear.easeNone,
-      0.5,
+      0,
       null,
       null,
       0.6,
@@ -4067,12 +4052,12 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn4_1",
-      0.5,
+      0,
       0,
       0,
       1,
       Linear.easeNone,
-      0.5,
+      0,
       null,
       null,
       0.6,
@@ -4080,12 +4065,12 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn4_2",
-      0.5,
+      0,
       0,
       0,
       1,
       Linear.easeNone,
-      0.5,
+      0,
       null,
       null,
       0.6,
@@ -4315,14 +4300,12 @@ var intro = {
   },
   /****screen4****/
   screen5_anim: function () {
-    scrlup=6;
-    cpage=5;
-    
+    scrlup = 6;
+    cpage = 5;
     model.verticalScreenStatusData[3] = true;
 
     model.twinmaxstaggerToVal(
-      "#scrn5_1a",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -4335,7 +4318,7 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn5_1",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -4348,7 +4331,7 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn5_2",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -4575,7 +4558,7 @@ var intro = {
     $("#scrn5_7a").addClass("scale100");
   },
   activeTab1: function () {
-    scrlpg6=true;
+    scrlpg6 = true;
     $(".col3_1.click_div1").removeClass("disable");
 
     // $("#section5 .click_icon1").removeClass("disable");
@@ -4585,12 +4568,12 @@ var intro = {
     $("#section5 .Down_arrowIcon").addClass("bounce");
   },
   activeTab1Stop: function () {
-    scrlpg7=true;
+    scrlpg7 = true;
     $("#section5 .Down_arrowIcon").removeClass("disable");
     $("#section5 .Down_arrowIcon").addClass("bounce");
   },
   scr5Done: function () {
-    scrlpg8=true;
+    scrlpg8 = true;
     //$("#section4 .overview_div").removeClass("disable");
     $("#section5 .Down_arrowIcon").removeClass("disable");
     $("#section5 .Down_arrowIcon").addClass("bounce");
@@ -4599,12 +4582,12 @@ var intro = {
   screen5_animStop: function () {
     model.twinmaxstaggerToVal(
       "#scrn5_1a",
-      0.5,
+      0,
       0,
       0,
       1,
       Linear.easeNone,
-      0.5,
+      0,
       null,
       null,
       0.6,
@@ -4612,12 +4595,12 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn5_1",
-      0.5,
+      0,
       0,
       0,
       1,
       Linear.easeNone,
-      0.5,
+      0,
       null,
       null,
       0.6,
@@ -4625,12 +4608,12 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn5_2",
-      0.5,
+      0,
       0,
       0,
       1,
       Linear.easeNone,
-      0.5,
+      0,
       null,
       null,
       0.6,
@@ -4847,9 +4830,8 @@ var intro = {
   },
   /****screen4****/
   screen6_anim: function () {
-    scrlup=7;
-    cpage=6;
-    
+    scrlup = 7;
+    cpage = 6;
     $("#dp").attr("id", "dprinciple");
     $("#navintro").attr("id", "intro");
     $("#dguidance").attr("id", "dg");
@@ -4857,7 +4839,7 @@ var intro = {
 
     model.twinmaxstaggerToVal(
       "#scrn6_1a",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -4870,7 +4852,7 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn6_1",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -4883,7 +4865,7 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn6_2",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -5110,7 +5092,7 @@ var intro = {
     $("#scrn6_7a").addClass("scale100");
   },
   scr6Done: function () {
-    scrlpg7=true;
+    scrlpg7 = true;
     // $("#section5 .overview_div").removeClass("disable");
     $("#section6 .Down_arrowIcon").removeClass("disable");
     $("#section6 .Down_arrowIcon").addClass("bounce");
@@ -5122,12 +5104,12 @@ var intro = {
     $("#dguidance").attr("id", "dg");
     model.twinmaxstaggerToVal(
       "#scrn6_1a",
-      0.5,
+      0,
       0,
       0,
       1,
       Linear.easeNone,
-      0.5,
+      0,
       null,
       null,
       0.6,
@@ -5135,12 +5117,12 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn6_1",
-      0.5,
+      0,
       0,
       0,
       1,
       Linear.easeNone,
-      0.5,
+      0,
       null,
       null,
       0.6,
@@ -5148,12 +5130,12 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn6_2",
-      0.5,
+      0,
       0,
       0,
       1,
       Linear.easeNone,
-      0.5,
+      0,
       null,
       null,
       0.6,
@@ -5370,9 +5352,8 @@ var intro = {
   },
   /****screen4****/
   screen7_anim: function () {
-    scrlup=8;
-    cpage=7;
-    
+    scrlup = 8;
+    cpage = 7;
     model.verticalScreenStatusData[5] = true;
     $("#dg").attr("id", "dguidance");
     $("#dprinciple").attr("id", "dp");
@@ -5384,7 +5365,7 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn7_1a1",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -5397,7 +5378,7 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn7_1",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -5410,7 +5391,7 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn7_2",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -5741,7 +5722,7 @@ var intro = {
     );
   },
   screen7part3Done: function () {
-    scrlpg8=true;
+    scrlpg8 = true;
     // $("#section5 .overview_div").removeClass("disable");
 
     $("#section7 .Down_arrowIcon").removeClass("disable");
@@ -5751,12 +5732,12 @@ var intro = {
   screen7_animStop: function () {
     model.twinmaxstaggerToVal(
       "#scrn7_1a1",
-      0.5,
+      0,
       0,
       0,
       1,
       Linear.easeNone,
-      0.5,
+      0,
       null,
       null,
       0.6,
@@ -5764,12 +5745,12 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn7_1",
-      0.5,
+      0,
       0,
       0,
       1,
       Linear.easeNone,
-      0.5,
+      0,
       null,
       null,
       0.6,
@@ -5777,12 +5758,12 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn7_2",
-      0.5,
+      0,
       0,
       0,
       1,
       Linear.easeNone,
-      0.5,
+      0,
       null,
       null,
       0.6,
@@ -6090,14 +6071,13 @@ var intro = {
   },
   /****screen4****/
   screen8_anim: function () {
-    cpage=8;
-    scrlup=9;
-    
+    cpage = 8;
+    scrlup = 9;
     model.verticalScreenStatusData[6] = true;
 
     model.twinmaxstaggerToVal(
       "#scrn8_1a1",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -6110,7 +6090,7 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn8_1a",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -6123,7 +6103,7 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn8_1",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -6136,7 +6116,7 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn8_2",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -6272,11 +6252,11 @@ var intro = {
     $("#scrn8_3b").addClass("scale100");
   },
   scr8Done: function () {
-    scrlpg9=true;
+    scrlpg9 = true;
     // $("#section5 .overview_div").removeClass("disable");
 
     $("#section8 .Down_arrowIcon").removeClass("disable");
-    scrl=true;
+    scrl = true;
     $("#section8 .Down_arrowIcon").addClass("bounce");
   },
   /****screen4****/
@@ -6427,14 +6407,13 @@ var intro = {
   },
   /****screen9****/
   screen9_anim: function () {
-    cpage=9;
-    scrlup=10;
-    
+    cpage = 9;
+    scrlup = 10;
     model.verticalScreenStatusData[7] = true;
 
     model.twinmaxstaggerToVal(
       "#scrn9_1a1",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -6447,7 +6426,7 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn9_1a",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -6460,7 +6439,7 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn9_1",
-      0.5,
+      0,
       0,
       0,
       1,
@@ -6557,12 +6536,12 @@ var intro = {
   screen9_animStop: function () {
     model.twinmaxstaggerToVal(
       "#scrn9_1a1",
-      0.5,
+      0,
       0,
       0,
       1,
       Linear.easeNone,
-      0.5,
+      0,
       null,
       null,
       0.6,
@@ -6570,12 +6549,12 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn9_1a",
-      0.5,
+      0,
       0,
       0,
       1,
       Linear.easeNone,
-      0.5,
+      0,
       null,
       null,
       0.6,
@@ -6583,12 +6562,12 @@ var intro = {
     );
     model.twinmaxstaggerToVal(
       "#scrn9_1",
-      0.5,
+      0,
       0,
       0,
       1,
       Linear.easeNone,
-      0.5,
+      0,
       null,
       null,
       0.6,
@@ -6676,8 +6655,7 @@ var intro = {
   /****screen9****/
   /****screen9****/
   screen10_anim: function () {
-    scrlup=11;
-    
+    scrlup = 11;
     model.verticalScreenStatusData[8] = true;
 
     model.twinmaxstaggerToVal(
@@ -6876,7 +6854,7 @@ var intro = {
   sec7func1: function () {
     $("#screen7 .ver_line").addClass("lineanim7");
   },
-  sec7func2: function () { },
+  sec7func2: function () {},
   sec7func3: function () {
     intro.sendBookMrkData(1);
   },
@@ -6913,17 +6891,17 @@ var intro = {
   },
 
   setDefaultposition: function () {
-    model.twinmaxSetVal("#scrn1_1", 0, null, 0);
-    model.twinmaxSetVal("#scrn1_2", 0, null, 0);
+    model.twinmaxSetVal("#scrn1_1", 0, null, 1);
+    model.twinmaxSetVal("#scrn1_2", 0, null, 1);
 
-    model.twinmaxSetVal("#scrn1_1a", -20, null, 0);
-    model.twinmaxSetVal("#scrn1_3", -20, null, 0);
-    model.twinmaxSetVal("#scrn1_4", -20, null, 0);
-    model.twinmaxSetVal("#scrn1_5", -20, null, 0);
-    model.twinmaxSetVal("#scrn1_6", -20, null, 0);
-    model.twinmaxSetVal("#scrn1_7", 0, 100, 0);
-    model.twinmaxSetVal("#scrn1_7a", 0, null, 0);
-    model.twinmaxSetVal("#scrn1_8", 0, 150, 0);
+    //model.twinmaxSetVal("#scrn1_1a", 0, null, 0);
+    model.twinmaxSetVal("#scrn1_4", 0, null, 0);
+    model.twinmaxSetVal("#scrn1_5", 0, null, 0);
+    model.twinmaxSetVal("#scrn1_6", 0, null, 0);
+    model.twinmaxSetVal("#scrn1_3", 0, null, 0);
+    model.twinmaxSetVal("#scrn1_7", 0, 0, 1);
+    model.twinmaxSetVal("#scrn1_7a", 0, null, 1);
+    model.twinmaxSetVal("#scrn1_8", 0, 0, 1);
     model.twinmaxSetVal("#scrn1_9", 0, null, 0);
     model.twinmaxSetVal("#scrn1_10", 0, null, 0);
     model.twinmaxSetVal("#scrn1_10a", 20, null, 0);
@@ -6939,9 +6917,9 @@ var intro = {
     model.twinmaxSetVal("#scrn1_18", 20, null, 0);
     // model.twinmaxSetVal("#scrn1_19", 20, null, 0);
 
-    model.twinmaxSetVal("#scrn2_1a1", -20, null, 0);
-    model.twinmaxSetVal("#scrn2_1", -100, null, 0);
-    model.twinmaxSetVal("#scrn2_2", 100, null, 0);
+    //model.twinmaxSetVal("#scrn2_1a1", 0, null, 0.8);
+    model.twinmaxSetVal("#scrn2_1", 0, null, 0);
+    model.twinmaxSetVal("#scrn2_2", 30, null, 0);
     model.twinmaxSetVal("#scrn2_3", -20, null, 0);
     model.twinmaxSetVal("#scrn2_4", -20, null, 0);
     model.twinmaxSetVal("#scrn2_4a", 0, -20, 0);
@@ -6953,7 +6931,7 @@ var intro = {
     model.twinmaxSetVal("#scrn2_5b", 0, -70, 0);
     model.twinmaxSetVal("#scrn2_5c", -70, null, 0);
     model.twinmaxSetVal("#scrn2_6", 0, null, 0);
-    model.twinmaxSetVal("#scrn2_7", 0, 100, 0);
+    model.twinmaxSetVal("#scrn2_7", 0, 0, 1);
     model.twinmaxSetVal("#scrn2_8", -20, null, 0);
     model.twinmaxSetVal("#scrn2_9", -20, null, 0);
     model.twinmaxSetVal("#scrn2_10", -20, null, 0);
@@ -6989,9 +6967,9 @@ var intro = {
     $(".middle_div").removeClass("step4");
     $(".bubble_down").hide();
 
-    model.twinmaxSetVal("#scrn3_1a", 0, 500, 0);
-    model.twinmaxSetVal("#scrn3_1", 0, 500, 0);
-    model.twinmaxSetVal("#scrn3_2", 0, 500, 0);
+    model.twinmaxSetVal("#scrn3_1a", 0, 0, 1);
+    model.twinmaxSetVal("#scrn3_1", 0, 0, 1);
+    model.twinmaxSetVal("#scrn3_2", 0, 0, 1);
     model.twinmaxSetVal("#scrn3_3", -20, null, 0);
     model.twinmaxSetVal("#scrn3_3a", 0, null, 0);
     model.twinmaxSetVal("#scrn3_3b", 0, null, 0);
@@ -7022,9 +7000,9 @@ var intro = {
     model.twinmaxSetVal("#scrn3_20", -20, null, 0);
     model.twinmaxSetVal("#scrn3_21", -20, null, 0);
 
-    model.twinmaxSetVal("#scrn4_1a", 0, 500, 0);
-    model.twinmaxSetVal("#scrn4_1", 0, 500, 0);
-    model.twinmaxSetVal("#scrn4_2", 0, 500, 0);
+    //model.twinmaxSetVal("#scrn4_1a", 0, 0, 1);
+    model.twinmaxSetVal("#scrn4_1", 0, 0, 1);
+    model.twinmaxSetVal("#scrn4_2", 0, 0, 1);
     model.twinmaxSetVal("#scrn4_3", -20, null, 0);
     model.twinmaxSetVal("#scrn4_3a", 0, null, 0);
     model.twinmaxSetVal("#scrn4_3b", 0, null, 0);
@@ -7043,9 +7021,9 @@ var intro = {
     model.twinmaxSetVal("#scrn4_7b", 0, null, 0);
     model.twinmaxSetVal("#scrn4_8", -20, null, 0);
 
-    model.twinmaxSetVal("#scrn5_1a", 0, 500, 0);
-    model.twinmaxSetVal("#scrn5_1", 0, 500, 0);
-    model.twinmaxSetVal("#scrn5_2", 0, 500, 0);
+    //model.twinmaxSetVal("#scrn5_1a", 0, 0, 1);
+    model.twinmaxSetVal("#scrn5_1", 0, 0, 1);
+    model.twinmaxSetVal("#scrn5_2", 0, 0, 1);
     model.twinmaxSetVal("#scrn5_3", -20, null, 0);
     model.twinmaxSetVal("#scrn5_3a", 0, null, 0);
     model.twinmaxSetVal("#scrn5_3b", 0, null, 0);
@@ -7076,9 +7054,9 @@ var intro = {
     model.twinmaxSetVal("#scrn5_20", -20, null, 0);
     model.twinmaxSetVal("#scrn5_21", -20, null, 0);
 
-    model.twinmaxSetVal("#scrn6_1a", 0, 500, 0);
-    model.twinmaxSetVal("#scrn6_1", 0, 500, 0);
-    model.twinmaxSetVal("#scrn6_2", 0, 500, 0);
+    //model.twinmaxSetVal("#scrn6_1a", 0, 0, 1);
+    model.twinmaxSetVal("#scrn6_1", 0, 0, 1);
+    model.twinmaxSetVal("#scrn6_2", 0, 0, 1);
     model.twinmaxSetVal("#scrn6_3", -20, null, 0);
     model.twinmaxSetVal("#scrn6_3a", 0, null, 0);
     model.twinmaxSetVal("#scrn6_3b", 0, null, 0);
@@ -7098,10 +7076,10 @@ var intro = {
     model.twinmaxSetVal("#scrn6_9", 20, null, 0);
     model.twinmaxSetVal("#scrn6_10", 20, null, 0);
 
-    model.twinmaxSetVal("#scrn7_1a1", 0, 100, 0);
-    model.twinmaxSetVal("#scrn7_1", 0, 100, 0);
-    model.twinmaxSetVal("#scrn7_2", 0, 100, 0);
-    model.twinmaxSetVal("#scrn7_3", 0, 100, 0);
+    //model.twinmaxSetVal("#scrn7_1a1", 0, 0, 1);
+    model.twinmaxSetVal("#scrn7_1", 0, 0, 1);
+    model.twinmaxSetVal("#scrn7_2", 0, 0, 1);
+    model.twinmaxSetVal("#scrn7_3", 0, 0, 1);
     model.twinmaxSetVal("#scrn7_4", -20, null, 0);
     model.twinmaxSetVal("#scrn7_5", -20, null, 0);
     model.twinmaxSetVal("#scrn7_6", 20, null, 0);
@@ -7125,9 +7103,9 @@ var intro = {
     model.twinmaxSetVal("#scrn7_17c", 0, null, 0);
     model.twinmaxSetVal("#scrn7_18", 20, null, 0);
 
-    model.twinmaxSetVal("#scrn8_1a1", 0, 100, 0);
-    model.twinmaxSetVal("#scrn8_1a", 0, 100, 0);
-    model.twinmaxSetVal("#scrn8_1", 0, 100, 0);
+    //model.twinmaxSetVal("#scrn8_1a1", 0, 0, 1);
+    model.twinmaxSetVal("#scrn8_1a", 0, 0, 1);
+    model.twinmaxSetVal("#scrn8_1", 0, 0, 1);
     model.twinmaxSetVal("#scrn8_2", 0, 100, 0);
     model.twinmaxSetVal("#scrn8_3", -60, null, 0);
     model.twinmaxSetVal("#scrn8_3a", 0, null, 0);
@@ -7147,9 +7125,9 @@ var intro = {
     model.twinmaxSetVal("#scrn8_16", -20, null, 0);
     model.twinmaxSetVal("#scrn8_17", -20, null, 0);
 
-    model.twinmaxSetVal("#scrn9_1a1", 0, 100, 0);
-    model.twinmaxSetVal("#scrn9_1a", 0, 100, 0);
-    model.twinmaxSetVal("#scrn9_1", 0, 100, 0);
+    //model.twinmaxSetVal("#scrn9_1a1", 0, 0, 1);
+    model.twinmaxSetVal("#scrn9_1a", 0, 0, 1);
+    model.twinmaxSetVal("#scrn9_1", 0, 0, 1);
     model.twinmaxSetVal("#scrn9_2", 0, -80, 0);
     model.twinmaxSetVal("#scrn9_3", 0, -60, 0);
     model.twinmaxSetVal("#scrn9_4", 0, -60, 0);
@@ -7157,7 +7135,7 @@ var intro = {
     model.twinmaxSetVal("#scrn9_6", 0, -60, 0);
     model.twinmaxSetVal("#scrn9_7", -20, null, 0);
 
-    model.twinmaxSetVal("#scrn10_1", -20, null, 0);
+    model.twinmaxSetVal("#scrn10_1", 0, null, 0.5);
     model.twinmaxSetVal("#scrn10_2", 20, null, 0);
     model.twinmaxSetVal("#scrn10_3", -20, null, 0);
     model.twinmaxSetVal("#scrn10_4", -20, null, 0);
@@ -7165,5 +7143,5 @@ var intro = {
     model.twinmaxSetVal("#scrn10_6", -20, null, 0);
     model.twinmaxSetVal("#scrn10_7", -20, null, 0);
   },
-  anim1Done: function () { },
+  anim1Done: function () {},
 };

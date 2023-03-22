@@ -5118,7 +5118,7 @@ strong{
     cursor: pointer;
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
+  animation: bounce 3s infinite;
   animation-iteration-count: 2;
   pointer-events: auto;
 }
@@ -6533,7 +6533,7 @@ strong{
 }
 #section2 .middle_div.step2{
     width: 962px;
-    transition: 1s;
+    transition: all 500ms ease 0ms;
 }
 
 #section2 .middle_div .cir{
