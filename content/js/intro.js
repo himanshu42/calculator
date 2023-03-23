@@ -256,6 +256,7 @@ var intro = {
     $(".popClose")
       .off()
       .on("click", function () {
+        cpage = 0;
         intro.volumeBlue_active();
         $(".Intro_module #myVideo3_1").get(0).pause();
         //$('.Intro_module #myVideo3_1')[0].currentTime(0);
@@ -291,6 +292,7 @@ var intro = {
     );
 
     $(".rightNavWrap .navWrap").on("click", function () {
+      cpage = 0;
       // $('#section3 .stop').trigger('click');
       $(".tabContent1 .stop").trigger("click");
       $(".tabContent2 .stop").trigger("click");
