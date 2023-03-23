@@ -14,6 +14,7 @@
     var scrlpg9=false;
     var scrlpg10=false;
     var cpage=0;
+    var a=0;
 </script>
 <!DOCTYPE html>
 <html>
@@ -2002,14 +2003,6 @@ background-image: url(content/images/pages/global/download.png) !important;
         if (checkScrollDirectionIsUp(event)) {
             console.log(scrlup)
             $('#Up_arrowIcon'+scrlup+'').trigger('click');
-        } 
-        else 
-        {
-            console.log(scrlup)
-            if(scrlpg1==true && cpage==0)
-            {
-                $('#Down_arrowIcon1').trigger('click');
-            }
             console.log("1"+scrlpg1,cpage);
             console.log("2"+scrlpg2,cpage);
             console.log("3"+scrlpg3,cpage);
@@ -2020,6 +2013,27 @@ background-image: url(content/images/pages/global/download.png) !important;
             console.log("8"+scrlpg8,cpage);
             console.log("9"+scrlpg9,cpage);
             console.log("10"+scrlpg10,cpage);
+            a=cpage;
+        } 
+        else 
+        {
+            // console.log(scrlup)
+            console.log("1"+scrlpg1,cpage);
+            console.log("2"+scrlpg2,cpage);
+            console.log("3"+scrlpg3,cpage);
+            console.log("4"+scrlpg4,cpage);
+            console.log("5"+scrlpg5,cpage);
+            console.log("6"+scrlpg6,cpage);
+            console.log("7"+scrlpg7,cpage);
+            console.log("8"+scrlpg8,cpage);
+            console.log("9"+scrlpg9,cpage);
+            console.log("10"+scrlpg10,cpage);
+            a=cpage;
+            console.log(a);
+            if(scrlpg1==true && cpage==0)
+            {
+                $('#Down_arrowIcon1').trigger('click');
+            }
             if(scrlpg2==true && cpage==1)
             {
                 $('#Down_arrowIcon2').trigger('click');
@@ -2056,8 +2070,9 @@ background-image: url(content/images/pages/global/download.png) !important;
             {
                 $('#Down_arrowIcon10').trigger('click');
             }
-
+            
         }
+        cpage=a;
         }
 
         function checkScrollDirectionIsUp(event) {
