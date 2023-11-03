@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="login.js"></script> -->
+</head>
+<body>
+    <div class="container" id="container">
+
+        <div class="form-container  sign-in-container" id="sign__in">
+            <form action="#">
+                <div class="header">Sign In</div>
+                <br>
+                <div class="button-input-group">
+                    <div class="group input-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="group input-group">
+                        <input type="password" placeholder="Password" required pattern=".{8,}">
+                    </div>
+                    <div class="alert-text signup__alert">
+                        <span class="help__text">At least 8 character</span>
+                    </div>
+                    <div class="form-link forgot">
+                        <a href="#" class="login-link">Forgot your password?</a>
+                    </div>
+                    <div class="group button-group">
+                        <button class="signin-btn" type="">Sign in</button>
+                    </div>
+
+                    <div class="log__in___adata">
+                        <h5 onclick="location.href='signup.html'"> SignUp</h5>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start your journey with us</p>
+
+                    <div class="group button-group">
+                        <button class="ghost" onclick="location.href='signup.html'" id="signUp">Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
